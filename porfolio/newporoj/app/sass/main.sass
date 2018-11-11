@@ -1,0 +1,747 @@
+@import "helpers/vars"
+@import "helpers/function"
+@import "base/reset"
+
+body
+ 	background-color: $additional-1				
+ 	font: 14px/1 "Roboto"
+ 	color: $main	 
+
+
+section 
+	padding 70px 0 90px
+
+
+h1,h2,h3,h4,h5,h6
+	font-family: "BigNoodleTitling"	
+	color: $main-2	
+	text-transform: uppercase
+	text-align: center
+	margin: 0
+	padding: 0
+
+h1
+	font:
+		size: 48px
+		weight: normal
+	letter-spacing: 2px
+
+
+p
+	font:
+		size: 14px
+		weight: 300
+	line-height: 1.5
+
+
+hr
+	width: 150px
+	height: 2px
+	border: none
+	background-color: $accent-1	
+	margin:
+		top: 5px
+		bottom: 0
+section
+	padding: 70px 0 90px
+
+
+button, input, textarea
+	background: none
+	border: none
+	outline: none
+textarea
+	resize: none
+
+input, textarea
+	color: $main
+	font-size: 14px
+	font-family: 'Roboto'
+
+
+img
+	width: 100%
+	//height: auto
+	height: 100%
+
+
+// slideOut
+
+
+
+// slideOut end
+
+.button
+	padding: 11px 22px
+	background: $accent-1-help	
+	border-radius: 5px
+	text-transform: uppercase
+	font-weight: bold
+	color: $additional-1	
+	cursor: pointer
+	transition: all 0.3s ease
+	&:hover
+		background: darken($accent-1-help, 15%)
+		transition: all 0.3s ease
+
+
+
+.title-inf
+	text-align: center
+	margin: 0 auto
+	margin-top: 15px
+	max-width: 500px
+	//font-weight: 100
+
+
+
+
+.header
+	&__top-line
+		padding: 50px 0
+		background-color: $additional-2	
+	&__content-block
+		background-color: $main-3
+		padding: 160px 0 44px	
+
+
+.logo 
+	display: flex
+	align-items: center
+	&--b
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	&__rocket
+		font-size: 60px
+		color: $accent-1
+		&--b
+			font-size: 40px
+	&__text
+		font:
+			size: 40px
+			weight: 300
+		margin-left: 25px
+		&--b
+			font-size: 24px
+			color: $additional-1	
+			margin-top: 3px
+			margin-left: auto
+			margin-right: auto
+
+
+.slick-slide 
+	outline: none
+
+
+.slick-arrow
+	position: absolute
+	z-index: 5
+	top: 50%
+	background: none
+	border: none
+	padding: 0
+	opacity: 0.6
+	outline: none
+	transition: all 0.3s ease
+	cursor: pointer
+.slick-prev
+	left: 0px
+.slick-next
+	right: 0px
+
+.slick-arrow:hover
+	opacity: 1
+	transition: all 0.3s ease
+
+
+
+.header-slider
+	margin-bottom: 160px
+	.slick-arrow
+		font-size: 50px
+		color: $additional-2
+	.slick-prev
+		left: -10px
+	.slick-next
+		right: -10px
+
+	.slide
+		&__title
+			font-size: 50px
+			color: $additional-2
+			margin-bottom: 10px
+		&__subtitle
+			font-size: 25px
+			color: $additional-2
+
+
+.scroll-down
+	&__mouse
+		margin-bottom: 15px
+		color: $additional-1
+		font:
+			size: 36px
+			weight: normal
+	&__text
+		color: $additional-1
+		font:
+			size: 12px
+			family: "Roboto"
+			weight: bold
+
+
+.about_us
+	&__title-inf
+		margin-bottom: 58px
+
+.about-item
+	background: $additional-2	
+	padding: 40px 25px 30px 40px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-bottom: 25px
+	max-width: 320px
+	margin-left:  auto
+	margin-right:  auto
+
+	
+	&__ico
+		font-size: 60px
+		color: $accent-1
+		text-align: center
+		margin-bottom: 22px
+		position: relative
+		&--1
+			top: -14px
+		&--2
+			top: -5px
+	&__title
+		font:
+			size: 17px
+			weight: bold
+			family: 'Roboto'
+		color: $main
+		margin-bottom: 15px
+		white-space: nowrap
+		//color: 
+	&__text
+		text-align: center
+	&--3
+		margin-bottom: 0
+
+
+.our_works 
+	border-top: 5px solid #ccc
+	padding-bottom: 0px
+	&__title-inf
+		margin-bottom: 50px	
+	&__content
+		&--bg
+			background-color: $accent-2
+		padding: 35px 0	
+		margin-top: 25px
+		
+			
+
+.work-item
+	width: 100%
+	max-width: 290px
+	height: 170px
+	margin: 0 auto 20px
+
+
+.controll-works
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__toggle
+		padding : 10px 15px 5px 15px
+		border-bottom: 1px solid $accent-2
+		cursor: pointer
+
+
+.toggle-ico
+	font-size: 20px
+	font-weight: bold
+	position: relative
+	bottom: -3px
+	color: $accent-2
+	&--map
+		font-size: 48px	
+		bottom: -15px	 
+
+	
+.toggle-name
+	display: inline-block
+	margin-right: 10px
+	font-size: 14px 
+	color : $main-2		
+	font-weight: bold
+	text-align: left
+	text-transform: uppercase
+	
+
+
+.categories
+	display: none
+	max-width: 100%
+	&__item
+		&:first-child
+			margin-top: 5px
+		margin-bottom: 5px
+		padding : 5px 15px
+		color: $main	
+		cursor: pointer
+		text-transform: uppercase
+		transition: all 0.1s ease-out
+
+
+
+.animal
+	background: $help-2 	
+	padding-top: 100px
+	padding-bottom: 75px	
+
+
+.item-wrap	
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-bottom: 15px
+.an-ico
+	width: 35px
+	height: 35px
+	border-radius: 5px
+	background: radial-gradient(circle farthest-corner at 70px 50px, $additional-2, darken($main, 50%), $main-2);
+	border: 1px solid $additional-2	
+	position: relative
+	&__pic
+		position: absolute
+		right: 0px
+		top: 0px
+		&--postion
+			right: -10px
+			top: 5px	
+	
+
+		
+.an-title
+	color : $additional-2		
+	margin-left: 10px
+	font-size: 33px
+	font-family: 'MgOpen Modata'
+
+
+.anSlider .slick-arrow
+	//background: #ccc
+	//font-size: 72px
+	font-size: 55px
+	top: -5px
+	color: $main
+
+.anSlider .slick-prev
+	left: -10px
+
+.anSlider .slick-next
+	right: -10px
+
+
+
+.whatWeAre
+	&__title-inf
+		margin-bottom: 85px
+
+
+.mainWorker
+	width: 100%
+	&__item	
+		display: flex
+		flex-direction: column
+		align-items: center
+
+
+.worker-ava
+	background: $accent-2	
+	width: 130px
+	height: 130px	
+	margin-bottom: 30px
+	border-radius: 50%	
+
+.worker-pic
+	border-radius: 50%
+
+.worker-fio
+	font-weight: bold
+	text-transform: uppercase
+	font-size: 20px
+	color: $main-2
+	line-height: 1	
+	margin-bottom: 5px	
+
+.worker-job
+	text-transform: uppercase
+	font-size: 14px
+	margin-bottom: 20px
+	line-height: 1
+
+.worker--wrap
+		display: flex	
+		flex-direction: column
+		align-items: center	
+		background: $additional-2	
+		padding-top: 70px 
+		padding-bottom: 80px
+		max-width: 100%
+		height: 100%
+
+.dots_block
+	.slick-dots
+		display: flex
+		margin-top: 40px
+		li
+			&:last-child
+				margin-right: 0px
+			width: 25px
+			height: 25px
+			border-radius: 50%
+			background: #ccc
+			margin-right: 30px
+			background: $additional-1	
+			cursor: pointer
+			
+	 .slick-active
+	 	background: $main
+
+.social
+	display: flex
+	&__item
+		&:last-child
+				margin-right: 0px
+		margin-right: 20px
+		cursor: pointer
+		font-size: 25px
+		color: $main
+
+.help-slide
+	display: none
+
+.helpWorker
+	width: 100%
+
+	&__item
+		h2
+			text-align: left	
+			margin-bottom: 20px
+			font-family: 'Roboto Condensed'
+			font-size: 24px
+			font-weight: bold
+		padding-left: 50px
+		padding-right: 50px
+
+.worker-descr
+	margin-bottom: 35px
+
+
+.skills
+	width: 100%
+	&__name 
+		text-align: left
+		font-size: 14px
+		font-family: 'Roboto'
+		font-weight: bold
+	&__value
+		text-align: right
+	td
+		&:nth-child(2)
+			display: none
+		&:nth-child(3)
+		padding-bottom: 0px
+		padding-right: 0px
+		padding-bottom: 18px
+		padding-right: 20px
+
+	
+
+.features
+	background: $help-1	
+	padding-top: 50px
+	padding-bottom: 65px	
+
+.head--white
+	font-family: 'Roboto Condensed'
+	color: $additional-1	
+	font-size: 36px
+	margin-bottom: 10px
+	letter-spacing: 0.5px
+.hr--white
+	background: $main
+	width: 75px
+	opacity: 0.7	
+	
+
+.feature
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 60px
+	color: $additional-1	
+	&__ico
+		color: $accent-1-help	
+		font-size: 60px
+	&__name
+		color: $additional-1	
+		font-size: 18px
+		font-weight: 200
+		margin-top: 20px
+		margin-bottom: 28px 
+	&__count
+		color: $additional-1
+		font-size: 48px
+		font-weight: 200
+
+.posts
+	&__item
+		max-width: 400px
+		margin: 0 auto
+		margin-bottom: 50px
+		&:nth-child(3)
+			margin-bottom: 0px
+.post
+	background: $additional-2	
+	&__text
+		padding: 35px 27px 25px 
+	&__photo
+		position: relative
+		z-index: 1
+		height: 218px
+		
+
+.photoControl
+	position: absolute
+	display: flex
+	height: 100%
+	width: 100%
+	background-size: cover
+	justify-content: center
+	align-items: center
+	z-index: 2
+	display: none
+
+
+	&__item
+		height: 45px
+		width: 45px
+		background: $additional-1	
+		color: $accent-1	
+		font-size: 24px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 50%
+		opacity: 1
+		z-index: 3
+		transition: all 0.3s ease	
+		cursor: pointer
+
+		&:nth-child(1)
+			margin-right: 25px
+		&:hover
+			background: $accent-1
+			color: $additional-1	
+			transition: all 0.3s ease	
+
+
+
+
+.postTitle
+	font-family: 'Roboto'
+	font-size: 18px
+	font-weight: 400
+	color: $main-3
+	text-transform: none
+	text-align: left
+	margin-bottom: 20px
+
+.postParagraph
+	margin-bottom: 20px
+
+.postHelp, .postDate, .postLike, .postComment, .postFeed
+	display: flex
+	align-items: flex-end
+
+	i
+		font-size: 14px
+		margin-right: 2px
+		position: relative
+		bottom: -2px
+
+.postHelp
+	justify-content: space-between
+	align-items: flex-end
+
+.postLike
+	margin-right: 5px
+
+.postComment 
+	i
+		bottom: -3px
+
+
+.postDate__date, .postLike__count, .postComment__count
+	font-size: 10px
+	font-weight: 400
+	font-family: 'Roboto Condensed'
+	color: $main-2		
+
+
+.chosePlan
+	background: $help-1	
+	color: $additional-1
+
+.plans
+	margin-top: 54px
+	&__item
+		margin: 0 auto
+		margin-bottom: 50px
+		max-width: 400px
+		&:hover
+			.option
+					&__count
+						color: $accent-1-help	
+			border: 1px solid $accent-1-help	
+			transition: all 0.1s ease
+
+
+
+
+.planTitle
+	background: #0e1316	 
+	padding-top: 40px
+	padding-bottom: 40px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	&__help
+		font-weight: bold
+		margin-bottom: 5px
+	&__main
+		font-size: 36px
+		font-weight: 200
+
+.planInfo
+	background: $help-3	
+	padding-bottom: 44px
+	padding-top: 46px
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__list
+		margin-bottom: 75px
+
+.option
+	margin-bottom: 22px
+	&:last-child
+		margin-bottom: 0px
+	&__count
+		font-weight: bold
+		display: inline-block
+		margin-right: 5px
+	&__name
+		font-weight: 200
+
+
+.dollar
+	font-size: 24px
+
+
+.label--text
+	font-weight: bold
+	text-transform: uppercase
+	display: block
+	margin-bottom: 10px
+.label-accent
+	color: $accent-1-help		
+
+
+.inp
+	border-bottom: 2px solid #cacaca				
+	padding: 0px 10px
+	margin-bottom: 43px
+	width: 250px
+	max-width: 100%;
+
+.formMessage__input
+	margin-bottom: 0px
+
+.formInp	
+	display: flex
+	align-items: center
+	flex-direction: column
+	margin-bottom: 62px
+	width: 100%
+
+.formCont
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	margin-top: 88px
+	&__button
+		border-radius: 0px
+		background: $accent-1-help	
+
+.formMessage__input
+	height: 67px
+
+
+
+
+.locationOnMap
+	background: #0c1215	
+	padding-top: 33px
+	padding-bottom: 33px
+
+
+
+.head--locationOnMap
+	font-size: 24px
+
+
+
+
+
+
+
+
+
+.footer 
+	background: $help-1		
+	color: $additional-1	
+	padding-top: 50px
+	padding-bottom: 65px
+	&__text
+		font-family: 'Roboto Condensed'
+		text-transform: uppercase
+		margin-top: 11px
+		margin-bottom: 11px
+
+.footer--cont
+	display: flex
+	flex-direction: column
+	align-items: center
+
+
+
+.social--white .social__item
+ 	color: $additional-1	
+
+@import "layout/meadia"
