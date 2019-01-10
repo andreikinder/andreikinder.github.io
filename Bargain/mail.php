@@ -18,7 +18,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'ivanov.ivanov.ivan1.ivan@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = '$dk820&123'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('ivanov.ivanov.ivan1.ivan@mail.ru'); // от кого будет уходить письмо?
 $mail->addAddress('andrei.kinder.2426@icloud.com');     // Кому будет уходить письмо 
@@ -38,6 +38,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: index.html');
+    //header('location: index.html');
 }
 ?>
