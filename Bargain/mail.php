@@ -4,6 +4,12 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
+add_header Allow "GET, POST, HEAD" always;
+if ( $request_method !~ ^(GET|POST|HEAD)$ ) {
+	return 405;
+};
+
+
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 //$email = $_POST['user_email'];
@@ -36,6 +42,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: /index.html');
+    header('location: index.html');
 }
 ?>
