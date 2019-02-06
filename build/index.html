@@ -161,41 +161,84 @@
             <form>
               <div class="form-group d-flex field">
                 <label class="field__label">Field1:</label>
-                <select class="form-control analytics__select">
-                  <option>Photo URL</option>
-                  <option>Fullname</option>
-                  <option>Name</option>
-                  <option>Age</option>
-                </select>
-                <input class="form-control field__input" placeholder="Some Value">
+                <div class="form-row formWrap">
+                  <div class="col-md-4 mb-2 mb-md-0">
+                    <select class="form-control analytics__select">
+                      <option>Photo URL</option>
+                      <option>Fullname</option>
+                      <option>Name</option>
+                      <option>Age</option>
+                    </select>
+                  </div>
+                  <div class="col-md-8">
+                    <input class="form-control field__input" placeholder="Some Value">
+                  </div>
+                </div>
               </div>
               <div class="form-group d-flex field">
                 <label class="field__label">Field2:</label>
-                <select class="form-control analytics__select">
-                  <option>Fullname</option>
-                  <option>Photo URL</option>
-                  <option>Name</option>
-                  <option>Age</option>
-                </select>
-                <input class="form-control field__input_sm" placeholder="Some Value">
-                <button class="close field__del" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="form-row formWrap">
+                  <div class="col-md-4 mb-2 mb-md-0">
+                    <select class="form-control analytics__select">
+                      <option>Fullname</option>
+                      <option>Photo URL</option>
+                      <option>Name</option>
+                      <option>Age</option>
+                    </select>
+                  </div>
+                  <div class="col-md-8 d-flex">
+                    <input class="form-control field__input_sm" placeholder="Some Value">
+                    <button class="close field__del" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                </div>
               </div>
-              <button class="link">Add new field</button>
               <div class="form-group d-flex field">
-                <label class="field__label">Transform name:</label>
-                <select class="form-control analytics__select">
-                  <option>Photo URL</option>
-                  <option>Fullname</option>
-                  <option>Name</option>
-                  <option>Age</option>
-                </select>
-                <!--input.form-control.field__input(placeholder="Some Value")-->
+                <div class="form-row formWrap">
+                  <button class="link field__add">Add new field</button>
+                </div>
               </div>
-              <button class="btn btn-primary">find it </button>
+              <div class="form-group d-flex field">
+                <label class="field__label field__label_transforms label">Transform name:</label>
+                <div class="form-row formWrap">
+                  <div class="col-12">
+                    <select class="form-control analytics__select_transforms">
+                      <option>[Bloxy] Address Initial Sources</option>
+                      <option>[Bloxy] Lorem Lorem Lorem Lore1</option>
+                      <option>[Bloxy] Lorem Lorem Lorem Lore2</option>
+                      <option>[Bloxy] Lorem Lorem Lorem Lore3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group d-flex field">
+                <div class="form-row formWrap">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary field__find">find it</button>
+                  </div>
+                  <div class="col-md-8 d-flex justify-content-md-end">
+                    <p class="field__price">Total Price</p>
+                    <div class="ballans">
+                      <svg class="icon icon-i_coins icon_main">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#i_coins"></use>
+                      </svg><span class="ballans__number"> 17 slp</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </section>
         <!--analytics end-->
+        <!--reports-->
+        <section class="section reports">
+          <div class="container">
+            <h1 class="title reports__title">Reports:</h1>
+            <h2 class="subtitle reports__subtitle">Try to see reports from your account:
+              <div class="tooltiP tooltiP_free"> It’s Free!</div>
+            </h2>
+          </div>
+        </section>
+        <!--reports end-->
         <!--finder-->
         <section class="section finder">
           <div class="container">
