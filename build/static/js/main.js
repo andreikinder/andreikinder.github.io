@@ -9,7 +9,7 @@ $(document).ready(function () {
 	 	'side': 'left'
 	});
 	// Toggle button
-      document.querySelector('.btn-sideNav').addEventListener('click', function() {
+      document.querySelector('.navbar-toggler').addEventListener('click', function() {
         slideout.toggle();
      });
 

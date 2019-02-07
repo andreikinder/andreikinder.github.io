@@ -16,8 +16,8 @@
       <header class="header">
         <div class="container">
           <!--navbar-->
-          <nav class="navbar navbar-expand-sm justify-content-between" id="navbar"><a class="navbar-brand" href="#"><img class="logo_img" src="static/img/general/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <nav class="navbar navbar-expand-lg justify-content-between" id="navbar"><a class="navbar-brand" href="#"><img class="logo_img" src="static/img/general/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <svg class="icon icon-i_bars-solid icon_white">
 <use xlink:href="static/img/svg/symbol/sprite.svg#i_bars-solid"></use>
 </svg>	 
@@ -61,53 +61,88 @@
             <li class="deskNav__item"><a class="deskNav__link" href="#">Reports</a></li>
             <li class="deskNav__item"><a class="deskNav__link" href="#">Plans&Special offers</a></li>
             <li class="deskNav__item"><a class="deskNav__link" href="#">Research</a></li>
-            <li class="deskNav__item"><a href="#">Analytics</a></li>
+            <li class="deskNav__item"><a href="#">Analytics	</a></li>
           </ul>
         </div>
       </nav>
       <!--desktopNav end-->
-      <div class="container">
-        <button class="btn btn-primary btn-sideNav" value="Menu">Menu</button>
-      </div>
       <main class="main">
         <!--subscriptions-->
         <section class="section subscriptions">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <h1 class="title">Subscriptions</h1>
               </div>
-              <div class="col-lg-6 d-flex justify-content-lg-end">
+              <div class="col-md-6 d-flex justify-content-lg-end">
                 <button class="btn btn-warning">add new subscriptions</button>
               </div>
-            </div><form class="form-inline dateForm">		
-            <div class="form-group">
-              <label class="dateForm__label dateForm__label_1" for="firstDay">Date:</label>
-              <input class="form-control form-control-plaintex dateForm__input" type="text" placeholder="08-12-2018" id="firstDay">
-              <svg class="icon icon-i_calendar icon_date icon_main">
-                <use xlink:href="static/img/svg/symbol/sprite.svg#i_calendar"></use>
-              </svg>
             </div>
-            <div class="form-group">
-              <label class="dateForm__label dateForm__label_2" for="lastDay">to:</label>
-              <input class="form-control form-control-plaintex dateForm__input" type="text" placeholder="08-12-2018" id="lastDay">
-              <svg class="icon icon-i_calendar icon_date icon_main">
-                <use xlink:href="static/img/svg/symbol/sprite.svg#i_calendar"></use>
-              </svg>
-            </div>
-            <div class="form-group">
-              <div class="ballans">
-                <svg class="icon icon-i_coins icon_main">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#i_coins"></use>
-                </svg><span class="ballans__number"> 240 slp</span>
+            <form class="d-flex flex-column flex-lg-row dateForm"><div class=" d-flex flex-column flex-md-row align-items-lg-center">		
+              <div class="form-group d-flex">
+                <label class="dateForm__label dateForm__label_1 mr-md-3 mr-1" for="firstDay">Date:</label>
+                <div class="d-flex dateForm__wrapper">
+                  <input class="form-control form-control-plaintex dateForm__input readonly" type="text" value="08-12-2018" readonly id="firstDay">
+                  <svg class="icon icon-i_calendar icon_date icon_main">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#i_calendar"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <input class="form-control form-control-plaintex" type="text" readonly value="Automatic renew">
-              <svg class="icon icon-i_tick icon_green icon_medium">
-                <use xlink:href="static/img/svg/symbol/sprite.svg#i_tick"></use>
-              </svg>
-            </div></form>
+              <div class="form-group d-flex">
+                <label class="dateForm__label dateForm__label_2 ml-md-2 mr-md-2 mr-4" for="lastDay">to:</label>
+                <div class="d-flex dateForm__wrapper">
+                  <input class="form-control form-control-plaintex dateForm__input readonly" type="text" value="08-12-2018" readonly id="lastDay">
+                  <svg class="icon icon-i_calendar icon_date icon_main">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#i_calendar"></use>
+                  </svg>
+                </div>
+              </div></div>
+<div class=" d-flex flex-column flex-md-row align-items-md-center">		
+              <div class="form-group ml-lg-3">
+                <div class="ballans">
+                  <svg class="icon icon-i_coins icon_main">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#i_coins"></use>
+                  </svg><span class="ballans__number"> 240 slp</span>
+                </div>
+              </div>
+              <div class="form-group d-flex">
+                <input class="form-control form-control-plaintex form-control__res readonly ml-md-3" type="text" readonly value="Automatic renew">
+                <svg class="icon icon-i_tick icon_green icon_medium">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#i_tick"></use>
+                </svg>
+              </div></div>
+            </form>
+            <form class="d-flex flex-column flex-lg-row dateForm_disabled"><div class=" d-flex flex-column flex-md-row align-items-lg-center">		
+              <div class="form-group d-flex">
+                <label class="dateForm__label dateForm__label_1 mr-md-3 mr-1" for="firstDay">Date:</label>
+                <div class="d-flex dateForm__wrapper">
+                  <input class="form-control form-control-plaintex dateForm__input" type="text" value="08-12-2018" disabled id="firstDay">
+                  <svg class="icon icon-i_calendar icon_date icon_main">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#i_calendar"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-group d-flex">
+                <label class="dateForm__label dateForm__label_2 ml-md-2 mr-md-2 mr-4" for="lastDay">to:</label>
+                <div class="d-flex dateForm__wrapper">
+                  <input class="form-control form-control-plaintex dateForm__input" type="text" value="08-12-2018" disabled id="lastDay">
+                  <svg class="icon icon-i_calendar icon_date icon_main">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#i_calendar"></use>
+                  </svg>
+                </div>
+              </div></div>
+<div class=" d-flex flex-column flex-md-row align-items-md-center">		
+              <div class="form-group ml-lg-3">
+                <div class="ballans">
+                  <svg class="icon icon-i_coins icon_main">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#i_coins"></use>
+                  </svg><span class="ballans__number"> 240 slp</span>
+                </div>
+              </div>
+              <div class="form-group d-flex">
+                <input class="form-control form-control-plaintex form-control__res red ml-md-3" type="text" disabled value="Expired">
+              </div></div>
+            </form>
           </div>
         </section>
         <!--subscriptions end-->
@@ -180,8 +215,8 @@
                 <div class="form-row formWrap">
                   <div class="col-md-4 mb-2 mb-md-0">
                     <select class="form-control analytics__select">
-                      <option>Fullname</option>
                       <option>Photo URL</option>
+                      <option>Fullname</option>
                       <option>Name</option>
                       <option>Age</option>
                     </select>
@@ -193,8 +228,8 @@
                 </div>
               </div>
               <div class="form-group d-flex field">
-                <div class="form-row formWrap">
-                  <button class="link field__add">Add new field</button>
+                <div class="form-row formWrap row_m0">
+                  <button class="link field__add ml-md-3">Add new field</button>
                 </div>
               </div>
               <div class="form-group d-flex field">
@@ -215,7 +250,7 @@
                   <div class="col-md-4 mb-3 mb-md-0">
                     <button class="btn btn-primary field__find">find it</button>
                   </div>
-                  <div class="col-md-8 d-flex justify-content-md-end">
+                  <div class="col-md-8 d-flex justify-content-md-end align-items-center">
                     <p class="field__price">Total Price</p>
                     <div class="ballans">
                       <svg class="icon icon-i_coins icon_main">
@@ -233,9 +268,81 @@
         <section class="section reports">
           <div class="container">
             <h1 class="title reports__title">Reports:</h1>
-            <h2 class="subtitle reports__subtitle">Try to see reports from your account:
-              <div class="tooltiP tooltiP_free"> It’s Free!</div>
-            </h2>
+            <div class="row">
+              <div class="col-lg-6 mb-2 mb-lg-0">
+                <h2 class="subtitle reports__subtitle">Try to see reports from your account:
+                  <div class="tooltiP tooltiP_free"> It’s Free!</div>
+                </h2>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-lg-end align-items-center">
+                <div class="row row_m0">
+                  <div class="col-xs-8 d-flex mb-2">
+                    <div class="userAva"><img class="userAva__img" src="static/img/content/userava.jpg"></div><span class="UserName text_weight_500">Ivan.shkvarun</span>
+                    <svg class="icon icon-i_plus reports__plus">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#i_plus"></use>
+                    </svg>
+                  </div>
+                  <div class="col-xs-4">
+                    <ul class="social d-flex">
+                      <li class="social__item"><a class="social__link social__link_bg_you" href="#">
+                          <svg class="icon icon-i_youtube social__ico icon_white ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#i_youtube"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link social__link_ml_14 social__link_bg_lin" href="#">
+                          <svg class="icon icon-i_linked social__ico  icon_white ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#i_linked"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link social__link_ml_14 social__link_bg_twi" href="#">
+                          <svg class="icon icon-i_twitter social__ico icon_white ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#i_twitter"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <form class="formRep mb-4">
+                  <div class="form-row align-items-center">
+                    <div class="col-md-8 col-lg-5">
+                      <label class="label reports__label">Facebook User ID or User’s URL</label>
+                    </div>
+                    <div class="col-lg-4 col-lg-5 d-flex align-items-center">
+                      <div class="form-group d-flex"></div>
+                      <input class="form-control" type="text" placeholder="Search">
+                      <svg class="icon icon-i_plus reports__plus reports__plus_size icon_primary">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#i_plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-row align-items-center newFieldRep">
+                    <div class="col-lg-4 col-lg-5 d-flex align-items-center offset-lg-5"> 
+                      <div class="form-group d-flex"></div>
+                      <input class="form-control" type="text" placeholder="Search">
+                      <button class="close formRep__del" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                  </div>
+                  <div class="form-row align-items-center newFieldRep">
+                    <div class="col-lg-12"> 
+                      <div class="form-group form-row row_m0">
+                        <div class="col-lg-5 d-flex align-items-center lg-mr-4">
+                          <p class="formRep__price">Price:</p>
+                          <div class="ballans">
+                            <svg class="icon icon-i_many_c icon_main">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#i_many_c"></use>
+                            </svg><span class="ballans__number"> 5 slp</span>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <button class="btn btn-primary reports__buy mt-2 mt-0-md" type="submit" aria-label="Close">Buy</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div><span><a class="link" href="#">See all facebook-reports</a></span>
           </div>
         </section>
         <!--reports end-->
@@ -263,7 +370,7 @@
       <!--footer-->
       <footer class="footer">
         <div class="container">
-          <div class="row justify-content-end">
+          <div class="d-flex justify-content-end">
             <button class="btn btn-success footer__btn">contact us</button>
           </div>
           <div class="row">
@@ -321,6 +428,20 @@
             <svg class="icon icon-i_business sidebarMenu__ico">
               <use xlink:href="static/img/svg/symbol/sprite.svg#i_business"></use>
             </svg><span>Analytics</span></a></li>
+      </ul>
+      <ul class="sidebarMenu">
+        <li class="sidebarMenu__item"><span class="sidebarMenu__link" href="">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="static/img/general/user_ico.png" alt=""><span>John Doe</span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Logout</a></div>
+              </button>
+            </div></span></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#"><img src=""><span> Profile</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#"><span> Logout</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_faq sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_faq"></use>
+            </svg><span> Faq</span></a></li>
       </ul>
     </div>
     <script src="static/js/jquery.js"></script>
