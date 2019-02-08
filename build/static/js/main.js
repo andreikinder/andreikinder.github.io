@@ -64,7 +64,6 @@ $(document).ready(function () {
     //add Search
 
     var newSearch = $('.newFieldRep').html();
-    console.log(newSearch);
 
     $('.reports__plus').click(function(event) {
         $('.priceField').before('<div class="new2 form-row align-items-center newFieldRep searchField"> </div>');
