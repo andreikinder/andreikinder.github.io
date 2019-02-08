@@ -5,13 +5,63 @@
     <title>Headquarters</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=""><meta http-equiv="cleartype" content="on">
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="static/css/main.css"><link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 <!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body class="index-page">
+    <nav class="slideout-menu slideout-menu-left" id="menu">
+      <header>
+        <h2 class="sidebarMenu__title">Menu
+          <button class="close slide_close" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </h2>
+      </header>
+      <hr class="menu_line">
+      <ul class="sidebarMenu">
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link sidebarMenu__link_active" href="#">
+            <svg class="icon icon-i_home sidebarMenu__ico sidebarMenu__ico_active">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_home"></use>
+            </svg><span>Headquarters</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_charts sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_charts"></use>
+            </svg><span>Reports</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_dollar sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_dollar"></use>
+            </svg><span> Plans&Special offers</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_word sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_word"></use>
+            </svg><span> Research</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_business sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_business"></use>
+            </svg><span>Analytics</span></a></li>
+        <hr class="menu_line">
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link user_toggler" href="#"><img class="sidebarMenu__ico" src="static/img/general/user_ico.png" alt=""><span>John Doe</span>
+            <svg class="icon icon-i_arrow_down mode icon_white">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_arrow_down"></use>
+            </svg></a>
+          <div class="dropdown-menu1" style="display: none;">
+            <ul class="subMenu">
+              <li class="subMenu__item"><a class="sidebarMenu__link subMenu__link" href="#"><span>Profile</span></a></li>
+              <li class="subMenu__item"><a class="sidebarMenu__link subMenu__link" href="#"><span>Logout	</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_faq sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_faq"></use>
+            </svg><span> Help</span></a></li>
+      </ul>
+    </nav>
     <div class="slideout-panel" id="panel">
       <header class="header">
         <div class="container">
@@ -210,26 +260,28 @@
                   </div>
                 </div>
               </div>
-              <div class="form-group d-flex field">
-                <label class="field__label">Field2:</label>
-                <div class="form-row formWrap">
-                  <div class="col-md-4 mb-2 mb-md-0">
-                    <select class="form-control analytics__select">
-                      <option>Photo URL</option>
-                      <option>Fullname</option>
-                      <option>Name</option>
-                      <option>Age</option>
-                    </select>
-                  </div>
-                  <div class="col-md-8 d-flex">
-                    <input class="form-control field__input_sm" placeholder="Some Value">
-                    <button class="close field__del" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="wrap-div">
+                <div class="form-group d-flex field">
+                  <label class="field__label">Field2:</label>
+                  <div class="form-row formWrap">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                      <select class="form-control analytics__select">
+                        <option>Photo URL</option>
+                        <option>Fullname</option>
+                        <option>Name</option>
+                        <option>Age</option>
+                      </select>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <input class="form-control field__input_sm" placeholder="Some Value">
+                      <button class="close field__del" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group d-flex field">
+              <div class="form-group d-flex field add_field">
                 <div class="form-row formWrap row_m0">
-                  <button class="link field__add ml-md-3">Add new field</button>
+                  <button class="link field__add ml-md-3" type="button">Add new field</button>
                 </div>
               </div>
               <div class="form-group d-flex field">
@@ -316,14 +368,14 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="form-row align-items-center newFieldRep">
+                  <div class="form-row align-items-center newFieldRep searchField">
                     <div class="col-lg-4 col-lg-5 d-flex align-items-center offset-lg-5"> 
                       <div class="form-group d-flex"></div>
                       <input class="form-control" type="text" placeholder="Search">
                       <button class="close formRep__del" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                   </div>
-                  <div class="form-row align-items-center newFieldRep">
+                  <div class="form-row align-items-center newFieldRep priceField">
                     <div class="col-lg-12"> 
                       <div class="form-group form-row row_m0">
                         <div class="col-lg-5 d-flex align-items-center lg-mr-4">
@@ -401,51 +453,7 @@
       </footer>
       <!--footer end-->
     </div>
-    <div class="slideout-menu slideout-menu-left" id="menu">
-      <header>
-        <h2 class="sidebarMenu__title">Menu
-          <button class="close slide_close" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </h2>
-      </header>
-      <ul class="sidebarMenu">
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link sidebarMenu__link_active" href="#">
-            <svg class="icon icon-i_home sidebarMenu__ico sidebarMenu__ico_active">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#i_home"></use>
-            </svg><span>Headquarters</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
-            <svg class="icon icon-i_charts sidebarMenu__ico">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#i_charts"></use>
-            </svg><span>Reports</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
-            <svg class="icon icon-i_dollar sidebarMenu__ico">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#i_dollar"></use>
-            </svg><span> Plans&Special offers</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
-            <svg class="icon icon-i_word sidebarMenu__ico">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#i_word"></use>
-            </svg><span> Research</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
-            <svg class="icon icon-i_business sidebarMenu__ico">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#i_business"></use>
-            </svg><span>Analytics</span></a></li>
-      </ul>
-      <ul class="sidebarMenu">
-        <li class="sidebarMenu__item"><span class="sidebarMenu__link" href="">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="static/img/general/user_ico.png" alt=""><span>John Doe</span>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Logout</a></div>
-              </button>
-            </div></span></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#"><img src=""><span> Profile</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#"><span> Logout</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
-            <svg class="icon icon-i_faq sidebarMenu__ico">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#i_faq"></use>
-            </svg><span> Faq</span></a></li>
-      </ul>
-    </div>
     <script src="static/js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.4.1.js	"></script>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
   </body>
