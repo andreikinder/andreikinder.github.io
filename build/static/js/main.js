@@ -65,7 +65,7 @@ $(document).ready(function () {
 
     var newSearch = $('.newFieldRep').html();
 
-    $('.reports__plus').click(function(event) {
+    $('.reports__plus_size').click(function(event) {
         $('.priceField').before('<div class="new2 form-row align-items-center newFieldRep searchField"> </div>');
         $('.new2').append(newSearch);
         $('.new2').removeClass('new2');
