@@ -87,4 +87,38 @@ $(document).ready(function () {
     });
 
 
+
+function Tarriff (card, time, price ){
+    var yearPrice = $('.card-1').find('yearPrice');
+    console.log('1');
+    yearPrice.find('.yearPrice__dollar').html('$ '+ price);
+    console.log(yearPrice.find('.yearPrice__dollar'));
+    yearPrice.find('.yearPrice__text').html('Per '+ time);
+    console.log(yearPrice.find('.yearPrice__html'));
+
+};
+
+
+
+
+
+    //toggle tarriff
+    $('.switch-btn').click(function(event) {
+        $(this).toggleClass('switch-on');
+        if ($(this).hasClass('switch-on')){
+            $('.yearPrice__text').html('Per year');
+            $('.yearPrice__dollar:eq(0)').html('$ 100');
+            $('.yearPrice__dollar:eq(1)').html('$ 120');
+        }
+        else{
+            $('.yearPrice__text').html('Per month');
+            $('.yearPrice__dollar:eq(0)').html('$ 9');
+            $('.yearPrice__dollar:eq(1)').html('$ 11');
+        }
+       
+    });
+
+
+
+
 });
