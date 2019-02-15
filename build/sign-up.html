@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Sign-in</title><!--[if IE]>
+    <title>Sign-up</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><meta http-equiv="cleartype" content="on">
@@ -15,7 +15,7 @@
 <!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="Sign-in-page">
+  <body class="Sign-up-page">
     <nav class="slideout-menu slideout-menu-left" id="menu">
       <header>
         <h2 class="sidebarMenu__title">Menu
@@ -24,12 +24,12 @@
       </header>
       <hr class="menu_line">
       <ul class="sidebarMenu">
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link sidebarMenu__link_active" href="sign-in.html">
-            <svg class="icon icon-i-sign-in sidebarMenu__ico sidebarMenu__ico_active">
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link " href="sign-in.html">
+            <svg class="icon icon-i-sign-in sidebarMenu__ico">
               <use xlink:href="static/img/svg/symbol/sprite.svg#i-sign-in"></use>
             </svg><span>Sign IN</span></a></li>
-        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="sign-up.html">
-            <svg class="icon icon-i-sign-up sidebarMenu__ico">
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link sidebarMenu__link_active" href="sign-up.html">
+            <svg class="icon icon-i-sign-up sidebarMenu__ico sidebarMenu__ico_active">
               <use xlink:href="static/img/svg/symbol/sprite.svg#i-sign-up"></use>
             </svg><span>Sign UP</span></a></li>
       </ul>
@@ -46,8 +46,8 @@
             </button>
             <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav justify-content-end"> 
-                <li class="nav-item"><a class="btn btn-success" href="#">Sign IN</a></li>
-                <li class="nav-item"><a class="btn" href="#">Sign UP 			</a></li>
+                <li class="nav-item"><a class="btn" href="#">Sign IN</a></li>
+                <li class="nav-item"><a class="btn btn-success" href="#">Sign UP 			</a></li>
               </ul>
             </div>
           </nav>
@@ -55,7 +55,7 @@
         </div>
       </header>
       <main class="main">
-        <div class="sing-wrap sign-in">
+        <div class="sing-wrap sign-in sign-up">
           <div class="cotainer">
             <h1 class="mx-auto text-center sign-in__title">Social Links 
               <div class="text-uppercase">find public data faster</div>
@@ -63,22 +63,28 @@
             <h2 class="mx-auto text-center sign-in__subtitle">Sign UP for free</h2>
             <form class="sign-in__form mx-auto">
               <div class="form-group">
-                <input class="form-control" placeholder="E-mail adress:">
+                <input class="form-control" placeholder="Name:">
                 <svg class="icon icon-i_tick sign-in__tick icon_green icon_medium">
                   <use xlink:href="static/img/svg/symbol/sprite.svg#i_tick"></use>
                 </svg>
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="Passowrd:">
-                <svg class="icon icon-i_tick sign-in__tick icon_main icon_medium">
+                <input class="form-control" placeholder="Buiesness Segment:">
+                <svg class="icon icon-i_tick sign-in__tick icon_grey icon_medium">
                   <use xlink:href="static/img/svg/symbol/sprite.svg#i_tick"></use>
                 </svg>
               </div>
-              <div class="form-group"><a class="sign-in__link" href="#">Forgot your e-mail or passowrd?</a></div>
               <div class="form-group">
-                <button class="btn btn-success sign-in__submit" type="submit">Sign IN</button>
+                <input class="form-control" placeholder="E-mail adress:">
+                <button class="close sign-close" disabled aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
-              <div class="form-group"><span class="sign-in__help">Don't have account?  <a class="sign-in__link text_weight_500" href="#">Sign UP!</a></span></div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Passowrd:">
+              </div>
+              <div class="form-group">
+                <button class="btn btn-success sign-in__submit" type="submit">Register</button>
+              </div>
+              <div class="form-group"><span class="sign-in__help">Already have account <a class="sign-in__link text_weight_500 text-uppercase" href="#">Sign in!</a></span></div>
             </form>
           </div>
         </div>
