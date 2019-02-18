@@ -125,12 +125,12 @@
                 <h1 class="gallery__title">Photo gallery</h1>
               </div>
               <div class="col-sm-6 d-flex justify-content-sm-end mt-2 mt-sm-0">
-                <button class="btn btn-warning gallery__btn">add new photo</button>
+                <button class="btn btn-warning gallery__btn" data-toggle="modal" data-target="#editPhoto">add new photo</button>
               </div>
             </div>
-            <p class="gallery__text mt-3 mt-md-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-            <div class="row photos">
-              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0">
+            <div class="gallery__text mt-3 mt-md-5 mb-3 mb-md-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+            <div class="row photos pb-3 pb-md-4 mb-4">
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0"> 
                 <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
                   <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
                 </div>
@@ -153,6 +153,52 @@
                   <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
                 </div>
                 <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+            </div>
+            <div class="row photos pb-3 pb-md-4">
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0"> 
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb -md-0">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="modal fade" id="editPhoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"></div>
+                </div>
               </div>
             </div>
           </div>
