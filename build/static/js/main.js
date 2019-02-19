@@ -119,11 +119,15 @@ function Tarriff (card, time, price ){
     });
 
 
- $('.btn-info-1').popover({
-    container: 'body',
-    placement : "top"
- });
+     $('.btn-info-1').popover({
+        container: 'body',
+        placement : "top"
+     });
 
+
+  $('#editPhoto').on('shown.bs.modal', function () {
+    
+    })
 
 
 });
