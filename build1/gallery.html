@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Photo gallery</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><meta http-equiv="cleartype" content="on">
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="photo-gallery-page">
+    <nav class="slideout-menu slideout-menu-left" id="menu">
+      <header>
+        <h2 class="sidebarMenu__title">Menu
+          <button class="close slide_close" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </h2>
+      </header>
+      <hr class="menu_line">
+      <ul class="sidebarMenu">
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link sidebarMenu__link_active" href="index.html">
+            <svg class="icon icon-i_home sidebarMenu__ico sidebarMenu__ico_active">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_home"></use>
+            </svg><span>Headquarters</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="reports.html">
+            <svg class="icon icon-i_charts sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_charts"></use>
+            </svg><span>Reports</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="plans.html">
+            <svg class="icon icon-i_dollar sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_dollar"></use>
+            </svg><span> Plans&Special offers</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_word sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_word"></use>
+            </svg><span> Research</span></a></li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_business sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_business"></use>
+            </svg><span>Analytics</span></a></li>
+        <hr class="menu_line">
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link user_toggler" href="#"><img class="sidebarMenu__ico" src="static/img/general/user_ico.png" alt=""><span>John Doe</span>
+            <svg class="icon icon-i_arrow_down mode icon_white">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_arrow_down"></use>
+            </svg></a>
+          <div class="dropdown-menu1" style="display: none;">
+            <ul class="subMenu">
+              <li class="subMenu__item"><a class="sidebarMenu__link subMenu__link" href="#"><span>Profile</span></a></li>
+              <li class="subMenu__item"><a class="sidebarMenu__link subMenu__link" href="#"><span>Logout	</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebarMenu__item"><a class="sidebarMenu__link" href="#">
+            <svg class="icon icon-i_faq sidebarMenu__ico">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_faq"></use>
+            </svg><span> Help</span></a></li>
+      </ul>
+    </nav>
+    <div class="slideout-panel" id="panel">
+      <header class="header">
+        <div class="container">
+          <!--navbar-->
+          <nav class="navbar navbar-expand-lg justify-content-between" id="navbar"><a class="navbar-brand" href="#"><img class="logo_img" src="static/img/general/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <svg class="icon icon-i_bars-solid icon_white">
+<use xlink:href="static/img/svg/symbol/sprite.svg#i_bars-solid"></use>
+</svg>	 
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav justify-content-end"> 
+                <li class="nav-item"><a href="#"><img src="static/img/general/user_ico.png" alt=""></a></li>
+                <li class="nav-item">
+                  <div class="dropdown">					
+                    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userName">John Doe</span></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Logout								</a></div>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="#">
+                    <svg class="icon icon-i_faq icon_white">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#i_faq"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </nav>
+          <!--navbar end-->
+        </div>
+      </header>
+      <div class="container">
+        <!--welcomeLine -->
+        <div class="welcomeLine">
+          <h1 class="welcomeLine__hello">Hello, Garry!</h1>
+          <div class="welcomeLine__status ballans">
+            <svg class="icon icon-i_coins icon_main">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#i_coins"></use>
+            </svg><span class="ballans__number"> 240 slp</span>
+          </div>
+          <!--welcomeLine end-->
+        </div>
+      </div>
+      <!--desktopNav-->
+      <nav class="desktopNav d-none d-lg-block">
+        <div class="container">
+          <ul class="deskNav">
+            <li class="deskNav__item deskNav__item_active"><a class="deskNav__link" href="index.html">Headquarters</a></li>
+            <li class="deskNav__item"><a class="deskNav__link" href="reports.html">Reports</a></li>
+            <li class="deskNav__item"><a class="deskNav__link" href="plans.html">Plans&Special offers</a></li>
+            <li class="deskNav__item"><a class="deskNav__link" href="#">Research</a></li>
+            <li class="deskNav__item"><a href="analytics.html">Analytics	</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--desktopNav end-->
+      <main class="main">
+        <!--subscriptions-->
+        <section class="section gallery">
+          <div class="container">
+            <div class="row align-items-center mt-3 mt-lg-5">
+              <div class="col-sm-6">
+                <h1 class="gallery__title">Photo gallery</h1>
+              </div>
+              <div class="col-sm-6 d-flex justify-content-sm-end mt-2 mt-sm-0">
+                <button class="btn btn-warning gallery__btn" data-toggle="modal" data-target="#editPhoto">add new photo</button>
+              </div>
+            </div>
+            <div class="gallery__text mt-3 mt-md-5 mb-3 mb-md-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+            <div class="row photos pb-3 pb-md-4 mb-4">
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0"> 
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb -md-0">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+            </div>
+            <div class="row photos pb-3 pb-md-4">
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0"> 
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb-xl-0">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start mb-4 mb -md-0">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+              <div class="col-md-6 col-xl-3 photo d-flex flex-column align-items-center align-items-xl-start">
+                <div class="img_wrap"><img class="photo__img" src="static/img/content/man_1.jpg">
+                  <div class="photoControll"><a class="photoControll__edit photoControll__item mr-1" href="#" data-toggle="modal" data-target="#editPhoto">Edit</a><a class="photoControll__delete photoControll__item ml-1" href="#">Delete</a></div>
+                </div>
+                <h2 class="photo__name text mt-2">Mr. Alexey Petrovich Petrenko</h2>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next </span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-success footer__btn">contact us</button>
+          </div>
+          <div class="row">
+            <div class="col-md-6 copyright">&#169; Social Links</div>
+            <div class="col-md-6 d-flex justify-content-md-end">
+              <ul class="social d-flex social_footer">
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="icon icon-i_fasebook social__ico icon_white ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#i_fasebook"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link social__link_ml_14" href="#">
+                    <svg class="icon icon-i_youtube social__ico icon_white">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#i_youtube"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link social__link_ml_14" href="#">
+                    <svg class="icon icon-i_linked social__ico  icon_white">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#i_linked"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link social__link_ml_14" href="#">
+                    <svg class="icon icon-i_twitter social__ico icon_white">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#i_twitter"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="decorateLine"></div>
+      </footer>
+      <!--footer end-->
+    </div>
+    <div class="editPhoto modal fade" id="editPhoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title editPhoto__title text-center mx-auto" id="exampleModalLongTitle">Popup edit photo</h5>
+            <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row no-gutters">
+              <div class="col-lg-2 d-flex justify-content-center justify-content-lg-start"> <img class="photo__img-1 d-block" src="static/img/content/man_1.jpg"></div>
+              <div class="col-lg-10">
+                <div class="form-group">
+                  <label>Note:</label>
+                  <textarea class="form-control" rows="4">Some notes for this user.</textarea>
+                </div>
+              </div>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Name:</label>
+                    <input class="form-control" value="Petrov Petrovich">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Sex:</label>
+                    <select class="form-control">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-lg-stretch">
+                <div class="col-lg-6">
+                  <div class="form-group mb-0">
+                    <label>Photo:</label>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <input class="form-control" value="C:/Somepath/path1/123.jpg">
+                    <button class="btn btn-warning btn_caps_no ml-3">Select file ...</button>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <div class="form-group">
+                    <label>Country:</label>
+                    <select class="form-control form-control-1">
+                      <option>Russia</option>
+                      <option>USA</option>
+                      <option>China</option>
+                      <option>Italy</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="modal-body d-flex justify-content-between row">
+              <button class="btn btn-warning" data-dismiss="modal">save</button>
+              <button class="btn btn-danger" data-dismiss="modal">delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
