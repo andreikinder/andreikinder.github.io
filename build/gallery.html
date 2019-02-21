@@ -111,7 +111,7 @@
             <li class="deskNav__item"><a class="deskNav__link" href="reports.html">Reports</a></li>
             <li class="deskNav__item"><a class="deskNav__link" href="plans.html">Plans&Special offers</a></li>
             <li class="deskNav__item"><a class="deskNav__link" href="#">Research</a></li>
-            <li class="deskNav__item"><a href="#">Analytics	</a></li>
+            <li class="deskNav__item"><a href="analytics.html">Analytics	</a></li>
           </ul>
         </div>
       </nav>
@@ -235,43 +235,63 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title editPhoto__title text-center" id="exampleModalLongTitle">Popup edit photo</h5>
+            <h5 class="modal-title editPhoto__title text-center mx-auto" id="exampleModalLongTitle">Popup edit photo</h5>
+            <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body"> <img class="photo__img d-block mx-auto mb-4" src="static/img/content/man_1.jpg">
-            <form>
-              <div class="form-group">
-                <label>Name:</label>
-                <input class="form-control" value="Petrov Petrovich">
-              </div>
-              <div class="form-group">
-                <label>Photo:</label>
-                <div class="d-flex justify-content-between">
-                  <input class="form-control" value="C:/Somepath/path1/123.jpg">
-                  <button class="btn btn-warning btn_caps_no ml-3">Select file ...</button>
+          <div class="modal-body">
+            <div class="row no-gutters">
+              <div class="col-lg-2 d-flex justify-content-center justify-content-lg-start"> <img class="photo__img-1 d-block" src="static/img/content/man_1.jpg"></div>
+              <div class="col-lg-10">
+                <div class="form-group">
+                  <label>Note:</label>
+                  <textarea class="form-control" rows="4">Some notes for this user.</textarea>
                 </div>
               </div>
-              <div class="form-group">
-                <label>Sex:</label>
-                <select class="form-control">
-                  <option>Male</option>
-                  <option>Female</option>
-                </select>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Name:</label>
+                    <input class="form-control" value="Petrov Petrovich">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Sex:</label>
+                    <select class="form-control">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                <label>Country:</label>
-                <select class="form-control">
-                  <option>Russia</option>
-                  <option>USA</option>
-                  <option>China</option>
-                  <option>Italy</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Note:</label>
-                <textarea class="form-control" rows="7">Some notes for this user.</textarea>
+              <div class="row align-items-lg-stretch">
+                <div class="col-lg-6">
+                  <div class="form-group mb-0">
+                    <label>Photo:</label>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <input class="form-control" value="C:/Somepath/path1/123.jpg">
+                    <button class="btn btn-warning btn_caps_no ml-3">Select file ...</button>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                  <div class="form-group">
+                    <label>Country:</label>
+                    <select class="form-control form-control-1">
+                      <option>Russia</option>
+                      <option>USA</option>
+                      <option>China</option>
+                      <option>Italy</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </form>
-            <div class="modal-footer d-flex justify-content-between">
+          </div>
+          <div class="modal-footer">
+            <div class="modal-body d-flex justify-content-between row">
               <button class="btn btn-warning" data-dismiss="modal">save</button>
               <button class="btn btn-danger" data-dismiss="modal">delete</button>
             </div>
