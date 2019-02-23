@@ -143,32 +143,18 @@ function Tarriff (card, time, price ){
 
 
 
-// $('.arrow_down').click(function(event) {
-//     $(this).toggleClass('arrow_down_up');
+$('.arrow_down').click(function(event) {
+    $(this).toggleClass('arrow_down_up');
 
-//     var check_wrap =  $(this).prev();
-
-//     var checkbox = check_wrap.find('.custom-control-input');
-//     checkbox.toggleAttr('checked', '');
-   
-
-//     // var flag = 'no';
-//     // if ($(this).hasClass('arrow_down_up')) flag = 'yes';
-
-//     // console.log(flag);
-
-//     // if (flag == 'yes' ) checkbox.attr('checked', true)
-//     // else  checkbox.attr('checked', false);
-
-//      $(this).closest('.userRes').find('.addtional_block').slideToggle();
-// });
-
-
-
-$('.custom-control-input').click(function(event) {
-   $(this).closest('.userRes').find('.addtional_block').slideToggle();
-   $(this).closest('.d-flex').find('.arrow_down').toggleClass('arrow_down_up');
+    $(this).closest('.userRes').find('.addtional_block').slideToggle();
 });
+
+
+
+// $('.custom-control-input').click(function(event) {
+//    $(this).closest('.userRes').find('.addtional_block').slideToggle();
+//    $(this).closest('.d-flex').find('.arrow_down').toggleClass('arrow_down_up');
+// });
 
 
 
