@@ -2,39 +2,61 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>burger.co</title><!--[if IE]>
+    <title>burgers.co</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/ico" href="static/images/general/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Martel:400,700|Rubik:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="index-page">
+  <body class="index-page" data-spy="scroll" data-target="#navbar" data-offset="150">
     <div class="wrapper">
-      <header class="header">
+      <header class="header sticky-top py-2">
         <div class="container">
-          <nav class="navbar navbar-expand-md px-0"><a class="navbar-brand" href="#"><img src="static/images/general/Logo.png"><span class="sr-only">burgers.go</span></a>
-            <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" arai-label="Toggle navigation">
+          <nav class="navbar navbar-expand-md px-0" id="navbar"><a class="navbar-brand" href="#"><img src="static/images/general/Logo.png"><span class="sr-only">burgers.go</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" arai-label="Toggle navigation">
               <svg class="svg-sprite-icon icon-hamburger-solid navbar-toggler-icon ">
                 <use xlink:href="static/images/svg/symbol/sprite.svg#hamburger-solid"></use>
               </svg>
             </button>
             <div class="collapse navbar-collapse align-self-end" id="mainNavbar">
-              <ul class="navbar-nav ml-auto align-items-end mt-2 mt-md-0">
-                <li class="nav-item active mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#">Our Burgers</a></li>
-                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#">What Else?</a></li>
-                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#">Photos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <ul class="navbar-nav ml-lg-auto mt-3 mt-lg-0 nav" id="nav-scroll">
+                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#burgers">Our Burgers</a></li>
+                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#wait">What Else?</a></li>
+                <li class="nav-item mr-md-3 mb-2 mb-md-0"><a class="nav-link" href="#photos">Photos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </header>
-      <div class="content">
+      <main class="content">
+        <section class="hero d-flex flex-column flex-md-row" id="home">
+          <div class="hero-1 w-100 wow fadeInLeft">
+            <div class="mycontainer pr-md-0 mycontainer_1">
+              <h1 class="display-4 text-primary font mb-2 wow slideInLeft" data-delay="0.5s">We create Burgers.</h1>
+              <p class="wow slideInLeft text-white" data-delay="0.8s">Beautiful hand crafted burgers with tangy sauce lettuce, onions, pickles and our specials</p>
+            </div>
+          </div>
+          <div class="hero-2 w-100 wow fadeInRight">
+            <div class="mycontainer pl-md-5 mycontainer_2">
+              <h1 class="display-4 text-white font mb-2 wow slideInRight" data-delay="0.5s">Delicious</h1>
+              <p class="wow slideInRight" data-delay="0.8s">Oh, yes as are made with hands and chef loves them to the core.</p>
+              <div class="d-flex align-items-center wow slideInRight" data-delay="0.8s"><span class="mr-3 font-weight-bold">Are they really?</span>
+                <button class="btn btn-outline-dark show_me">Show me 
+                  <svg class="svg-sprite-icon icon-hamburger hamburger_icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#hamburger"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- burgers-->
-        <section class="burgers">
+        <section class="burgers wow fadeInLeft" id="burgers">
           <div class="container"> 
             <div class="row">
               <div class="col-md-4 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
@@ -69,7 +91,7 @@
         </section>
         <!-- burgers end -->
         <!-- wait-->
-        <section class="wait w-100">
+        <section class="wait w-100" id="wait">
           <div class="container">
             <div class="row">
               <div class="col-md-7 col-lg-5 col-xl-8 d-flex align-items-md-center mb-5 mb-md-0">
@@ -89,13 +111,11 @@
         </section>
         <!--wait end-->
         <!--photos -->
-        <section class="photos">
+        <section class="photos" id="photos">
           <div class="container">
             <h1 class="title text-center mb-2"> Photos</h1>
             <p class="help-title mb-5">Beautiful pictures clicked by our Customizes</p>
             <div class="slider">
-              <div> <img src="static/images/content/slide_1_m.jpg"></div>
-              <div> <img src="static/images/content/slide_2_m.jpg"></div>
               <div> <img src="static/images/content/slide_3_m.jpg"></div>
               <div> <img src="static/images/content/slide_4_m.jpg"></div>
               <div> <img src="static/images/content/slide_5_m.jpg"></div>
@@ -112,8 +132,6 @@
               <div> <img src="static/images/content/slide_16_m.jpg"></div>
             </div>
             <div class="preview d-md-block">
-              <div> <img src="static/images/content/slide_1_m.jpg"></div>
-              <div> <img src="static/images/content/slide_2_m.jpg"></div>
               <div> <img src="static/images/content/slide_3_m.jpg"></div>
               <div> <img src="static/images/content/slide_4_m.jpg"></div>
               <div> <img src="static/images/content/slide_5_m.jpg"></div>
@@ -133,35 +151,88 @@
         </section>
         <!-- photos end -->
         <!--contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="container">
-            <h1 class="title text-center mb-2"> Contact Us</h1>
-            <p class="help-title mb-5">Beautiful pictures clicked by our Customizes</p>
+            <h1 class="title text-center mb-2"> Contact </h1>
+            <p class="help-title mb-5">Fill this form to get in touch with us.</p>
           </div>
         </section>
-        <div class="bg_dark-blue">
+        <div class="bg_dark-blue pt-4 pb-4">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <form>
-                  <input class="form-control mb-2" type="text" placeholder="Name">
-                  <input class="form-control mb-2" type="mail" placeholder="Email">
-                  <input class="form-control mb-2" type="cell" placeholder="tell">
-                  <textarea class="form-control mb-2" placeholder="deliver"></textarea>
-                  <input class="form-control btn btn-primary text-white" type="submit" value="Submit">
+                <form class="contactForm needs-validation" novalidate>
+                  <div class="form-group">
+                    <label class="sr-only">Full name:</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-secondary">
+                          <svg class="svg-sprite-icon icon-user-solid form-icon form-icon_user">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#user-solid"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <input class="form-control" type="text" placeholder="Full name" required>
+                      <div class="invalid-feedback">Write your full name here.</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only">E-mail Address:</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-secondary">
+                          <svg class="svg-sprite-icon icon-envelope-solid form-icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#envelope-solid"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <input class="form-control" type="email" placeholder="E-mail Address" required>
+                      <div class="invalid-feedback">Write your Email Address here.</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only">Phone number:</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-secondary">
+                          <svg class="svg-sprite-icon icon-phone-solid form-icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#phone-solid"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <input class="form-control" type="tel" placeholder="09005896" required>
+                      <div class="invalid-feedback">Write your Phone Number here.</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only">Your deliver:</label>
+                    <textarea class="form-control" placeholder="Message you want to deliver..." rows="4" required></textarea>
+                    <div class="invalid-feedback">Write your Deliver here.</div>
+                  </div>
+                  <div class="form-group">
+                    <input class="btn btn-primary text-white w-100" type="submit" value="Submit">
+                  </div>
                 </form>
               </div>
               <div class="col-md-6">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.917602540446!2d144.96279431584483!3d-37.81539894191099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b44b0eaffb%3A0xc325beac870b4a2!2zMjcyIENvbGxpbnMgU3QsIE1lbGJvdXJuZSBWSUMgMzAwMCwg0JDQstGB0YLRgNCw0LvQuNGP!5e0!3m2!1sru!2sru!4v1552929706773" width="800" height="450" frameborder="0"  allowfullscreen></iframe>-->
+                <div class="map mb-3" id="map"></div>
+                <address class="text-white address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="street-address">272 Collin Street</span>, <span itemprop="locality">Melbourne 3000</span>
+                  <div class="d-flex align-items-center"><span class="mr-3">Call |  </span><span class="text-primary display-4 phoneNum font-weight-bold" itemprop="tel">09005896</span></div>
+                </address>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer"></footer>
+      </main>
+      <footer class="footer text-primary py-3">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-md-between"><small class="mb-1 mb-md-0">All RIghts Reserved,  2016-2019 </small><small>Made with love by <a href="#">Andrei Kinder</a></small></div>
+        </div>
+      </footer>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lt;75a7463f-6554-4291-81ac-8833da531fcb&gt;&amp;lang=ru_US" type="text/javascript"></script>
     <script src="static/js/main.js"></script>
   </body>
 </html>
