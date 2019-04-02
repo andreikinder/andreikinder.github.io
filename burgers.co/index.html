@@ -12,6 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
   <body class="index-page" data-spy="scroll" data-target="#navbar" data-offset="150">
+    <div class="preloader" id="preloader">
+      <div class="spinner-border text-primary" role="status"></div>
+      <div class="sr-only">Loading</div>
+    </div>
     <div class="wrapper">
       <header class="header sticky-top py-2">
         <div class="container">
@@ -34,18 +38,18 @@
         </div>
       </header>
       <main class="content">
-        <section class="hero d-flex flex-column flex-md-row" id="home">
-          <div class="hero-1 w-100 wow fadeInLeft">
+        <section class="hero d-flex flex-column flex-md-row"  id="home">
+          <div class="hero-1 w-100 wow fadeInLeft" data-wow-duration="0.5s" style="background-size: cover;">
             <div class="mycontainer pr-md-0 mycontainer_1">
-              <h1 class="display-4 text-primary font mb-2 wow slideInLeft" data-delay="0.5s">We create Burgers.</h1>
-              <p class="wow slideInLeft text-white" data-delay="0.8s">Beautiful hand crafted burgers with tangy sauce lettuce, onions, pickles and our specials</p>
+              <h1 class="display-4 text-primary font mb-2 wow slideInLeft" data-wow-duration="1s">We create Burgers.</h1>
+              <p class="wow slideInLeft text-white" data-wow-duration="1.5s">Beautiful hand crafted burgers with tangy sauce lettuce, onions, pickles and our specials</p>
             </div>
           </div>
-          <div class="hero-2 w-100 wow fadeInRight">
+          <div class="hero-2 w-100 wow fadeInRight" style="background-size: cover;" data-wow-duration="0.5s">
             <div class="mycontainer pl-md-5 mycontainer_2">
-              <h1 class="display-4 text-white font mb-2 wow slideInRight" data-delay="0.5s">Delicious</h1>
-              <p class="wow slideInRight" data-delay="0.8s">Oh, yes as are made with hands and chef loves them to the core.</p>
-              <div class="d-flex align-items-center wow slideInRight" data-delay="0.8s"><span class="mr-3 font-weight-bold">Are they really?</span>
+              <h1 class="display-4 text-white font mb-2 wow slideInRight" data-wow-duration="1s">Delicious</h1>
+              <p class="wow slideInRight" data-wow-duration="1.5s">Oh, yes as are made with hands and chef loves them to the core.</p>
+              <div class="d-flex align-items-center wow slideInRight" data-wow-delay="0.5s" data-wow-duration="1s"><span class="mr-3 font-weight-bold">Are they really?</span>
                 <button class="btn btn-outline-dark show_me">Show me 
                   <svg class="svg-sprite-icon icon-hamburger hamburger_icon">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#hamburger"></use>
@@ -56,32 +60,32 @@
           </div>
         </section>
         <!-- burgers-->
-        <section class="burgers wow fadeInLeft" id="burgers">
+        <section class="burgers" id="burgers">
           <div class="container"> 
             <div class="row">
               <div class="col-md-4 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
-                <div class="burger position-relative"><img class="burger__img burger__img_1 mb-2 mb-md-4" src="static/images/content/burger_1.png">
+                <div class="burger position-relative"><img class="burger__img burger__img_1 mb-2 mb-md-4 wow flipInX" data-wow-duration="1.5s" src="static/images/content/burger_1.png">
                   <div class="burger__body">
-                    <h5 class="burger__name mb-1 mb-md-2">Beef Bondy</h5>
-                    <p class="burger__text">Juicy hand cut beef with Mango sauce fries</p><a class="burger__btn btn bookBurg btn-light justify-content-between stretched-link" href="#">
+                    <h5 class="burger__name mb-1 mb-md-2 wow fadeInUp" data-wow-duration="1s">Beef Bondy</h5>
+                    <p class="burger__text wow fadeInUp" data-wow-duration="1s">Juicy hand cut beef with Mango sauce fries</p><a class="burger__btn btn bookBurg btn-light justify-content-between stretched-link wow fadeInUp" data-wow-duration="1.5s" href="#">
                       <div class="d-flex"><img class="bookBurg__icon mr-2" src="static/images/general/barbecco-icon.png"><span class="bookBurg__kilo mr-2">345 KJ</span></div><span class="bookBurg__price">$12.5</span></a>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4 mb-md-0">
-                <div class="burger position-relative"><img class="burger__img burger__img_2 mb-2 mb-md-4" src="static/images/content/burger_2.png">
+                <div class="burger position-relative"><img class="burger__img burger__img_2 mb-2 mb-md-4 wow flipInX" data-wow-duration="1.5s" src="static/images/content/burger_2.png">
                   <div class="burger__body">
-                    <h5 class="burger__name mb-1 mb-md-2">Chicken Mota</h5>
-                    <p class="burger__text">Beautiful chicken breast with salsa sauce on top</p><a class="burger__btn btn bookBurg btn-light justify-content-between stretched-link" href="#">
+                    <h5 class="burger__name mb-1 mb-md-2 wow fadeInUp" data-wow-duration="1s">Chicken Mota</h5>
+                    <p class="burger__text wow fadeInUp" data-wow-duration="1s">Beautiful chicken breast with salsa sauce on top</p><a class="burger__btn btn bookBurg btn-light justify-content-between stretched-link wow fadeInUp" data-wow-duration="1.5s" href="#">
                       <div class="d-flex"><img class="bookBurg__icon mr-2" src="static/images/general/barbecco-icon.png"><span class="bookBurg__kilo mr-2">345 KJ</span></div><span class="bookBurg__price">$9.0</span></a>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
-                <div class="burger position-relative"><img class="burger__img burger__img_3 mb-2 mb-md-4" src="static/images/content/burger_3.png">
+                <div class="burger position-relative"><img class="burger__img burger__img_3 mb-2 mb-md-4 wow flipInX" data-wow-duration="1.5s" src="static/images/content/burger_3.png">
                   <div class="burger__body">
-                    <h5 class="burger__name mb-1 mb-md-2">Double Beef</h5>
-                    <p class="burger__text">Yes! Double patty with  seculent sauce</p><a class="burger__btn btn bookBurg btn-light justify-content-between stretched-link" href="#">
+                    <h5 class="burger__name mb-1 mb-md-2 wow fadeInUp" data-wow-duration="1s">Double Beef</h5>
+                    <p class="burger__text wow fadeInUp" data-wow-duration="1s">Yes! Double patty with  seculent sauce</p><a class="burger__btn btn bookBurg btn-light justify-content-between stretched-link wow fadeInUp" data-wow-duration="1.5s" href="#">
                       <div class="d-flex"><img class="bookBurg__icon mr-2" src="static/images/general/barbecco-icon.png"><span class="bookBurg__kilo mr-2">345 KJ</span></div><span class="bookBurg__price">$13.6</span></a>
                   </div>
                 </div>
@@ -91,14 +95,14 @@
         </section>
         <!-- burgers end -->
         <!-- wait-->
-        <section class="wait w-100" id="wait">
+        <section class="wait w-100 wow fadeInLeft" style="background-size: cover;" id="wait" data-wow-duration="0.5s" da>
           <div class="container">
             <div class="row">
               <div class="col-md-7 col-lg-5 col-xl-8 d-flex align-items-md-center mb-5 mb-md-0">
-                <h1 class="title text-white">Wait! But we also serve ...</h1>
+                <h1 class="title text-white wow slideInLeft" data-wow-duration="0.8s">Wait! But we also serve ...</h1>
               </div>
               <div class="col-md-5 col-lg-7 col-xl-4 d-flex justify-content-md-end">
-                <ul class="price-list list-unstyled">
+                <ul class="price-list list-unstyled wow slideInRight" data-wow-duration="0.8s">
                   <li class="price-list__item mb-3 mb-md-4"><span class="price-list__food">French Fries</span><span class="price-list__price">$12</span></li>
                   <li class="price-list__item mb-3 mb-md-4"><span class="price-list__food">Cold Drinks</span><span class="price-list__price">$8</span></li>
                   <li class="price-list__item mb-3 mb-md-4"><span class="price-list__food">Love Choclates</span><span class="price-list__price">$25</span></li>
@@ -113,9 +117,9 @@
         <!--photos -->
         <section class="photos" id="photos">
           <div class="container">
-            <h1 class="title text-center mb-2"> Photos</h1>
-            <p class="help-title mb-5">Beautiful pictures clicked by our Customizes</p>
-            <div class="slider">
+            <h1 class="title text-center mb-2 wow slideInLeft" data-wow-duration="1s"> Photos</h1>
+            <p class="help-title mb-5 wow slideInLeft" data-wow-duration="1.5s">Beautiful pictures clicked by our Customizes</p>
+            <div class="slider wow fadenIn" data-wow-duration="2s">
               <div> <img src="static/images/content/slide_3_m.jpg"></div>
               <div> <img src="static/images/content/slide_4_m.jpg"></div>
               <div> <img src="static/images/content/slide_5_m.jpg"></div>
@@ -131,7 +135,7 @@
               <div> <img src="static/images/content/slide_15_m.jpg"></div>
               <div> <img src="static/images/content/slide_16_m.jpg"></div>
             </div>
-            <div class="preview d-md-block">
+            <div class="preview d-md-block wow slideInUp" data-wow-delay="1s" data-wow-duration="2s">
               <div> <img src="static/images/content/slide_3_m.jpg"></div>
               <div> <img src="static/images/content/slide_4_m.jpg"></div>
               <div> <img src="static/images/content/slide_5_m.jpg"></div>
@@ -153,11 +157,11 @@
         <!--contact -->
         <section class="contact" id="contact">
           <div class="container">
-            <h1 class="title text-center mb-2"> Contact </h1>
-            <p class="help-title mb-5">Fill this form to get in touch with us.</p>
+            <h1 class="title text-center mb-2 wow slideInLeft" data-wow-duration="1s"> Contact </h1>
+            <p class="help-title mb-5 wow slideInLeft" data-wow-duration="1.5s">Fill this form to get in touch with us.</p>
           </div>
         </section>
-        <div class="bg_dark-blue pt-4 pb-4">
+        <div class="bg_dark-blue pt-4 pb-4 wow fadeInLeft" data-wow-duration="0.5s">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
@@ -165,58 +169,58 @@
                   <div class="form-group">
                     <label class="sr-only">Full name:</label>
                     <div class="input-group">
-                      <div class="input-group-prepend">
+                      <div class="input-group-prepend wow fadeInLeft" data-wow-duration="2s">
                         <div class="input-group-text bg-secondary">
                           <svg class="svg-sprite-icon icon-user-solid form-icon form-icon_user">
                             <use xlink:href="static/images/svg/symbol/sprite.svg#user-solid"></use>
                           </svg>
                         </div>
                       </div>
-                      <input class="form-control" type="text" placeholder="Full name" required>
+                      <input class="form-control wow fadeInRight" data-wow-duration="1s" type="text" placeholder="Full name" required>
                       <div class="invalid-feedback">Write your full name here.</div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="sr-only">E-mail Address:</label>
                     <div class="input-group">
-                      <div class="input-group-prepend">
+                      <div class="input-group-prepend wow fadeInLeft" data-wow-duration="2s">
                         <div class="input-group-text bg-secondary">
                           <svg class="svg-sprite-icon icon-envelope-solid form-icon">
                             <use xlink:href="static/images/svg/symbol/sprite.svg#envelope-solid"></use>
                           </svg>
                         </div>
                       </div>
-                      <input class="form-control" type="email" placeholder="E-mail Address" required>
+                      <input class="form-control wow fadeInRight" data-wow-duration="1s" type="email" placeholder="E-mail Address" required>
                       <div class="invalid-feedback">Write your Email Address here.</div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="sr-only">Phone number:</label>
                     <div class="input-group">
-                      <div class="input-group-prepend">
+                      <div class="input-group-prepend wow fadeInLeft" data-wow-duration="2s">
                         <div class="input-group-text bg-secondary">
                           <svg class="svg-sprite-icon icon-phone-solid form-icon">
                             <use xlink:href="static/images/svg/symbol/sprite.svg#phone-solid"></use>
                           </svg>
                         </div>
                       </div>
-                      <input class="form-control" type="tel" placeholder="09005896" required>
+                      <input class="form-control wow fadeInRight phone" data-wow-duration="1s" type="tel" data-mask="+3 (000) 000 00 00" placeholder="+3 (___) ___ __ __" required>
                       <div class="invalid-feedback">Write your Phone Number here.</div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="sr-only">Your deliver:</label>
-                    <textarea class="form-control" placeholder="Message you want to deliver..." rows="4" required></textarea>
+                    <textarea class="form-control wow fadeInRight" data-wow-duration="1s" placeholder="Message you want to deliver..." rows="4" required></textarea>
                     <div class="invalid-feedback">Write your Deliver here.</div>
                   </div>
                   <div class="form-group">
-                    <input class="btn btn-primary text-white w-100" type="submit" value="Submit">
+                    <input class="btn btn-primary text-white w-100 wow fadeInRight" data-wow-duration="1s" type="submit" value="Submit">
                   </div>
                 </form>
               </div>
               <div class="col-md-6">
                 <div class="map mb-3" id="map"></div>
-                <address class="text-white address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="street-address">272 Collin Street</span>, <span itemprop="locality">Melbourne 3000</span>
+                <address class="wow fadeInRight text-white address" data-wow-duration="2s" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="street-address">272 Collin Street</span>, <span itemprop="locality">Melbourne 3000</span>
                   <div class="d-flex align-items-center"><span class="mr-3">Call |  </span><span class="text-primary display-4 phoneNum font-weight-bold" itemprop="tel">09005896</span></div>
                 </address>
               </div>
@@ -226,13 +230,13 @@
       </main>
       <footer class="footer text-primary py-3">
         <div class="container">
-          <div class="d-flex flex-column flex-md-row justify-content-md-between"><small class="mb-1 mb-md-0">All RIghts Reserved,  2016-2019 </small><small>Made with love by <a href="#">Andrei Kinder</a></small></div>
+          <div class="d-flex flex-column flex-md-row justify-content-md-between"><small class="mb-1 mb-md-0">All RIghts Reserved,  2016-2019 </small><small>Made with love by <a href="https://vk.com/andei_kinder">Andrei Kinder</a></small></div>
         </div>
       </footer>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=&lt;75a7463f-6554-4291-81ac-8833da531fcb&gt;&amp;lang=ru_US" type="text/javascript"></script>
-    <script src="static/js/main.min.js"></script>
+    <script src="static/js/main.js"></script>
   </body>
 </html>
