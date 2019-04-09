@@ -79,20 +79,82 @@ span {
 	color: #555555;
 	letter-spacing: .1em;
 }
-
+.wrapper{
+	padding-bottom: 167px;
+}
+.wrapper  h1{
+	margin-top: 50px;
+	margin-bottom: 55px;
+}
 .wrapper  h1, .wrapper {
 	background-color: #fcfbfa;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 100;
-	margin-bottom: 20px;
 }
 
 .wrapper h1 {
   text-align: center;
 }
+.abs-total-price{
+	display: inline-block;
+
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+    width: 148px;
 
 
+}
+.help-label{
+	color: #43484D;
+	font-weight: 500;
+	display: inline-block;
+	margin-right: 3px;
+}
+.wrapper-help{
+	padding: 20px 30px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
 
+}
+
+.margin-resp{
+	margin-bottom:  40px;
+}
+
+
+.btn-submit{
+	width: 189.063px;
+	
+}
+
+.btn-submit_1{
+	margin-left: auto;
+	margin-right: 24px;
+	margin-bottom: 20px !important;
+}
+.btn-submit_2{
+	margin-top: 28px;
+	margin-left: auto;
+}
+.flex-right{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.max-width{
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
 /* Shopping cart styles */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
@@ -104,13 +166,13 @@ html,
 body {
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 0px;
   margin: 0; 
 }
 
 .shopping-cart {
   max-width: 750px;
-  height: 423px;
+  /*height: 423px;*/
   margin: 0px auto;
   background: #FFFFFF;
   /*box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
@@ -136,7 +198,7 @@ body {
   display: flex;
 }
 
-.item:nth-child(3) {
+.item:nth-child(3), .item:nth-child(4) {
   border-top:  1px solid #E1E8EE;
   border-bottom:  1px solid #E1E8EE;
 }
@@ -230,7 +292,7 @@ body {
   font-weight: 300;
 }
 
-.shopping-cart button[class*=btn] {
+.quantity button[class*=btn] {
   width: 30px;
   height: 30px;
   background-color: #E1E8EE;
@@ -259,6 +321,7 @@ body {
   font-weight: 300;
 }
 
+
 /* Responsive */
 @media (max-width: 800px) {
   .shopping-cart {
@@ -284,4 +347,9 @@ body {
   .shopping-cart .buttons {
     margin-right: 20px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+.margin-resp{
+	margin-bottom:  0px;
 }
