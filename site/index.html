@@ -32,57 +32,6 @@
 </head>
 
 <body>
-	<!-- <div class="container wrapper">
-		
-
-		<div class="left col col-md-6">
-			<div class="customer-info">
-				<h2><span>1</span> Customer</h2>
-
-
-				<p>your@email.com</p>
-			</div>
-
-
-		
-
-			<div class="customer-info">
-				<h2><span>3</span> Review</h2>
-			</div>
-		</div>
-
-
-		<div class="right col col-md-6">
-			<div class="customer-order">
-				<h2><span>4</span> Order</h2>
-
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<br>
-
-
-				<p><span>Sample Item 1</span>
-				</p>
-
-
-				<p>$99.99</p>
-				<br>
-
-
-				<p><span>Sample Item</span>
-				</p>
-
-
-				<p>$20.00</p>
-
-				<hr>
-
-
-				<p><b>TOTAL:</b> $119.99</p>
-			</div>
-		</div>
- 
-	</div> -->
 	<div class="wrapper">
 		<div class="container">
   	<h1>Оформление заказа</h1>
@@ -112,13 +61,14 @@
 			    </div>
 
 			    <div class="quantity">
+					  <button class="minus-btn" type="button" name="button">
+			        <img src="img/minus.svg" alt="" />
+			      </button>
+			      <input type="text" name="name" value="1">
 			      <button class="plus-btn" type="button" name="button">
 			        <img src="img/plus.svg" alt="" />
 			      </button>
-			      <input type="text" name="name" value="1">
-			      <button class="minus-btn" type="button" name="button">
-			        <img src="img/minus.svg" alt="" />
-			      </button>
+			    
 			    </div>
 
 			    <div class="total-price">$549</div>
@@ -142,12 +92,13 @@
 			    </div>
 
 			    <div class="quantity">
-			      <button class="plus-btn" type="button" name="button">
-			        <img src="img/plus.svg" alt="" />
-			      </button>
-			      <input type="text" name="name" value="1">
 			      <button class="minus-btn" type="button" name="button">
 			        <img src="img/minus.svg" alt="" />
+			      </button>
+			      <input type="text" name="name" value="1">
+			 
+			       <button class="plus-btn" type="button" name="button">
+			        <img src="img/plus.svg" alt="" />
 			      </button>
 			    </div>
 
@@ -172,12 +123,13 @@
 			    </div>
 
 			    <div class="quantity">
-			      <button class="plus-btn" type="button" name="button">
-			        <img src="img/plus.svg" alt="" />
+			   		<button class="minus-btn" type="button" name="button">
+			        <img src="img/minus.svg" alt="" />
 			      </button>
 			      <input type="text" name="name" value="1">
-			      <button class="minus-btn" type="button" name="button">
-			        <img src="img/minus.svg" alt="" />
+			   
+			         <button class="plus-btn" type="button" name="button">
+			        <img src="img/plus.svg" alt="" />
 			      </button>
 			    </div>
 
@@ -228,6 +180,7 @@
 			</div> <!-- customer-pay end -->
 			<div class="customer-info">
 				<h2><span>2</span> Комментарий</h2>
+				<textarea  class="form-control" rows="5"></textarea>
 			</div>
 			<div class="flex-right">
 				<button class="btn btn-default btn-submit btn-submit_2 " type="submit">Оформить заказ</button>
