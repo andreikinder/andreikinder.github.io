@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="robots" content="noindex,follow" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily UI #002 - Credit Card Checkout</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+ 
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<html>
+<head>
+	<!-- Latest compiled and minified BootstrapCSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!--   Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700|Playfair+Display:400,700" rel="stylesheet">
+
+	<title>
+	</title>
+</head>
+
+<body>
+	<!-- <div class="container wrapper">
+		
+
+		<div class="left col col-md-6">
+			<div class="customer-info">
+				<h2><span>1</span> Customer</h2>
+
+
+				<p>your@email.com</p>
+			</div>
+
+
+		
+
+			<div class="customer-info">
+				<h2><span>3</span> Review</h2>
+			</div>
+		</div>
+
+
+		<div class="right col col-md-6">
+			<div class="customer-order">
+				<h2><span>4</span> Order</h2>
+
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<br>
+
+
+				<p><span>Sample Item 1</span>
+				</p>
+
+
+				<p>$99.99</p>
+				<br>
+
+
+				<p><span>Sample Item</span>
+				</p>
+
+
+				<p>$20.00</p>
+
+				<hr>
+
+
+				<p><b>TOTAL:</b> $119.99</p>
+			</div>
+		</div>
+ 
+	</div> -->
+	<div class="wrapper">
+		<div class="container">
+  	<h1>ОФормление заказа</h1>
+  	<div class="row">
+   		<div class="col-md-8">
+			<div class="shopping-cart">
+			  <!-- Title -->
+			  <div class="title">
+			    Корзина
+			  </div>
+
+			  <!-- Product #1 -->
+			  <div class="item">
+			    <div class="buttons">
+			      <span class="delete-btn"></span>
+			      <span class="like-btn"></span>
+			    </div>
+
+			    <div class="image">
+			      <img src="img/item-1.png" alt="" />
+			    </div>
+
+			    <div class="description">
+			      <span>Common Projects</span>
+			      <span>Bball High</span>
+			      <span>White</span>
+			    </div>
+
+			    <div class="quantity">
+			      <button class="plus-btn" type="button" name="button">
+			        <img src="img/plus.svg" alt="" />
+			      </button>
+			      <input type="text" name="name" value="1">
+			      <button class="minus-btn" type="button" name="button">
+			        <img src="img/minus.svg" alt="" />
+			      </button>
+			    </div>
+
+			    <div class="total-price">$549</div>
+			  </div>
+
+			  <!-- Product #2 -->
+			  <div class="item">
+			    <div class="buttons">
+			      <span class="delete-btn"></span>
+			      <span class="like-btn"></span>
+			    </div>
+
+			    <div class="image">
+			      <img src="img/item-2.png" alt=""/>
+			    </div>
+
+			    <div class="description">
+			      <span>Maison Margiela</span>
+			      <span>Future Sneakers</span>
+			      <span>White</span>
+			    </div>
+
+			    <div class="quantity">
+			      <button class="plus-btn" type="button" name="button">
+			        <img src="img/plus.svg" alt="" />
+			      </button>
+			      <input type="text" name="name" value="1">
+			      <button class="minus-btn" type="button" name="button">
+			        <img src="img/minus.svg" alt="" />
+			      </button>
+			    </div>
+
+			    <div class="total-price">$870</div>
+			  </div>
+
+			  <!-- Product #3 -->
+			  <div class="item">
+			    <div class="buttons">
+			      <span class="delete-btn"></span>
+			      <span class="like-btn"></span>
+			    </div>
+
+			    <div class="image">
+			      <img src="img/item-3.png" alt="" />
+			    </div>
+
+			    <div class="description">
+			      <span>Our Legacy</span>
+			      <span>Brushed Scarf</span>
+			      <span>Brown</span>
+			    </div>
+
+			    <div class="quantity">
+			      <button class="plus-btn" type="button" name="button">
+			        <img src="img/plus.svg" alt="" />
+			      </button>
+			      <input type="text" name="name" value="1">
+			      <button class="minus-btn" type="button" name="button">
+			        <img src="img/minus.svg" alt="" />
+			      </button>
+			    </div>
+
+			    <div class="total-price">$349</div>
+			  </div>
+			</div> <!--shopping-cart end -->  			
+   		</div> <!-- col-md end -->
+   		<div class="col-md-4">
+			<div class="customer-pay">
+				<h2> <span> 1 </span> Информация</h2>
+		
+				<div class="form-group">
+					<label for="usr">Имя</label> <input class="form-control" id="usr" type="text">
+				</div>
+				<div class="form-group">
+					<label for="num">Телефон</label> <input class="form-control" id="num" type="number">
+				</div>
+
+
+				<div class="form-group">
+					<label for="email">Почта:</label> <input class="form-control" id="email" type="number">
+				</div>
+
+
+				<div class="form-group">
+					<label for="addr">Адрес</label> <input class="form-control" id="addr" type="text">
+				</div>
+				
+			</div> <!-- customer-pay end -->
+			<div class="customer-info">
+				<h2><span>2</span> Комментарий</h2>
+			</div>
+			<button class="btn btn-default" type="submit">Оформить заказ</button>
+
+				
+   		</div>
+   </div> <!-- row end -->
+  </div>
+   f
+		
+	</div> <!-- wrapper end -->
+  
+
+  
+</body>
+</html>
+  <script src='https://use.fontawesome.com/83fc84333f.js'></script>
+
+  
+
+ <script  src="js/index.js"></script>
+
+
+    <script type="text/javascript">
+      $('.minus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value > 1) {
+    			value = value - 1;
+    		} else {
+    			value = 0;
+    		}
+
+        $input.val(value);
+
+    	});
+
+    	$('.plus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value < 100) {
+      		value = value + 1;
+    		} else {
+    			value =100;
+    		}
+
+    		$input.val(value);
+    	});
+
+      $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+      });
+    </script>
+
+
+</body>
+
+</html>
