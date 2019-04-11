@@ -1,0 +1,134 @@
+/*general*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #444;
+}
+*{
+	box-sizing: border-box;
+}
+.fab, .fas{
+	color: #0068cb;
+	font-size: 16px;
+}
+
+.fab:hover, .fas:hover{
+	color: #d5a06c;
+}
+.wrapper{
+	max-width: 1200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.w-25{
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	margin-right: 0px;
+	
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+.w-25:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pl-0{
+	padding-left: 0px;
+}
+.pr-0{
+	padding-right: 0px;
+}
+
+/*general end*/
+
+/*header*/
+.header{
+	padding-top: 55px;
+	background: no-repeat url("../img/birds.jpg");
+	background-size: cover;
+}
+.headline{
+	padding-bottom: 546px;
+}
+
+.hedline__logo{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+.headline__social{
+	float: right;
+}
+
+
+.social__item{
+	display: inline-block;
+	margin-right: 18px;
+}
+
+.social__item:last-child{
+	margin-right: 0px;
+}	
+
+
+/*header end*/
+
+/*nav */
+.nav{
+	background: #222;
+}
+.nav__item{
+	text-transform: uppercase;
+	color: #0068cb;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+.nav__item:hover{
+	text-decoration: underline;
+}
+
+/*nav end*/
+
+
+
+/*main*/
+
+
+/*articles*/
+.articles{
+	padding: 40px 0 95px;
+}
+
+
+
+.article__title{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.article__thumb{
+	margin-bottom: 20px;
+}
+
+
+
+
+/*articles end */
+/*main end*/
