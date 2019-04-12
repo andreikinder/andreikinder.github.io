@@ -55,7 +55,7 @@ header {
     left: 0;
 
     width: initial;
-    height: 90px;
+    height: 60px;
 
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -153,12 +153,7 @@ html.active #overlay {
 
     color: #5a1d3c;
 }
-#home{
-    top: 5px;
-    left: 30px;
-    font-size: 40px;
-    line-height: 1.5;
-}
+
 .logo {
 
     line-height: 40px;
@@ -405,12 +400,12 @@ html.active menu .container {
 }
 
 #menu {
-    font-size: 40px;
-    line-height: 1.5;
+    font-size: 30px;
+    line-height: 40px;
 
     position: fixed;
-    top: 5px;
-    right: 30px;
+    top: 0;
+    right: 0;
 
     display: block;
 
@@ -527,19 +522,4 @@ html.active menu .container {
     section>h1 {
         font-size: 3em;
     }
-
-    #home{
-        top: 0;
-        left: 0;
-        font-size: 25px;
-        line-height: 36px;
-    }
-    header { height: 60px;}
-    #menu {
-    font-size: 30px;
-    line-height: 40px;
-    top: 0;
-    right: 0;
-    }
-
 }
