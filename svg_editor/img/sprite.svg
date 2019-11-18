@@ -1,4 +1,11 @@
- 
+ <input class="input_radio" id ="row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
+                                <label for="row_autoincrement_increment" class="label label_radio mr-26">Increment</label>
+
+                                <input class="input_radio" id ="row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
+                                <label for="row_autoincrement_decrement" class="label label_radio mr-26">Decrement</label>
+
+                                <input class="input_radio" id ="row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
+                                <label for="row_autoincrement_non" class="label label_radio">Non</label>
 <!-- SVG Sprite -->
 <svg width="0" height="0" class="hidden" xmlns="http://www.w3.org/2000/svg">
   <symbol viewBox="0 0 511.947 511.947" xmlns="http://www.w3.org/2000/svg" id="escalator">

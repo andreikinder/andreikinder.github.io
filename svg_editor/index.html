@@ -17,12 +17,12 @@
 <nav class="toolbox"> 
 	<ul class="nav">
 		<!-- select -->
-		<li class="nav__item active">
+		<li class="nav__item ">
 			<div class="nav__icon">
 				<svg class="icon">
 					<use xlink:href="#select" ></use>		
 				</svg>	
-			</div> <!-- nav__icon -->		
+			</div> 		
 			<section class="nav__content">
 				
 			</section> <!-- .nav__content -->
@@ -34,78 +34,133 @@
 				<svg class="icon">
 					<use xlink:href="#armchair"></use>		
 				</svg>	
-			</div> <!-- nav__icon -->		
+			</div>	
 			<section class="nav__content">
 			</section> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 
 		<!-- text-tool -->
-		<li class="nav__item">
+		<li class="nav__item ">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#text-tool"></use>		
 				</svg>	
-			</div> <!-- nav__icon -->		
+			</div> 		
 			<div class="nav__content">
 				<form action="">
 					<section class="section section_hr">
-						<div class="form-group mb-22">
-							<label class="label label_h1" for="">Text</label>
-							<input class="input" type="text" value="Dance Floor">
-						</div>
-			
-						<div class="form-group mb-22">
+						<h1 class="h1">Text</h1>
+						<input class="input mb-16" type="text" value="Dance Floor">
+				
+						<div class="form-group">
 							
 							<input class="input_radio" id ="text_horizontal" type="radio" value="Dance Floor"  name="radio_orientation">
-							<label for="text_horizontal" class="label label_radio mr-20">Horizontal</label>
+							<label for="text_horizontal" class="label label_radio mr-35">Horizontal</label>
 
 							<input class="input_radio" id ="text_vertical" type="radio" value="Dance Floor" name="radio_orientation">
 							<label for="text_vertical" class="label label_radio">Vertical</label>
 			
 						</div>
 
-
-						<div class="form-group mb-22">
-							<label class="label label_h1">Font size</label>
-							<input  type="range" value="Dance Floor">
-						</div>
-
-	
-	
-
-
-						<div class="form-group">
-							<label >Select font</label>
-							<select>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-						</div>
-
-						<button type="submit">Add</button>
-							
 					</section>
-	
+
+					
+
+					<section class="section">
+						<h1 class="h1">Font size</h1>
+						<input  type="range" value="Dance Floor">								
+					</section>
+
+
+					<section class="section">
+						<h1 class="h1" >Select font</h1>
+							<select class="input mb-16" >
+								<option class="input"  value="1">Verdana Regular</option>
+								<option value="2">Roboto</option>
+								<option value="3">Arial</option>
+								<option value="4">Helvetica</option>
+								<option value="5">San Francisco</option>
+							</select>
+						<button class="btn mb-22" >Add</button>
+					</section>
+
+					<hr class="hr mb-22">
 
 			
+					<section class="section">
+						
+							<h1 class="h1">Rows numbers</h1>
+							<div class="form-group mb-22 d-flex justify-content-between" >
+								 
+								<input class="input_radio" id ="rows-numbers_right" type="radio" value="right"  name="rows-numbers">
+								<label for="rows-numbers_right" class="label label_radio label_sm">Right</label>
+
+								<input class="input_radio" id ="rows-numbers_left" type="radio" value="left" name="rows-numbers">
+								<label for="rows-numbers_left" class="label label_radio label_sm">Left</label>
+
+								<input class="input_radio" id ="rows-numbers_top" type="radio" value="top" name="rows-numbers">
+								<label for="rows-numbers_top" class="label label_radio label_sm">Top</label>
+
+								<input class="input_radio" id ="rows-numbers_bottom" type="radio" value="bottom" name="rows-numbers">
+								<label for="rows-numbers_bottom" class="label label_radio label_sm">Bottom</label>
+			
+							</div>
+					</section>
 				</form>
-				<hr>
+
 
 			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
-		<li class="nav__item">
+
+
+		<!-- rows -->
+
+		<li class="nav__item active">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#menu"></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
-			</section> <!-- .nav__content -->
+			<div class="nav__content">
+				<section class="section">
+					<div class="d-flex align-center">
+						<h1 class="h1 mb-0 mr-13 ">Align row number</h1>
+						<div class="counter ">
+							<span class="counter__minus"></span>
+							<input type="text" class="counter__input" value="0"/>
+							<spa class="counter__plus"></span>
+						</div>
+					</div>
+				</section>
+				<section class="section">
+					<h1 class="h1" >Row autoincrement</h1>
+
+					<input class="input_radio" id ="row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
+                    <label for="row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
+
+                    <input class="input_radio" id ="row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
+                    <label for="row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
+
+                    <input class="input_radio" id ="row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
+                    <label for="row_autoincrement_non" class="label label_sm label_radio">Non</label>
+
+					 			
+				</section>
+				<section class="section">
+					<h1 class="h1" >Assign row automatically</h1>
+
+					<input class="input_radio" id ="assign_row_automatically_horizontally" type="radio" value="horizontally"  name="assign_row_automatically">
+                    <label for="assign_row_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
+
+                    <input class="input_radio" id ="assign_row_automatically_vertically" type="radio" value="vertically" name="assign_row_automatically">
+                    <label for="assign_row_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
+
+                    <input class="input_radio" id ="assign_row_automatically_non" type="radio" value="non" name="assign_row_automatically">
+                    <label for="assign_row_automatically_non" class="label label_sm label_radio">Non</label>
+
+					 			
+				</section>
+			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 		<li class="nav__item">
 			<div class="nav__icon">
