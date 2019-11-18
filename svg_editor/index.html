@@ -16,17 +16,19 @@
 
 <nav class="toolbox"> 
 	<ul class="nav">
+		<!-- select -->
 		<li class="nav__item active">
 			<div class="nav__icon">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#select" ></use>		
+					<use xlink:href="#select" ></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
 			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
 				
 			</section> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
+
+		<!-- arcmchair -->
 		<li class="nav__item">
 			<div class="nav__icon">
 				<svg class="icon">
@@ -34,10 +36,10 @@
 				</svg>	
 			</div> <!-- nav__icon -->		
 			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
 			</section> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
+
+		<!-- text-tool -->
 		<li class="nav__item">
 			<div class="nav__icon">
 				<svg class="icon" >
@@ -45,8 +47,40 @@
 				</svg>	
 			</div> <!-- nav__icon -->		
 			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
+				<form action="">
+					<div class="form-group">
+						<label for="">Text</label>
+						<input type="text" value="Dance Floor">
+					</div>
+					<div class="form-group">
+						<label for="12">Horizontal</label>
+						<input id ="12" type="radio" value="Dance Floor">
+					</div>
+					<div class="form-group">
+						<label for="13">Vertical</label>
+						<input id ="13" type="radio" value="Dance Floor">
+					</div>
+
+					<div class="form-group">
+						<label >Font size</label>
+						<input  type="range" value="Dance Floor">
+					</div>
+
+					<div class="form-group">
+						<label >Select font</label>
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+
+					<button type="submit">Add</button>
+				</form>
+				<hr>
+
 			</section> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 		<li class="nav__item">

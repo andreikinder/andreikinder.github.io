@@ -3,6 +3,9 @@ body{
   color: #fff
 }
 
+
+/* toolbox and nav*/
+
 .toolbox{
   width: 350px;
   max-width: 350px;
@@ -38,8 +41,8 @@ body{
 
 
 .nav__icon{
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -59,9 +62,9 @@ body{
 }
 .icon, .icon use{
   fill: #fff;
-  width: 25px;
+  width: 20px;
   height: auto;
-  max-height: 25px;
+  max-height: 20px;
   display: flex;
   justify-content: center;
   -ms-align-items: center;
@@ -69,10 +72,6 @@ body{
 
 }
 
-#img-columns{
-  width: 40px;
-  height: 40px;
-}
 
 .nav__content{
   display: none;
@@ -81,7 +80,7 @@ body{
   bottom: 0px;
   background: #1f2327;
   right: 0px;
-  left: 70px;
+  left: 60px;
   padding: 27px 18px 0px;
   border-left: 1px solid #4275ee;
 }
@@ -96,3 +95,7 @@ body{
 .nav__item.active .nav__content{
   display: block;
 }
+
+
+/*input and buttons*/
+
