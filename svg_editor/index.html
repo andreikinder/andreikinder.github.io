@@ -46,42 +46,55 @@
 					<use xlink:href="#text-tool"></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
-			<section class="nav__content">
+			<div class="nav__content">
 				<form action="">
-					<div class="form-group">
-						<label for="">Text</label>
-						<input type="text" value="Dance Floor">
-					</div>
-					<div class="form-group">
-						<label for="12">Horizontal</label>
-						<input id ="12" type="radio" value="Dance Floor">
-					</div>
-					<div class="form-group">
-						<label for="13">Vertical</label>
-						<input id ="13" type="radio" value="Dance Floor">
-					</div>
+					<section class="section section_hr">
+						<div class="form-group mb-22">
+							<label class="label label_h1" for="">Text</label>
+							<input class="input" type="text" value="Dance Floor">
+						</div>
+			
+						<div class="form-group mb-22">
+							
+							<input class="input_radio" id ="text_horizontal" type="radio" value="Dance Floor"  name="radio_orientation">
+							<label for="text_horizontal" class="label label_radio mr-20">Horizontal</label>
 
-					<div class="form-group">
-						<label >Font size</label>
-						<input  type="range" value="Dance Floor">
-					</div>
+							<input class="input_radio" id ="text_vertical" type="radio" value="Dance Floor" name="radio_orientation">
+							<label for="text_vertical" class="label label_radio">Vertical</label>
+			
+						</div>
 
-					<div class="form-group">
-						<label >Select font</label>
-						<select>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</div>
 
-					<button type="submit">Add</button>
+						<div class="form-group mb-22">
+							<label class="label label_h1">Font size</label>
+							<input  type="range" value="Dance Floor">
+						</div>
+
+	
+	
+
+
+						<div class="form-group">
+							<label >Select font</label>
+							<select>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+
+						<button type="submit">Add</button>
+							
+					</section>
+	
+
+			
 				</form>
 				<hr>
 
-			</section> <!-- .nav__content -->
+			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 		<li class="nav__item">
 			<div class="nav__icon">

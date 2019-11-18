@@ -1,6 +1,26 @@
 body{
   font-family: 'Roboto', sans-serif;
   color: #fff
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: left;
+}
+
+.mb-22{
+  margin-bottom: 22px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.section{
+  margin-bottom: 22px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.section_hr{
+  border-bottom: 1px solid #4275ee;
 }
 
 
@@ -81,15 +101,14 @@ body{
   background: #1f2327;
   right: 0px;
   left: 60px;
-  padding: 27px 18px 0px;
+  padding-top: 18px;
   border-left: 1px solid #4275ee;
 }
 
 
 
-/*active nav__item */
 .nav__item.active .nav__icon{
-  background: blue;
+  background: #4275ee;
 }
 
 .nav__item.active .nav__content{
@@ -98,4 +117,99 @@ body{
 
 
 /*input and buttons*/
+.input{
+  padding: 9px 17px;
+  background: #ffffff;
+  border: 1px #959595 solid;
+  border-radius: 5px;
+  color: #222222;
+}
+
+.input:focus{
+  outline: none;
+  border-color: #4275ee;
+}
+
+
+
+
+
+
+
+
+.label{
+  color: #fff;
+}
+
+.label_h1{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.label_radio{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+.input_radio:checked,
+.input_radio:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+
+.input_radio:checked + .label_radio:before,
+.input_radio:not(:checked) + .label_radio:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4275ee;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.input_radio:checked + .label_radio:after,
+.input_radio:not(:checked) + .label_radio:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #4275ee;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.input_radio:not(:checked) + .label_radio:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.input_radio:checked + .label_radio:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+
+/* range slider*/
 

@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-
+//tabs
 	$('.nav__icon').click(function(event) {
 		var $this = $ (this);
 		var  $nav__item =  $this.parent();
@@ -9,7 +9,11 @@ jQuery(document).ready(function($) {
 				$('.nav__item.active').removeClass('active');
 				$nav__item.addClass('active');		
 			}
-		}
-	
+		}	
 	});
+
+
+//range slider
+
+
 });
