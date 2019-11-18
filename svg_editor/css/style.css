@@ -57,12 +57,21 @@ body{
 .nav__icon:hover{
   cursor: pointer;
 }
-.icon{
+.icon, .icon use{
   fill: #fff;
   width: 25px;
   height: auto;
   max-height: 25px;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
 
+}
+
+#img-columns{
+  width: 40px;
+  height: 40px;
 }
 
 .nav__content{
