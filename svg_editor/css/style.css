@@ -155,7 +155,7 @@ body{
 .input{
   padding: 9px 17px;
   background: #ffffff;
-  border: 2px #959595 solid;
+  border: 1px #959595 solid;
   border-radius: 5px;
   color: #222222;
   width: 100%;
@@ -254,8 +254,46 @@ body{
 
 
 
-/* range slider*/
+/* select and option */
 
+
+
+
+.selectize-input.items.has-options.full.has-items{
+  padding: 9px 17px;
+  background: #ffffff;
+  border: 1px #959595 solid;
+  border-radius: 5px;
+  color: #222222;
+  width: 100%;
+}
+
+.selectize-input.items.has-options.full.has-items.input-active{
+  outline: none;
+  border-color: #4275ee;
+  transition: 0.3s all ease;
+}
+
+.selectize-control.single .selectize-input:after{
+  border-color: #4275ee transparent transparent transparent;
+  transition: all ease 0.3s;
+}
+.selectize-control.single .selectize-input.dropdown-active:after {
+  border-color: transparent transparent #4275ee transparent;
+}
+
+
+.selectize-dropdown  .option{
+  padding: 9px 17px;
+  color: #222222;
+  font-size: 14px;
+}
+
+.selectize-dropdown  .option:hover{
+  background: #4275ee;
+  color: #fff;
+  cursor: pointer;
+}
 
 
 /*button*/

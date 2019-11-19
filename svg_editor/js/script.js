@@ -59,7 +59,12 @@ jQuery(document).ready(function($) {
 
 	})
 
+// select
 
+$('.select').selectize({
+    create: true,
+    sortField: 'text'
+});
 
 
 
