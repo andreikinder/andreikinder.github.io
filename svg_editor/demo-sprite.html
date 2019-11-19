@@ -1,370 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>svg editor</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="art-bord">
 
-	
-</div> <!-- .art bord -->
-
-
-<nav class="toolbox"> 
-	<ul class="nav">
-		<!-- select -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon">
-					<use xlink:href="#select" ></use>		
-				</svg>	
-			</div> 		
-			<section class="nav__content">
-				
-			</section> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- arcmchair -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon">
-					<use xlink:href="#armchair"></use>		
-				</svg>	
-			</div>	
-			<section class="nav__content">
-			</section> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- text-tool -->
-		<li class="nav__item active">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#text-tool"></use>		
-				</svg>	
-			</div> 		
-			<div class="nav__content">
-				<form action="">
-					<section class="section section_hr">
-						<h1 class="h1">Text</h1>
-						<input class="input mb-16" type="text" value="Dance Floor">
-				
-						<div class="form-group">
-							
-							<input class="input_radio" id ="text_horizontal" type="radio" value="Dance Floor"  name="radio_orientation">
-							<label for="text_horizontal" class="label label_radio mr-35">Horizontal</label>
-
-							<input class="input_radio" id ="text_vertical" type="radio" value="Dance Floor" name="radio_orientation">
-							<label for="text_vertical" class="label label_radio">Vertical</label>
-			
-						</div>
-
-					</section>
-
-					
-
-					<section class="section">
-						<h1 class="h1">Font size</h1>
-						<div class="d-flex align-center justify-content-between">
-							<div class="slider-container">
-								<div >
-									<span class="bar"><span class="fill"></span></span>
-									<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-								</div>					
-							</div>
-							<input type="text" value="50" class="slider-input input_sm input">		
-						</div>
-					
-
-
-														
-					</section>
-
-
-					<section class="section">
-						<h1 class="h1" >Select font</h1>
-							<select class="input mb-16" >
-								<option class="input"  value="1">Verdana Regular</option>
-								<option value="2">Roboto</option>
-								<option value="3">Arial</option>
-								<option value="4">Helvetica</option>
-								<option value="5">San Francisco</option>
-							</select>
-						<button class="btn mb-22" >Add</button>
-					</section>
-
-					<hr class="hr">
-
-			
-					<section class="section">
-						
-							<h1 class="h1">Rows numbers</h1>
-							<div class="form-group mb-22 d-flex justify-content-between" >
-								 
-								<input class="input_radio" id ="rows-numbers_right" type="radio" value="right"  name="rows-numbers">
-								<label for="rows-numbers_right" class="label label_radio label_sm">Right</label>
-
-								<input class="input_radio" id ="rows-numbers_left" type="radio" value="left" name="rows-numbers">
-								<label for="rows-numbers_left" class="label label_radio label_sm">Left</label>
-
-								<input class="input_radio" id ="rows-numbers_top" type="radio" value="top" name="rows-numbers">
-								<label for="rows-numbers_top" class="label label_radio label_sm">Top</label>
-
-								<input class="input_radio" id ="rows-numbers_bottom" type="radio" value="bottom" name="rows-numbers">
-								<label for="rows-numbers_bottom" class="label label_radio label_sm">Bottom</label>
-			
-							</div>
-					</section>
-				</form>
-
-
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-
-		<!-- rows -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#menu"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<div class="d-flex align-center">
-						<h1 class="h1 mb-0 mr-13 ">Align row number</h1>
-						<div class="counter ">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>
-					</div>
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Row autoincrement</h1>
-
-					<input class="input_radio" id ="row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
-                    <label for="row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
-
-                    <input class="input_radio" id ="row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
-                    <label for="row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
-
-                    <input class="input_radio" id ="row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
-                    <label for="row_autoincrement_non" class="label label_sm label_radio">Non</label>
-
-					 			
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Assign row automatically</h1>
-
-					<input class="input_radio" id ="assign_row_automatically_horizontally" type="radio" value="horizontally"  name="assign_row_automatically">
-                    <label for="assign_row_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
-
-                    <input class="input_radio" id ="assign_row_automatically_vertically" type="radio" value="vertically" name="assign_row_automatically">
-                    <label for="assign_row_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
-
-                    <input class="input_radio" id ="assign_row_automatically_non" type="radio" value="non" name="assign_row_automatically">
-                    <label for="assign_row_automatically_non" class="label label_sm label_radio">Non</label>
-
-					 			
-				</section>
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- place  -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#edit-table"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->			
-			<div class="nav__content">
-				<section class="section">
-					<div class="d-flex justify-content-between align-center">
-						<h1 class="h1 mb-0 mr-13 ">Align place number</h1>
-						<div class="counter ">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-							<svg class="counter__undo">
-							  <use xlink:href="#undo"></use>
-							</svg>
-						</div>
-					</div>
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Row autoincrement</h1>
-
-					<input class="input_radio" id ="place_row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
-                    <label for="place_row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
-
-                    <input class="input_radio" id ="place_row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
-                    <label for="place_row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
-
-                    <input class="input_radio" id ="place_row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
-                    <label for="place_row_autoincrement_non" class="label label_sm label_radio">Non</label>
-
-						
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Assign place automatically</h1>
-
-					<input class="input_radio" id ="assign_place_automatically_horizontally" type="radio" value="horizontally"  name="assign_place_automatically">
-                    <label for="assign_place_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
-
-                    <input class="input_radio" id ="assign_place_automatically_vertically" type="radio" value="vertically" name="assign_place_automatically">
-                    <label for="assign_place_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
-
-                    <input class="input_radio" id ="assign_place_automatically_non" type="radio" value="non" name="assign_place_automatically">
-                    <label for="assign_place_automatically_non" class="label label_sm label_radio">Non</label>		 			
-				</section>
-				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- dance floor  -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#disco-ball"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<h1 class="h1">Add dance floor</h1>
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">Height</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
-
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">Width</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
-
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">X coordinate</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
-
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">Y coordinates</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
-
-					<button class="btn">Add</button>
-
-				</section>
-				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-
-
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#columns"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
-			</section> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-
-		
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#selection"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
-			</section> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#settings-cogwheel-button"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
-			</section> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#delete-photo"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
-			</section> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-
-
-		<li class="nav__item last  ">
-
-			<div class="nav__icon">
-
-			</div> <!-- nav__icon -->
-		
-			<section class="nav__content">
-		
-				
-			</section> <!-- .nav__content -->
-
-		</li> <!-- .nav__item -->
-
-
-	</ul> <!-- .nav -->		
-</nav> <!-- .toolbox -->
-
-
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> <!-- fonts -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- jquery -->
-<script src="js/script.js"> </script>
-
-
+  <!doctype>
+  <html lang="en">
+  <head>
+    <title>SVG Sprite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <style>
+      html { box-sizing: border-box }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto",
+          "Oxygen","Ubuntu","Cantarell","Fira Sans",
+          "Droid Sans","Helvetical Neue",sans-serif;
+        font-size: 1.125rem;
+        text-align: center
+      }
+      h1{
+        font-weight: 100;
+        margin-bottom: 1em
+      }
+      small { font-size: .34em }
+      .icon { 
+  width: 50px; 
+  height: 50px;
+  margin: .5em;
+}
+    </style>
+  </head>
+    
+  <body>
 <!-- SVG Sprite -->
 <svg width="0" height="0" class="hidden">
-	<symbol version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="undo">
+    <symbol version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="undo">
     <path d="M35 1.9c-6.8 2.2-11.4 4.5-16.1 8.2l-3.6 2.8-4.4-4.5C7.3 4.8 5.9 4 3.5 4.2l-3 .3v37l17.4.3c11.9.2 17.8-.1 18.7-.9 2.6-2.1 1.5-5.4-3.5-10.3l-5-4.9 2.4-1.9c8.7-6.8 22.5-8.3 32.6-3.6 21 9.7 26.1 36.6 9.9 52.8-12.7 12.7-33.5 12.7-45.8.1-2.2-2.3-4.6-4.1-5.4-4.1C19.7 69 11 78.3 11 80.6c0 3.3 9.2 11.1 17.8 15.2 7.1 3.4 8.5 3.7 18.3 4 16.8.6 27.7-3.4 38.5-14.2 10-10 14.4-20.9 14.4-35.6 0-14.7-4.4-25.6-14.4-35.6C75.5 4.3 64.6 0 49.6.1 43.8.1 38.5.7 35 1.9z"></path>
   </symbol>
-
   <symbol viewBox="0 0 511.947 511.947" xmlns="http://www.w3.org/2000/svg" id="escalator">
     <path d="M147.47 460.84h364.477V149.084h-52.721z"></path>
     <path d="M435.186 66.958L99.105 403.039H0v57.801h105.044L446.8 119.084h65.147V66.958z"></path>
@@ -372,7 +42,7 @@
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.709 27.709" id="menu">
     <path d="M9.84.078h7.655V7.73H9.84V.078zm0 9.84h7.655v7.652H9.84V9.918zm-9.84 0h7.652v7.652H0V9.918zm0-9.84h7.652V7.73H0V.078zm.003 19.9h7.649v7.654H.003v-7.654zm9.84 0h7.652v7.654H9.843v-7.654zM20.054.078h7.655V7.73h-7.655V.078zm0 9.84h7.655v7.652h-7.655V9.918zm0 10.06h7.655v7.654h-7.655v-7.654z"
-      fill="#fff"></path>
+      fill="#030104"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.167 300.167" id="food">
     <path d="M251.39 157.505a26.63 26.63 0 0 1-3.469-5.056c-.468 48.27-39.875 87.398-88.254 87.398-48.669 0-88.265-39.596-88.265-88.265s39.596-88.265 88.265-88.265c41.868 0 77.02 29.304 86.027 68.477l7.993-59.42.18-1.336c-22.76-26.581-56.544-43.457-94.2-43.457-29.378 0-56.398 10.276-77.667 27.414v28.586c0 16.811-8.713 32.159-22.5 40.929v100.073c22.574 30.89 59.063 50.998 100.167 50.998 43.192 0 81.291-22.203 103.5-55.79V165.28a26.556 26.556 0 0 1-11.777-7.775z"></path>
@@ -469,18 +139,113 @@
     <path d="M60.343 0v471.418h34V34h329.434v437.418h34V0z"></path>
     <path d="M104.194 43.906h149.255V444.51H104.194zm160.478 0h149.254V444.51H264.672zM13.641 281.419h36.811v-91.362H13.641v91.362zm18.403-79.784l11.34 19.123h-22.68l11.34-19.123zm11.34 49.083l-11.34 19.123-11.34-19.123h22.68z"></path>
   </symbol>
-   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="edit-table">
+    <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="edit-table">
     <path d="M205.332 395.113a10.475 10.475 0 0 0-2.836 5.102l-23.254 98.687a10.68 10.68 0 0 0 2.836 9.985 10.773 10.773 0 0 0 7.555 3.113 9.78 9.78 0 0 0 2.453-.297l98.668-23.254a10.65 10.65 0 0 0 5.098-2.84L435.39 346.07l-90.516-90.52zM499.5 221.633l-30.168-30.168c-16.125-16.125-44.223-16.125-60.352 0l-41.472 41.472 90.52 90.52 41.472-41.473c8.063-8.062 12.5-18.773 12.5-30.164 0-11.414-4.437-22.125-12.5-30.187zM145.922 405.332h-92.59c-5.887 0-10.664-4.777-10.664-10.664v-53.336h160c11.773 0 21.332-9.555 21.332-21.332v-85.332h86.828c11.774 0 21.332-9.559 21.332-21.336 0-11.773-9.558-21.332-21.332-21.332H224v-64h138.668v21.332c0 11.777 9.555 21.336 21.332 21.336s21.332-9.559 21.332-21.336V48c0-26.477-21.523-48-48-48H48C21.523 0 0 21.523 0 48v346.668C0 424.063 23.938 448 53.332 448h92.59c11.773 0 21.332-9.559 21.332-21.332 0-11.777-9.559-21.336-21.332-21.336zm35.41-106.664H42.668v-64h138.664zm0-106.668H42.668v-64h138.664zm0 0"></path>
   </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="disco-ball">
     <path d="M441.616 278.102c0-95.11-73.015-173.588-166.094-182.097V16.781C275.522 7.513 268.008 0 258.741 0c-9.268 0-16.781 7.513-16.781 16.781v79.224c-93.091 8.51-166.093 87.003-166.093 182.097l.002.172-.002.044c0 .025.003.048.003.072.157 100.876 82.328 182.588 182.871 182.588 100.377 0 182.715-81.554 182.872-182.588 0-.025.003-.048.003-.072l-.002-.044.002-.172zm-319.01-61.316h38.143c-2.8 14.328-4.618 29.339-5.377 44.749h-45.02a148.164 148.164 0 0 1 12.254-44.749zm.199 123.061a148.096 148.096 0 0 1-12.403-44.749h44.989c.778 15.415 2.626 30.424 5.447 44.749h-38.033zm21.088 33.561h25.812c4.084 12.072 8.969 23.493 15.061 34.356a150.396 150.396 0 0 1-40.873-34.356zm25.668-190.184H143.53a150.452 150.452 0 0 1 41.237-34.786c-6.16 10.982-11.092 22.556-15.206 34.786zm72.4 239.33c-16.989-9.772-29.094-31.02-36.483-49.146h36.483v49.146zm0-82.707H195.1c-3.165-14.105-5.229-29.148-6.096-44.749h52.957v44.749zm0-78.311h-52.985c.845-15.595 2.885-30.639 6.024-44.749h46.961v44.749zm0-78.312h-36.659c7.377-18.23 19.542-39.729 36.659-49.575v49.575zm131.992 0h-26.032c-4.109-12.219-9.047-23.805-15.206-34.786a150.412 150.412 0 0 1 41.238 34.786zm-98.43-49.575c17.114 9.844 29.281 31.341 36.659 49.575h-36.659v-49.575zm0 288.905v-49.146h36.483c-7.378 18.102-19.483 39.369-36.483 49.146zm46.86-82.707h-46.86v-44.749h52.957c-.867 15.599-2.931 30.644-6.097 44.749zm-46.86-78.311v-44.749h46.961c3.139 14.112 5.18 29.155 6.024 44.749h-52.985zm57.193 146.23c6.113-10.9 10.992-22.329 15.063-34.356h25.812a150.446 150.446 0 0 1-40.875 34.356zm61.963-67.919h-38.032c2.821-14.325 4.67-29.334 5.447-44.749h44.989a148.171 148.171 0 0 1-12.404 44.749zm-32.569-78.311c-.757-15.409-2.576-30.421-5.377-44.749h38.144a148.126 148.126 0 0 1 12.253 44.749h-45.02zm102.786 183.777L451.5 420.819l-13.395 24.494-24.494 13.395 24.494 13.396 13.395 24.493 13.396-24.493 24.493-13.396zM95.289 85.216l-26.791 7.848-26.792-7.848 7.847 26.792-7.847 26.792 26.792-7.847 26.791 7.847-7.847-26.792zM58.353 402.742L47.517 382.93l-10.835 19.812-19.813 10.836 19.813 10.834 10.835 19.813 10.836-19.813 19.812-10.834zm416.966-301.57l-10.836-19.811-10.835 19.811-19.813 10.836 19.813 10.835 10.835 19.813 10.836-19.813 19.812-10.835zM138.951 458.354l-26.823 7.855-26.824-7.855 7.857 26.823L85.304 512l26.824-7.856L138.951 512l-7.856-26.823z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.5 900.5" id="delete-photo">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.5 900.5" id="delete-photo">
     <path d="M176.415 880.5c0 11.046 8.954 20 20 20h507.67c11.046 0 20-8.954 20-20V232.487h-547.67V880.5zM562.75 342.766h75v436.029h-75V342.766zm-150 0h75v436.029h-75V342.766zm-150 0h75v436.029h-75V342.766zM618.825 91.911V20c0-11.046-8.954-20-20-20h-297.15c-11.046 0-20 8.954-20 20v96.911H141.874c-11.046 0-20 8.954-20 20v50.576c0 11.045 8.954 20 20 20h616.752c11.046 0 20-8.955 20-20v-50.576c0-11.046-8.954-20-20-20H618.825v-25zm-75 20.888h-187.15V75h187.15v37.799z"></path>
   </symbol>
 
 </svg>
+    <h1>
+      SVG Sprite Demo
+      <br/>
+      <small>
+        created with <a href="https://svgsprit.es/">svgsprit.es</a>
+      </small>
+    </h1>
+    <svg class="icon">
+  <use xlink:href="#escalator"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#food"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#hanger"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#help"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#info"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#medical"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#menu"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#microphone-black-shape"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#newspaper"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#open-exit-door"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#parking-sign"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#restaurant"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#select"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#selection"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#settings-cogwheel-button"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#shower"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#text-tool"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#undo-arrow"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#way-in"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#wc"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#wifi"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#armchair"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#camping-tent"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#cocktail"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#columns"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#computer"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#edit-table"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#disco-ball"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#delete-photo"></use>
+</svg>
 
-
-</body>
-</html>
+<svg class="icon">
+  <use xlink:href="#undo"></use>
+</svg>
+  </body>

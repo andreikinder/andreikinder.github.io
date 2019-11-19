@@ -32,8 +32,8 @@ body{
 /*section*/
 .section{
   margin-bottom: 22px;
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 18px;
+  padding-right: 18px;
 
 }
 
@@ -41,7 +41,8 @@ body{
   color: #4275ee; 
   background-color:#4275ee; 
   border:0px none;
-  height:1px; 
+  height:1px;
+  margin-bottom: 22px; 
 }
 
 
@@ -135,7 +136,7 @@ body{
   background: #1f2327;
   right: 0px;
   left: 60px;
-  padding-top: 18px;
+  padding-top: 27px;
   border-left: 1px solid #4275ee;
 }
 
@@ -167,7 +168,13 @@ body{
 
 
 
-
+.input_sm{
+  height: 22px;
+  width: 35px;
+  text-align: center;
+  line-height: 22px;
+  padding: 0;
+}
 
 
 
@@ -253,6 +260,7 @@ body{
 
 /*button*/
 
+
 .btn{
   background: rgb(0,212,255);
   background: -webkit-linear-gradient(rgba(0,212,255,1) 0%, rgba(64,114,238,1) 100%);
@@ -289,8 +297,19 @@ body{
   align-items: center;
 }
 
+.counter_dance-floor{
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+
+.counter__label{
+  font-size: 12px;
+  color: #959595;
+}
 .counter__input{
-  width: 45px;
+  width: 55px;
   padding: 4px 8px;
   background: #d1d1d1;
   color: #31394d;
@@ -353,6 +372,81 @@ body{
 }
 
 
+.counter__undo{
+  width: 10px;
+  height: 20px;
+  fill: #fff;
+  margin-left: 10px;
+}
+
+.counter__undo:hover{
+  cursor: pointer;
+}
+
+
+/*slider*/
+
+.slider-container {
+  position: relative;
+  width: 208px;
+}
+
+.slider-container .bar{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 8px;
+  width: 100%;
+  height: 4px;
+  background: #d1d1d1;
+  border-radius: 5px;
+}
+
+.slider-container .fill{
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: #4275ee;
+
+}
+
+.slider-container .slider{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.slider-container .slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #4275ee;
+
+  box-shadow: 0 0 0 #4275ee;
+  transition: 0.3s all ease;
+}
+
+
+.slider-container .slider::-webkit-slider-thumb:hover{
+  box-shadow: 0 0 10px #4275ee;
+  transition: 0.3s all ease;
+}
+
+
+.slider-container .slider:active::-webkit-slider-thumb:hover{
+  box-shadow: 0 0 30px #4275ee;
+  transition: 0.3s all ease;
+}
 
 /*margins*/
 

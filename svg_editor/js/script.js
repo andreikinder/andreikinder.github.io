@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 	});
 
 
-//range slider
+//range 
 	$('.counter__minus').click(function () {
 		var $input = $(this).parent().find('input');
 		var count = parseInt($input.val()) - 1;
@@ -28,5 +28,39 @@ jQuery(document).ready(function($) {
 		$input.change();
 		return false;
 	});
+
+
+
+//slider
+	var $slider = $(".slider");
+	$slider.on('input', function() {
+		$this = $(this);
+		$bar = $this.prev();
+		$fill = $bar.find('.fill');
+
+		$value = $this.parent().parent().parent().find('.slider-input ');
+
+		var value = $this.val();
+		$fill.css("width", value + "%");
+
+		$value.val(value); 
+	});
+
+
+	var $slider_input = $(".slider-input");
+	$slider_input.on('input', function() {
+		$this = $(this);
+		var value = $this.val();
+		$slider = $this.parent().find('.slider');
+		$fill = $this.parent().find('.fill');
+
+		$slider.val(value);
+		$fill.css("width", value + "%");
+
+	})
+
+
+
+
 
 });
