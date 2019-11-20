@@ -67,5 +67,96 @@ $('.select').selectize({
 });
 
 
+//colorpicker
+
+
+$('#table_color').ColorPicker({
+	color: '#0000ff',
+	onShow: function (colpkr) {
+		$(colpkr).fadeIn(500);
+		return false;
+	},
+	onHide: function (colpkr) {
+		$(colpkr).fadeOut(500);
+		return false;
+	},
+	onChange: function (hsb, hex, rgb) {
+		$('#table_color .color__bg').css('backgroundColor', '#' + hex);
+		$('#table_color .color_input').val(hex);
+	}
+});
+
+$('#zone_color_name').ColorPicker({
+	color: '#0000ff',
+	onShow: function (colpkr) {
+		$(colpkr).fadeIn(500);
+		return false;
+	},
+	onHide: function (colpkr) {
+		$(colpkr).fadeOut(500);
+		return false;
+	},
+	onChange: function (hsb, hex, rgb) {
+		$('#zone_color_name .color__bg').css('backgroundColor', '#' + hex);
+		$('#zone_color_name .color_input').val(hex);
+	}
+});
+
+
+
+$('#settings_stroke').ColorPicker({
+	color: '#0000ff',
+	onShow: function (colpkr) {
+		$(colpkr).fadeIn(500);
+		return false;
+	},
+	onHide: function (colpkr) {
+		$(colpkr).fadeOut(500);
+		return false;
+	},
+	onChange: function (hsb, hex, rgb) {
+		$('#settings_stroke .color__bg').css('backgroundColor', '#' + hex);
+		$('#settings_stroke .color_input').val(hex);
+	}
+});
+
+
+
+$('#settings_table').ColorPicker({
+	color: '#0000ff',
+	onShow: function (colpkr) {
+		$(colpkr).fadeIn(500);
+		return false;
+	},
+	onHide: function (colpkr) {
+		$(colpkr).fadeOut(500);
+		return false;
+	},
+	onChange: function (hsb, hex, rgb) {
+		$('#settings_table .color__bg').css('backgroundColor', '#' + hex);
+		$('#settings_table .color_input').val(hex);
+	}
+});
+
+$('#icon_color').ColorPicker({
+	color: '#0000ff',
+	onShow: function (colpkr) {
+		$(colpkr).fadeIn(500);
+		return false;
+	},
+	onHide: function (colpkr) {
+		$(colpkr).fadeOut(500);
+		return false;
+	},
+	onChange: function (hsb, hex, rgb) {
+		$('#icon_color .color__bg').css('backgroundColor', '#' + hex);
+		$('#icon_color .color_input').val(hex);
+	}
+});
+
+
+
+
+
 
 });

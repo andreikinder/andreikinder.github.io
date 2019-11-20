@@ -6,9 +6,12 @@
 	<title>svg editor</title>
 
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	 
 	<!--pluins -->
 	<link rel="stylesheet" href="plugins/selectize/css/selectize.css">
+	<link rel="stylesheet" href="plugins/colorpicker/css/colorpicker.css">
 
 
 	<!-- styles -->
@@ -29,6 +32,7 @@
 
 <nav class="toolbox"> 
 	<ul class="nav">
+
 		<!-- select -->
 		<li class="nav__item ">
 			<div class="nav__icon">
@@ -42,19 +46,138 @@
 		</li> <!-- .nav__item -->
 
 		<!-- seat -->
-		<li class="nav__item">
+		<li class="nav__item ">
 			<div class="nav__icon">
 				<svg class="icon">
 					<use xlink:href="#armchair"></use>		
 				</svg>	
 			</div>	
 			<div class="nav__content">
-				<img src="img/matrix.png" alt="">
+				<section class="section">
+					<div class="d-flex align-center mb-16">
+						<img class="display-inline-block mr-10" src="img/matrix.png" alt="matrix">
+						<h1 class="h1 mb-0">Add matrix</h1>
+					</div>
+					<div class="d-flex align-center justify-content-between">
+							<div class="slider-container">
+								<div >
+									<span class="bar"><span class="fill"></span></span>
+									<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+								</div>					
+							</div>
+							<input type="text" value="50" class="slider-input input_sm input">		
+						</div>
+					<div class="cross_wrapper">
+						<span class="cross">Х</span>
+					</div>	
+					<div class="d-flex align-center justify-content-between mb-16">
+						<div class="slider-container">
+							<div >
+								<span class="bar"><span class="fill"></span></span>
+								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+							</div>					
+						</div>
+						<input type="text" value="50" class="slider-input input_sm input">		
+					</div>
+
+					<label for="" class="label label_grey ">Row horizontal margin</label>
+					<div class="mt-16 mb-16 d-flex align-center justify-content-between">
+						<div class="slider-container">
+							<div >
+								<span class="bar"><span class="fill"></span></span>
+								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+							</div>					
+						</div>
+						<input type="text" value="50" class="slider-input input_sm input">		
+					</div>
+
+					<label for="" class="label label_grey">Row horizontal margin</label>
+					<div class="mt-16 mb-16  d-flex align-center justify-content-between">
+						<div class="slider-container">
+							<div >
+								<span class="bar"><span class="fill"></span></span>
+								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+							</div>					
+						</div>
+						<input type="text" value="50" class="slider-input input_sm input">		
+					</div>
+					<button class="btn">Create</button>
+				</section>
+				<hr class="hr">
+
+				<section class="section">
+					<div class="d-flex align-center mb-16">
+						<img class="display-inline-block mr-10" src="img/table_round.png" alt="table_round">
+						<h1 class="h1 mb-0">Add round table</h1>
+					</div>
+					<div class="mb-16  d-flex align-center justify-content-between">
+						<div class="slider-container">
+							<div >
+								<span class="bar"><span class="fill"></span></span>
+								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+							</div>					
+						</div>
+						<input type="text" value="50" class="slider-input input_sm input">		
+					</div>
+					<button class="btn">Create</button>
+					
+				</section>
+
+				<hr class="hr">
+				<section class="section">
+					<div class="d-flex align-center mb-16">
+						<img class="display-inline-block mr-10" src="img/table_square.png" alt="table_square">
+						<h1 class="h1 mb-0">Add square table</h1>
+					</div>
+
+					<div class="square_table mb-16">
+						<div class="square_table__row justify-content-center mb-10"><input type="text" value="5" class="slider-input input_sm input"></div>
+						<div class="square_table__row align-center justify-content-between mb-10">
+							<input type="text" value="5" class="slider-input input_sm input">
+							<div class="rectangle"></div>
+							<input type="text" value="5" class="slider-input input_sm input">
+						</div>
+						<div class="square_table__row justify-content-center"><input type="text" value="5" class="slider-input input_sm input"></div>
+					</div>
+		
+	
+					<button class="btn">Create</button>
+					
+				</section>
+				<hr class="hr">
+				<section class="section">
+					<h1 class="h1">Seat size</h1>
+					<div class="d-flex align-center justify-content-between">
+						<div class="slider-container">
+							<div >
+								<span class="bar"><span class="fill"></span></span>
+								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+							</div>					
+						</div>
+						<input type="text" value="50" class="slider-input input_sm input">		
+					</div>
+				</section>
+
+				<hr class="hr">
+				<section class="section">
+					<h1 class="h1">Table color</h1>
+					<div id="table_color" class="color">
+						<div class="color__bg"></div>
+						<input class="color_input"  type="text" hidden name="" value="#fff"> 
+
+					</div>
+
+			
+		
+				</section>
+				
+	
+
 			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 
 		<!-- text-tool -->
-		<li class="nav__item active">
+		<li class="nav__item ">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#text-tool"></use>		
@@ -107,7 +230,8 @@
 								<option class="option"  value="Helvetica">Helvetica</option>
 								<option class="option"  value="San Francisco">San Francisco</option>
 							</select>
-						<button class="btn mb-22" >Add</button>
+
+						<button class="btn mb-16" >Add</button>
 					</section>
 
 					<hr class="hr">
@@ -116,7 +240,7 @@
 					<section class="section">
 						
 							<h1 class="h1">Rows numbers</h1>
-							<div class="form-group mb-22 d-flex justify-content-between" >
+							<div class="form-group mb-16 d-flex justify-content-between" >
 								 
 								<input class="input_radio" id ="rows-numbers_right" type="radio" value="right"  name="rows-numbers">
 								<label for="rows-numbers_right" class="label label_radio label_sm">Right</label>
@@ -254,7 +378,7 @@
 				<section class="section">
 					<h1 class="h1">Add dance floor</h1>
 					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">Height</label>
+						<label for="" class="label label_grey">Height</label>
 						<div class="d-flex align-center">
 							<span class="counter__minus"></span>
 							<input type="text" class="counter__input" value="1000"/>
@@ -263,7 +387,7 @@
 					</div>
 
 					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">Width</label>
+						<label for="" class="label label_grey">Width</label>
 						<div class="d-flex align-center">
 							<span class="counter__minus"></span>
 							<input type="text" class="counter__input" value="1000"/>
@@ -272,7 +396,7 @@
 					</div>
 
 					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">X coordinate</label>
+						<label for="" class="label label_grey">X coordinate</label>
 						<div class="d-flex align-center">
 							<span class="counter__minus"></span>
 							<input type="text" class="counter__input" value="1000"/>
@@ -281,7 +405,7 @@
 					</div>
 
 					<div class="counter  counter_dance-floor">
-						<label for="" class="label counter__label">Y coordinates</label>
+						<label for="" class="label label_grey">Y coordinates</label>
 						<div class="d-flex align-center">
 							<span class="counter__minus"></span>
 							<input type="text" class="counter__input" value="1000"/>
@@ -297,68 +421,286 @@
 		</li> <!-- .nav__item -->
 
 
-
+		<!-- zone -->
 		<li class="nav__item">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#columns"></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
+			<div class="nav__content">
+				<section class="section">
+					<h1 class="h1">Zone name</h1>
+					<input type="text" value="Parter" class="input mb-22">
+					
+					<h1 class="h1">Color name</h1>
+					<div id="zone_color_name" class="color mb-22">
+						<div class="color__bg"></div>
+						<input class="color_input"  type="text" hidden name="" value="#fff"> 
+					</div>
+					<button class="btn">Add</button>
+
+				</section>
+				<hr class="hr">
+				<section class="section">
+					<h1 class="h1">Zones:</h1>
+					<select class="select mb-16" >
+						<option class="option"  value="Verdana Regular">Parter - blue</option>
+						<option class="option"  value="Roboto">Roboto</option>
+						<option class="option"  value="Arial">Arial</option>
+						<option class="option"  value="Helvetica">Helvetica</option>
+						<option class="option"  value="San Francisco">San Francisco</option>
+					</select>
+
+				</section>
 				
-			</section> <!-- .nav__content -->
+			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 
 
-		
-		<li class="nav__item">
+		<!-- icons -->
+		<li class="nav__item active">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#selection"></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
+			<div class="nav__content">
+				<section class="section">
+					<h1 class="h1">Icons</h1>
+
+					<div class="icons">
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#open-exit-door"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#wc"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#microphone-black-shape"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#cocktail"></use>		
+							</svg>	
+						</div>
+
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#help"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#disco-ball"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#food"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#info"></use>		
+							</svg>	
+						</div>
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#way-in"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#newspaper"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#camping-tent"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#restaurant"></use>		
+							</svg>	
+						</div>
+
+
+						<div class="icon__wrapper">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#elevator-doors"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#parking-sign"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#computer"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper border-b-0">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#hanger"></use>		
+							</svg>	
+						</div>
+									<div class="icon__wrapper border-b-0">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#medical"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper border-b-0">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#escalator"></use>		
+							</svg>	
+						</div>
+
+						<div class="icon__wrapper border-b-0 ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#shower"></use>		
+							</svg>	
+						</div>
+						<div class="icon__wrapper  border-b-0 ">
+							<svg class="icon icon_sm" >
+								<use xlink:href="#wifi"></use>		
+							</svg>	
+						</div>
+
+
+
+					</div> <!-- icons -->
+
+				</section>
+
+				<section class="section">
+
+
+					<h1 class="h1">Icon color</h1>
+					<div id="icon_color" class="color mb-22">
+						<div class="color__bg"></div>
+						<input class="color_input"  type="text" hidden name="" value="#fff"> 
+					</div>
+
+
+					<button class="btn">Add</button>
+				</section>
+
+
+
 				
-			</section> <!-- .nav__content -->
+			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 
+
+
+		<!-- settings -->
 		<li class="nav__item">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#settings-cogwheel-button"></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
-				
-			</section> <!-- .nav__content -->
+			<div class="nav__content">
+				<section class="section">
+					<h1 class="h1 ">Canvas size</h1>
+					<div class="d-flex align-center justify-content-between">
+							<div class="slider-container">
+								<div >
+									<span class="bar"><span class="fill"></span></span>
+									<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+								</div>					
+							</div>
+							<input type="text" value="50" class="slider-input input_sm input">		
+						</div>
+					<div class="cross_wrapper">
+						<span class="cross">Х</span>
+					</div>	
+					<div class="d-flex align-center justify-content-between mb-16">
+						<div class="slider-container">
+							<div >
+								<span class="bar"><span class="fill"></span></span>
+								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+							</div>					
+						</div>
+						<input type="text" value="50" class="slider-input input_sm input">		
+					</div>
+					
+				</section>
+
+				<hr class="hr">
+
+				<section class="section">
+					<h1 class="h1"> Table color</h1>
+						<div id="settings_table" class="color">
+							<div class="color__bg"></div>
+							<input class="color_input"  type="text" hidden name="" value="#fff"> 
+						</div>
+				</section>
+
+				<hr class="hr">
+				<section class="section">
+					<h1 class="h1">Stroke color</h1>
+						<div id="settings_stroke" class="color">
+							<div class="color__bg"></div>
+							<input class="color_input"  type="text" hidden name="" value="#fff"> 
+						</div>
+				</section>
+
+				<hr class="hr">
+
+				<section class="section">
+					<button class="btn">Add</button>
+				</section>
+			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
+
+		<!-- delete -->
 		<li class="nav__item">
 			<div class="nav__icon">
 				<svg class="icon" >
 					<use xlink:href="#delete-photo"></use>		
 				</svg>	
 			</div> <!-- nav__icon -->		
-			<section class="nav__content">
-				L1orem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus, dolores, sunt velit similique iusto ad voluptatum cumque illum dignissimos.
+			<div class="nav__content">
 				
-			</section> <!-- .nav__content -->
+			</div> <!-- .nav__content -->
 		</li> <!-- .nav__item -->
 
 
 
 		<li class="nav__item last  ">
-
 			<div class="nav__icon">
 
 			</div> <!-- nav__icon -->
 		
-			<section class="nav__content">
+			<div class="nav__content">
 		
 				
-			</section> <!-- .nav__content -->
+			</div> <!-- .nav__content -->
 
 		</li> <!-- .nav__item -->
 
@@ -373,6 +715,11 @@
 <!--pluins -->
 
 <script src="plugins/selectize/js/standalone/selectize.min.js"></script>
+
+<script src="plugins/colorpicker/js/colorpicker.js"></script>
+<script  src="plugins/colorpicker/js/eye.js"></script>
+<script" src="plugins/colorpicker/js/utils.js"></script>
+
 
 <!-- script -->
 <script src="js/script.js"> </script>
@@ -404,7 +751,7 @@
     <path d="M0 325h512v187H0zm0-75h512v45H0zm316-90H196c-33.137 0-60 26.863-60 60h240c0-33.137-26.863-60-60-60zm5-95c0 35.898-29.102 65-65 65s-65-29.102-65-65 29.102-65 65-65 65 29.102 65 65zm0 0"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.766 20.766" id="wifi">
-    <g fill="#030104">
+    <g fill="#fff">
       <circle cx="10.432" cy="15.771" r="2.426"></circle>
       <path d="M16.23 9.926c-.036-.037-.074-.07-.111-.104l-.109-.103c-.018-.019-.038-.033-.061-.051a7.914 7.914 0 0 0-10.932.257l-.351.352-.486.486a1.522 1.522 0 0 0 .004 2.15 1.52 1.52 0 0 0 2.15.004l.838-.838a4.89 4.89 0 0 1 6.904-.001l.605.586a1.508 1.508 0 0 0 2.131-.005 1.5 1.5 0 0 0 .443-1.066 1.483 1.483 0 0 0-.439-1.063l-.586-.604z"></path>
       <path d="M20.363 6.927l-.504-.504c-.002-.002-.003-.005-.007-.006l-.398-.4a1.435 1.435 0 0 0-.226-.181c-5.113-4.489-12.89-4.351-17.84.411-.024.022-.051.037-.075.061l-.91.911a1.384 1.384 0 0 0 .006 1.959 1.384 1.384 0 0 0 1.959.005l.91-.909c.006-.008.011-.015.017-.02 4.003-3.867 10.353-3.891 14.388-.079l.716.717a1.387 1.387 0 0 0 1.96-.005 1.388 1.388 0 0 0 .004-1.96z"></path>
@@ -484,7 +831,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.435 371.435" id="columns">
     <path d="M369.717 279.514c0-9.021-7.312-16.334-16.332-16.334h-8.375c-.114-5.848-2.9-11.033-7.186-14.406a5.787 5.787 0 0 0 5.581-5.782 5.797 5.797 0 0 0-3.524-5.332c13.278-6.59 13.656-24.128 7.45-43.182l-12.175-39.709h2.457a5.793 5.793 0 0 0 5.792-5.791 5.792 5.792 0 0 0-4.5-5.643c4.438-3.66 7.268-9.201 7.268-15.402 0-7.259-3.888-13.594-9.683-17.086h16.895c9.021 0 16.332-7.313 16.332-16.334 0-9.02-7.312-16.332-16.332-16.332H18.051c-9.02 0-16.333 7.313-16.333 16.332 0 9.021 7.313 16.334 16.333 16.334h16.895c-5.795 3.492-9.683 9.827-9.683 17.086 0 6.201 2.829 11.742 7.268 15.402a5.79 5.79 0 0 0 1.293 11.434h2.455l-12.174 39.709c-6.207 19.057-5.828 36.593 7.451 43.183a5.791 5.791 0 0 0-3.523 5.331c0 3.13 2.479 5.67 5.579 5.782-4.285 3.373-7.071 8.559-7.186 14.406h-8.375c-9.02 0-16.333 7.313-16.333 16.334L0 293.255h371.435l-1.718-13.741zM101.556 237.66a5.791 5.791 0 0 0-3.523 5.331c0 3.13 2.478 5.67 5.579 5.782-4.285 3.373-7.071 8.559-7.186 14.406H64.01c-.114-5.848-2.9-11.033-7.185-14.406a5.787 5.787 0 0 0 5.581-5.782 5.795 5.795 0 0 0-3.524-5.332c13.278-6.59 13.657-24.128 7.45-43.182l-12.175-39.709h2.457a5.793 5.793 0 0 0 5.792-5.791 5.792 5.792 0 0 0-4.5-5.643c4.438-3.66 7.268-9.201 7.268-15.402 0-7.259-3.888-13.594-9.683-17.086h49.455c-5.795 3.492-9.683 9.827-9.683 17.086 0 6.201 2.829 11.742 7.267 15.402a5.79 5.79 0 0 0 1.293 11.434h2.455l-12.174 39.709c-6.207 19.057-5.828 36.593 7.452 43.183zm70 0a5.791 5.791 0 0 0-3.523 5.331c0 3.13 2.479 5.67 5.579 5.782-4.285 3.373-7.071 8.559-7.186 14.406H134.01c-.114-5.848-2.9-11.033-7.186-14.406a5.787 5.787 0 0 0 5.581-5.782 5.795 5.795 0 0 0-3.524-5.332c13.278-6.59 13.657-24.128 7.45-43.182l-12.175-39.709h2.457a5.793 5.793 0 0 0 5.792-5.791 5.792 5.792 0 0 0-4.5-5.643c4.439-3.66 7.268-9.201 7.268-15.402 0-7.259-3.888-13.594-9.683-17.086h49.455c-5.795 3.492-9.683 9.827-9.683 17.086 0 6.201 2.829 11.742 7.268 15.402a5.79 5.79 0 0 0 1.293 11.434h2.455l-12.174 39.709c-6.207 19.057-5.828 36.593 7.452 43.183zm70 0a5.791 5.791 0 0 0-3.523 5.331c0 3.13 2.479 5.67 5.579 5.782-4.285 3.373-7.071 8.559-7.186 14.406H204.01c-.114-5.848-2.9-11.033-7.186-14.406a5.787 5.787 0 0 0 5.581-5.782 5.795 5.795 0 0 0-3.524-5.332c13.278-6.59 13.657-24.128 7.45-43.182l-12.175-39.709h2.457a5.793 5.793 0 0 0 5.792-5.791 5.792 5.792 0 0 0-4.5-5.643c4.439-3.66 7.268-9.201 7.268-15.402 0-7.259-3.888-13.594-9.683-17.086h49.455c-5.795 3.492-9.683 9.827-9.683 17.086 0 6.201 2.829 11.742 7.268 15.402a5.79 5.79 0 0 0 1.293 11.434h2.455l-12.174 39.709c-6.207 19.057-5.828 36.593 7.452 43.183zm71 0a5.791 5.791 0 0 0-3.523 5.331c0 3.13 2.479 5.67 5.579 5.782-4.285 3.373-7.071 8.559-7.186 14.406H274.01c-.114-5.848-2.9-11.033-7.186-14.406a5.787 5.787 0 0 0 5.581-5.782 5.797 5.797 0 0 0-3.524-5.332c13.278-6.59 13.656-24.128 7.45-43.182l-12.175-39.709h2.457a5.793 5.793 0 0 0 5.792-5.791 5.792 5.792 0 0 0-4.5-5.643c4.438-3.66 7.268-9.201 7.268-15.402 0-7.259-3.888-13.594-9.683-17.086h50.455c-5.795 3.492-9.683 9.827-9.683 17.086 0 6.201 2.829 11.742 7.268 15.402a5.79 5.79 0 0 0 1.293 11.434h2.455l-12.175 39.709c-6.206 19.057-5.827 36.593 7.453 43.183z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.418 471.418" id="computer">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.418 471.418" id="elevator-doors">
     <path d="M60.343 0v471.418h34V34h329.434v437.418h34V0z"></path>
     <path d="M104.194 43.906h149.255V444.51H104.194zm160.478 0h149.254V444.51H264.672zM13.641 281.419h36.811v-91.362H13.641v91.362zm18.403-79.784l11.34 19.123h-22.68l11.34-19.123zm11.34 49.083l-11.34 19.123-11.34-19.123h22.68z"></path>
   </symbol>
@@ -496,6 +843,9 @@
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.5 900.5" id="delete-photo">
     <path d="M176.415 880.5c0 11.046 8.954 20 20 20h507.67c11.046 0 20-8.954 20-20V232.487h-547.67V880.5zM562.75 342.766h75v436.029h-75V342.766zm-150 0h75v436.029h-75V342.766zm-150 0h75v436.029h-75V342.766zM618.825 91.911V20c0-11.046-8.954-20-20-20h-297.15c-11.046 0-20 8.954-20 20v96.911H141.874c-11.046 0-20 8.954-20 20v50.576c0 11.045 8.954 20 20 20h616.752c11.046 0 20-8.955 20-20v-50.576c0-11.046-8.954-20-20-20H618.825v-25zm-75 20.888h-187.15V75h187.15v37.799z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.348 547.348" id="computer">
+    <path d="M450.634 380.036c-.134-1.984-.256-3.97-.45-6.027-1.449-15.034 8.402-19.729 17.865-25.977 5.322-3.52 7.271-8.135 6.717-14.31-1.724-19.267-41.729-32.084-26.701-52.196h46.01V0H53.283v281.526h167.306v21.836c-36.712 1.839-61.89 5.59-61.89 9.913 0 6.149 50.756 11.137 113.371 11.137 62.615 0 113.368-4.987 113.368-11.137 0-4.202-23.705-7.855-58.669-9.755v-21.994h111.979c-5.761 13.116 4.025 25.745 15.454 37.205 4.677 4.688 19.229 16.039 6.813 24.246-5.048 3.338-9.176 6.102-13.061 10.833-6.418 7.794-6.065 16.971-5.518 26.226H13.871v167.312h519.605V380.036h-82.842zM82.24 257.395V21.723h382.867v235.671H82.24zM514.181 528.04H33.177V399.338h481.004V528.04zM88.676 438.754H62.125v-26.543h26.552v26.543zm42.232 0h-26.542v-26.543h26.542v26.543zm43.427 0h-26.537v-26.543h26.537v26.543zm42.226 0h-26.536v-26.543h26.536v26.543zm44.646 0H234.67v-26.543h26.537v26.543zm42.228 0h-26.536v-26.543h26.536v26.543zm43.44 0h-26.549v-26.543h26.549v26.543zm42.234 0h-26.555v-26.543h26.555v26.543zM70.573 476.958H44.037v-26.543h26.537v26.543zm42.235 0h-26.54v-26.543h26.54v26.543zm43.434 0H129.7v-26.543h26.542v26.543zm42.225 0h-26.542v-26.543h26.542v26.543zm44.645 0H216.56v-26.543h26.552v26.543zm42.232 0h-26.545v-26.543h26.545v26.543zm43.427 0h-26.536v-26.543h26.536v26.543zm42.229 0h-26.536v-26.543H371v26.543zm95.229 0h-26.537v-26.543h26.537v26.543zm-3.13 8.847h26.536v26.542h-26.536v-26.542zm-45.858 0h26.555v26.542h-26.555v-26.542zm-364.156 4.822h26.543v26.549H53.085v-26.549zm42.226 0h26.549v26.549H95.311v-26.549zm43.439 0h26.54v26.549h-26.54v-26.549zm42.22 0h26.552v26.549H180.97v-26.549zm44.645 0h26.537v26.549h-26.537v-26.549zm42.226 0h26.546v26.549h-26.546v-26.549zm43.436 0h26.543v26.549h-26.543v-26.549zm42.235 0h26.537v26.549h-26.537v-26.549zm100.423-82.398h-40.469v14.602h40.469v-14.602zm-1.937 12.666h-36.596v-10.729h36.596v10.729zm50.589-12.666h-40.456v14.602h40.456v-14.602zm-1.925 12.666H464.06v-10.729h36.602v10.729z"></path>
   </symbol>
 
 </svg>

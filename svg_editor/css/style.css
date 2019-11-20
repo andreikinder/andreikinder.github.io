@@ -24,8 +24,34 @@ body{
 .justify-content-between{
   justify-content: space-between;
 }
+.justify-content-center{
+  justify-content: center;
+}
 .align-center{
   align-items: center;
+}
+
+
+
+
+
+
+/*cross*/
+.cross_wrapper{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 13px;
+}
+.cross{
+  font-size: 10px;
+  color: #959595;
 }
 
 
@@ -62,18 +88,21 @@ body{
 /* toolbox and nav*/
 
 .toolbox{
-  width: 360px;
-  max-width: 360px;
+  width: 390px;
+  max-width: 390px;
   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
+
+
 
 }
 
 
 .nav{
   height: 100%;
+  overflow-y: scroll;
 }
 
 
@@ -85,6 +114,7 @@ body{
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+
 }
 
 .nav__item.last, .nav__item.last .nav__icon{
@@ -96,8 +126,8 @@ body{
 
 
 .nav__icon{
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -117,14 +147,54 @@ body{
 }
 .icon, .icon use{
   fill: #fff;
-  width: 20px;
+  width: 35px;
   height: auto;
-  max-height: 20px;
+  max-height: 25px;
   display: flex;
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
 
+}
+
+.icon_sm{
+  width: 25px;
+  height: auto;
+  max-height: 20px;
+
+}
+.icons{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon__wrapper{
+  width: 20%;
+  height: 50px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  border: 1px solid #3f4245;
+  border-right: 0px;
+  border-top: 0px;
+
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  
+}
+
+.icon__wrapper:nth-child(5n-4){
+  border-left: 0px;
+}
+/*border*/
+.border-b-0{
+  border-bottom: 0px;
 }
 
 
@@ -135,9 +205,10 @@ body{
   bottom: 0px;
   background: #1f2327;
   right: 0px;
-  left: 60px;
+  left: 70px;
   padding-top: 27px;
   border-left: 1px solid #4275ee;
+      overflow-y: scroll;
 }
 
 
@@ -150,12 +221,28 @@ body{
   display: block;
 }
 
+/*square_table*/
+.square_table__row{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.rectangle{
+  width: 164px;
+  height: 64px;
+  border-radius: 5px;
+  background: #33393f;
+
+}
 
 /*input and buttons*/
 .input{
   padding: 9px 17px;
   background: #ffffff;
   border: 1px #959595 solid;
+  border-right: 0px;
   border-radius: 5px;
   color: #222222;
   width: 100%;
@@ -202,7 +289,10 @@ body{
 
 
 
-
+.label_grey{
+  font-size: 12px;
+  color: #959595;
+}
 
 
 
@@ -251,7 +341,16 @@ body{
 }
 
 
+/*color*/
+.color__bg{
+  padding: 16px 17px;
+  background: #ffffff;
+  border: 1px #959595 solid;
+  border-radius: 5px;
+  color: #222222;
+  width: 100%;
 
+} 
 
 
 /* select and option */
@@ -338,7 +437,7 @@ body{
 .counter_dance-floor{
   width: 70%;
   justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 
@@ -486,13 +585,31 @@ body{
   transition: 0.3s all ease;
 }
 
+
+/*color-picker*/
+
+.color:hover{
+  cursor: pointer;
+}
+
+
 /*margins*/
+
+
+.mt-16px{
+  margin-top: 16px;
+}
+.mb-22{
+  margin-bottom: 22px;
+}
 
 .mb-16{
   margin-bottom: 16px;
 }
-.mb-22{
-  margin-bottom: 22px;
+
+
+.mb-10{
+  margin-bottom: 10px;
 }
 
 .mb-0{
@@ -509,3 +626,4 @@ body{
 .mr-35{
   margin-right: 35px;
 }
+
