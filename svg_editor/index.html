@@ -24,41 +24,54 @@
 
 </head>
 <body>
-<div class="art-bord">
+<div class="wrapper">
+	<div class="art-bord">
 
-	
-</div> <!-- .art bord -->
+		
+	</div> <!-- .art bord -->
 
 
-<nav class="toolbox"> 
-	<ul class="nav">
+	<nav class="toolbox"> 
+		<ul class="nav">
 
-		<!-- select -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon">
-					<use xlink:href="#select" ></use>		
-				</svg>	
-			</div> 		
-			<div class="nav__content">
-				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
+			<!-- select -->
+			<li class="nav__item ">
+				<div class="nav__icon">
+					<svg class="icon">
+						<use xlink:href="#select" ></use>		
+					</svg>	
+				</div> 		
+				<div class="nav__content">
+					
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
 
-		<!-- seat -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon">
-					<use xlink:href="#armchair"></use>		
-				</svg>	
-			</div>	
-			<div class="nav__content">
-				<section class="section">
-					<div class="d-flex align-center mb-16">
-						<img class="display-inline-block mr-10" src="img/matrix.png" alt="matrix">
-						<h1 class="h1 mb-0">Add matrix</h1>
-					</div>
-					<div class="d-flex align-center justify-content-between">
+			<!-- seat -->
+			<li class="nav__item ">
+				<div class="nav__icon">
+					<svg class="icon">
+						<use xlink:href="#armchair"></use>		
+					</svg>	
+				</div>	
+				<div class="nav__content">
+					<section class="section">
+						<div class="d-flex align-center mb-16">
+							<img class="display-inline-block mr-10" src="img/matrix.png" alt="matrix">
+							<h1 class="h1 mb-0">Add matrix</h1>
+						</div>
+						<div class="d-flex align-center justify-content-between">
+								<div class="slider-container">
+									<div >
+										<span class="bar"><span class="fill"></span></span>
+										<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+									</div>					
+								</div>
+								<input type="text" value="50" class="slider-input input_sm input">		
+							</div>
+						<div class="cross_wrapper">
+							<span class="cross">Х</span>
+						</div>	
+						<div class="d-flex align-center justify-content-between mb-16">
 							<div class="slider-container">
 								<div >
 									<span class="bar"><span class="fill"></span></span>
@@ -67,144 +80,74 @@
 							</div>
 							<input type="text" value="50" class="slider-input input_sm input">		
 						</div>
-					<div class="cross_wrapper">
-						<span class="cross">Х</span>
-					</div>	
-					<div class="d-flex align-center justify-content-between mb-16">
-						<div class="slider-container">
-							<div >
-								<span class="bar"><span class="fill"></span></span>
-								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-							</div>					
-						</div>
-						<input type="text" value="50" class="slider-input input_sm input">		
-					</div>
 
-					<label for="" class="label label_grey ">Row horizontal margin</label>
-					<div class="mt-16 mb-16 d-flex align-center justify-content-between">
-						<div class="slider-container">
-							<div >
-								<span class="bar"><span class="fill"></span></span>
-								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-							</div>					
-						</div>
-						<input type="text" value="50" class="slider-input input_sm input">		
-					</div>
-
-					<label for="" class="label label_grey">Row horizontal margin</label>
-					<div class="mt-16 mb-16  d-flex align-center justify-content-between">
-						<div class="slider-container">
-							<div >
-								<span class="bar"><span class="fill"></span></span>
-								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-							</div>					
-						</div>
-						<input type="text" value="50" class="slider-input input_sm input">		
-					</div>
-					<button class="btn">Create</button>
-				</section>
-				<hr class="hr">
-
-				<section class="section">
-					<div class="d-flex align-center mb-16">
-						<img class="display-inline-block mr-10" src="img/table_round.png" alt="table_round">
-						<h1 class="h1 mb-0">Add round table</h1>
-					</div>
-					<div class="mb-16  d-flex align-center justify-content-between">
-						<div class="slider-container">
-							<div >
-								<span class="bar"><span class="fill"></span></span>
-								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-							</div>					
-						</div>
-						<input type="text" value="50" class="slider-input input_sm input">		
-					</div>
-					<button class="btn">Create</button>
-					
-				</section>
-
-				<hr class="hr">
-				<section class="section">
-					<div class="d-flex align-center mb-16">
-						<img class="display-inline-block mr-10" src="img/table_square.png" alt="table_square">
-						<h1 class="h1 mb-0">Add square table</h1>
-					</div>
-
-					<div class="square_table mb-16">
-						<div class="square_table__row justify-content-center mb-10"><input type="text" value="5" class="slider-input input_sm input"></div>
-						<div class="square_table__row align-center justify-content-between mb-10">
-							<input type="text" value="5" class="slider-input input_sm input">
-							<div class="rectangle"></div>
-							<input type="text" value="5" class="slider-input input_sm input">
-						</div>
-						<div class="square_table__row justify-content-center"><input type="text" value="5" class="slider-input input_sm input"></div>
-					</div>
-		
-	
-					<button class="btn">Create</button>
-					
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1">Seat size</h1>
-					<div class="d-flex align-center justify-content-between">
-						<div class="slider-container">
-							<div >
-								<span class="bar"><span class="fill"></span></span>
-								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-							</div>					
-						</div>
-						<input type="text" value="50" class="slider-input input_sm input">		
-					</div>
-				</section>
-
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1">Table color</h1>
-					<div id="table_color" class="color">
-						<div class="color__bg"></div>
-						<input class="color_input"  type="text" hidden name="" value="#fff"> 
-
-					</div>
-
-			
-		
-				</section>
-				
-	
-
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- text-tool -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#text-tool"></use>		
-				</svg>	
-			</div> 		
-			<div class="nav__content">
-				<form action="">
-					<section class="section section_hr">
-						<h1 class="h1">Text</h1>
-						<input class="input mb-16" type="text" value="Dance Floor">
-				
-						<div class="form-group">
-							
-							<input class="input_radio" id ="text_horizontal" type="radio" value="Dance Floor"  name="radio_orientation">
-							<label for="text_horizontal" class="label label_radio mr-35">Horizontal</label>
-
-							<input class="input_radio" id ="text_vertical" type="radio" value="Dance Floor" name="radio_orientation">
-							<label for="text_vertical" class="label label_radio">Vertical</label>
-			
+						<label for="" class="label label_grey ">Row horizontal margin</label>
+						<div class="mt-16 mb-16 d-flex align-center justify-content-between">
+							<div class="slider-container">
+								<div >
+									<span class="bar"><span class="fill"></span></span>
+									<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+								</div>					
+							</div>
+							<input type="text" value="50" class="slider-input input_sm input">		
 						</div>
 
+						<label for="" class="label label_grey">Row horizontal margin</label>
+						<div class="mt-16 mb-16  d-flex align-center justify-content-between">
+							<div class="slider-container">
+								<div >
+									<span class="bar"><span class="fill"></span></span>
+									<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+								</div>					
+							</div>
+							<input type="text" value="50" class="slider-input input_sm input">		
+						</div>
+						<button class="btn">Create</button>
 					</section>
-
-					
+					<hr class="hr">
 
 					<section class="section">
-						<h1 class="h1">Font size</h1>
+						<div class="d-flex align-center mb-16">
+							<img class="display-inline-block mr-10" src="img/table_round.png" alt="table_round">
+							<h1 class="h1 mb-0">Add round table</h1>
+						</div>
+						<div class="mb-16  d-flex align-center justify-content-between">
+							<div class="slider-container">
+								<div >
+									<span class="bar"><span class="fill"></span></span>
+									<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+								</div>					
+							</div>
+							<input type="text" value="50" class="slider-input input_sm input">		
+						</div>
+						<button class="btn">Create</button>
+						
+					</section>
+
+					<hr class="hr">
+					<section class="section">
+						<div class="d-flex align-center mb-16">
+							<img class="display-inline-block mr-10" src="img/table_square.png" alt="table_square">
+							<h1 class="h1 mb-0">Add square table</h1>
+						</div>
+
+						<div class="square_table mb-16">
+							<div class="square_table__row justify-content-center mb-10"><input type="text" value="5" class="slider-input input_sm input"></div>
+							<div class="square_table__row align-center justify-content-between mb-10">
+								<input type="text" value="5" class="slider-input input_sm input">
+								<div class="rectangle"></div>
+								<input type="text" value="5" class="slider-input input_sm input">
+							</div>
+							<div class="square_table__row justify-content-center"><input type="text" value="5" class="slider-input input_sm input"></div>
+						</div>
+			
+		
+						<button class="btn">Create</button>
+						
+					</section>
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1">Seat size</h1>
 						<div class="d-flex align-center justify-content-between">
 							<div class="slider-container">
 								<div >
@@ -214,420 +157,490 @@
 							</div>
 							<input type="text" value="50" class="slider-input input_sm input">		
 						</div>
-					
-
-
-														
-					</section>
-
-
-					<section class="section">
-						<h1 class="h1" >Select font</h1>
-							<select class="select mb-16" >
-								<option class="option"  value="Verdana Regular">Verdana Regular</option>
-								<option class="option"  value="Roboto">Roboto</option>
-								<option class="option"  value="Arial">Arial</option>
-								<option class="option"  value="Helvetica">Helvetica</option>
-								<option class="option"  value="San Francisco">San Francisco</option>
-							</select>
-
-						<button class="btn mb-16" >Add</button>
 					</section>
 
 					<hr class="hr">
-
-			
 					<section class="section">
-						
-							<h1 class="h1">Rows numbers</h1>
-							<div class="form-group mb-16 d-flex justify-content-between" >
-								 
-								<input class="input_radio" id ="rows-numbers_right" type="radio" value="right"  name="rows-numbers">
-								<label for="rows-numbers_right" class="label label_radio label_sm">Right</label>
+						<h1 class="h1">Table color</h1>
+						<div id="table_color" class="color">
+							<div class="color__bg"></div>
+							<input class="color_input"  type="text" hidden name="" value="#fff"> 
 
-								<input class="input_radio" id ="rows-numbers_left" type="radio" value="left" name="rows-numbers">
-								<label for="rows-numbers_left" class="label label_radio label_sm">Left</label>
+						</div>
 
-								<input class="input_radio" id ="rows-numbers_top" type="radio" value="top" name="rows-numbers">
-								<label for="rows-numbers_top" class="label label_radio label_sm">Top</label>
-
-								<input class="input_radio" id ="rows-numbers_bottom" type="radio" value="bottom" name="rows-numbers">
-								<label for="rows-numbers_bottom" class="label label_radio label_sm">Bottom</label>
+				
 			
-							</div>
 					</section>
-				</form>
+					
+		
 
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
 
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
+			<!-- text-tool -->
+			<li class="nav__item ">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#text-tool"></use>		
+					</svg>	
+				</div> 		
+				<div class="nav__content">
+					<form action="">
+						<section class="section section_hr">
+							<h1 class="h1">Text</h1>
+							<input class="input mb-16" type="text" value="Dance Floor">
+					
+							<div class="form-group">
+								
+								<input class="input_radio" id ="text_horizontal" type="radio" value="Dance Floor"  name="radio_orientation">
+								<label for="text_horizontal" class="label label_radio mr-35">Horizontal</label>
 
+								<input class="input_radio" id ="text_vertical" type="radio" value="Dance Floor" name="radio_orientation">
+								<label for="text_vertical" class="label label_radio">Vertical</label>
+				
+							</div>
 
-		<!-- rows -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#menu"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<div class="d-flex align-center">
-						<h1 class="h1 mb-0 mr-13 ">Align row number</h1>
-						<div class="counter ">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>
-					</div>
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Row autoincrement</h1>
-
-					<input class="input_radio" id ="row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
-                    <label for="row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
-
-                    <input class="input_radio" id ="row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
-                    <label for="row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
-
-                    <input class="input_radio" id ="row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
-                    <label for="row_autoincrement_non" class="label label_sm label_radio">Non</label>
-
-					 			
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Assign row automatically</h1>
-
-					<input class="input_radio" id ="assign_row_automatically_horizontally" type="radio" value="horizontally"  name="assign_row_automatically">
-                    <label for="assign_row_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
-
-                    <input class="input_radio" id ="assign_row_automatically_vertically" type="radio" value="vertically" name="assign_row_automatically">
-                    <label for="assign_row_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
-
-                    <input class="input_radio" id ="assign_row_automatically_non" type="radio" value="non" name="assign_row_automatically">
-                    <label for="assign_row_automatically_non" class="label label_sm label_radio">Non</label>
-
-					 			
-				</section>
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- place  -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#edit-table"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->			
-			<div class="nav__content">
-				<section class="section">
-					<div class="d-flex justify-content-between align-center">
-						<h1 class="h1 mb-0 mr-13 ">Align place number</h1>
-						<div class="counter ">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-							<svg class="counter__undo">
-							  <use xlink:href="#undo"></use>
-							</svg>
-						</div>
-					</div>
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Row autoincrement</h1>
-
-					<input class="input_radio" id ="place_row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
-                    <label for="place_row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
-
-                    <input class="input_radio" id ="place_row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
-                    <label for="place_row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
-
-                    <input class="input_radio" id ="place_row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
-                    <label for="place_row_autoincrement_non" class="label label_sm label_radio">Non</label>
+						</section>
 
 						
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1" >Assign place automatically</h1>
 
-					<input class="input_radio" id ="assign_place_automatically_horizontally" type="radio" value="horizontally"  name="assign_place_automatically">
-                    <label for="assign_place_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
+						<section class="section">
+							<h1 class="h1">Font size</h1>
+							<div class="d-flex align-center justify-content-between">
+								<div class="slider-container">
+									<div >
+										<span class="bar"><span class="fill"></span></span>
+										<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+									</div>					
+								</div>
+								<input type="text" value="50" class="slider-input input_sm input">		
+							</div>
+						
 
-                    <input class="input_radio" id ="assign_place_automatically_vertically" type="radio" value="vertically" name="assign_place_automatically">
-                    <label for="assign_place_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
 
-                    <input class="input_radio" id ="assign_place_automatically_non" type="radio" value="non" name="assign_place_automatically">
-                    <label for="assign_place_automatically_non" class="label label_sm label_radio">Non</label>		 			
-				</section>
+															
+						</section>
+
+
+						<section class="section">
+							<h1 class="h1" >Select font</h1>
+								<select class="select mb-16" >
+									<option class="option"  value="Verdana Regular">Verdana Regular</option>
+									<option class="option"  value="Roboto">Roboto</option>
+									<option class="option"  value="Arial">Arial</option>
+									<option class="option"  value="Helvetica">Helvetica</option>
+									<option class="option"  value="San Francisco">San Francisco</option>
+								</select>
+
+							<button class="btn mb-16" >Add</button>
+						</section>
+
+						<hr class="hr">
+
 				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
+						<section class="section">
+							
+								<h1 class="h1">Rows numbers</h1>
+								<div class="form-group mb-16 d-flex justify-content-between" >
+									 
+									<input class="input_radio" id ="rows-numbers_right" type="radio" value="right"  name="rows-numbers">
+									<label for="rows-numbers_right" class="label label_radio label_sm">Right</label>
 
-		<!-- dance floor  -->
-		<li class="nav__item ">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#disco-ball"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<h1 class="h1">Add dance floor</h1>
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label label_grey">Height</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
+									<input class="input_radio" id ="rows-numbers_left" type="radio" value="left" name="rows-numbers">
+									<label for="rows-numbers_left" class="label label_radio label_sm">Left</label>
 
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label label_grey">Width</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
+									<input class="input_radio" id ="rows-numbers_top" type="radio" value="top" name="rows-numbers">
+									<label for="rows-numbers_top" class="label label_radio label_sm">Top</label>
 
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label label_grey">X coordinate</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
-
-					<div class="counter  counter_dance-floor">
-						<label for="" class="label label_grey">Y coordinates</label>
-						<div class="d-flex align-center">
-							<span class="counter__minus"></span>
-							<input type="text" class="counter__input" value="1000"/>
-							<span class="counter__plus"></span>
-						</div>					
-					</div>
-
-					<button class="btn">Add</button>
-
-				</section>
+									<input class="input_radio" id ="rows-numbers_bottom" type="radio" value="bottom" name="rows-numbers">
+									<label for="rows-numbers_bottom" class="label label_radio label_sm">Bottom</label>
 				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
+								</div>
+						</section>
+					</form>
 
 
-		<!-- zone -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#columns"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<h1 class="h1">Zone name</h1>
-					<input type="text" value="Parter" class="input mb-22">
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
+
+
+			<!-- rows -->
+			<li class="nav__item ">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#menu"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->		
+				<div class="nav__content">
+					<section class="section">
+						<div class="d-flex align-center">
+							<h1 class="h1 mb-0 mr-13 ">Align row number</h1>
+							<div class="counter ">
+								<span class="counter__minus"></span>
+								<input type="text" class="counter__input" value="1000"/>
+								<span class="counter__plus"></span>
+							</div>
+						</div>
+					</section>
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1" >Row autoincrement</h1>
+
+						<input class="input_radio" id ="row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
+	                    <label for="row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
+
+	                    <input class="input_radio" id ="row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
+	                    <label for="row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
+
+	                    <input class="input_radio" id ="row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
+	                    <label for="row_autoincrement_non" class="label label_sm label_radio">Non</label>
+
+						 			
+					</section>
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1" >Assign row automatically</h1>
+
+						<input class="input_radio" id ="assign_row_automatically_horizontally" type="radio" value="horizontally"  name="assign_row_automatically">
+	                    <label for="assign_row_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
+
+	                    <input class="input_radio" id ="assign_row_automatically_vertically" type="radio" value="vertically" name="assign_row_automatically">
+	                    <label for="assign_row_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
+
+	                    <input class="input_radio" id ="assign_row_automatically_non" type="radio" value="non" name="assign_row_automatically">
+	                    <label for="assign_row_automatically_non" class="label label_sm label_radio">Non</label>
+
+						 			
+					</section>
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
+
+			<!-- place  -->
+			<li class="nav__item">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#edit-table"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->			
+				<div class="nav__content">
+					<section class="section">
+						<div class="d-flex justify-content-between align-center">
+							<h1 class="h1 mb-0 mr-13 ">Align place number</h1>
+							<div class="counter ">
+								<span class="counter__minus"></span>
+								<input type="text" class="counter__input" value="1000"/>
+								<span class="counter__plus"></span>
+								<svg class="counter__undo">
+								  <use xlink:href="#undo"></use>
+								</svg>
+							</div>
+						</div>
+					</section>
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1" >Row autoincrement</h1>
+
+						<input class="input_radio" id ="place_row_autoincrement_increment" type="radio" value="increment"  name="row_autoincrement">
+	                    <label for="place_row_autoincrement_increment" class="label label_sm label_radio mr-10">Increment</label>
+
+	                    <input class="input_radio" id ="place_row_autoincrement_decrement" type="radio" value="decrement" name="row_autoincrement">
+	                    <label for="place_row_autoincrement_decrement" class="label label_sm label_radio mr-10">Decrement</label>
+
+	                    <input class="input_radio" id ="place_row_autoincrement_non" type="radio" value="non" name="row_autoincrement">
+	                    <label for="place_row_autoincrement_non" class="label label_sm label_radio">Non</label>
+
+							
+					</section>
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1" >Assign place automatically</h1>
+
+						<input class="input_radio" id ="assign_place_automatically_horizontally" type="radio" value="horizontally"  name="assign_place_automatically">
+	                    <label for="assign_place_automatically_horizontally" class="label label_sm label_radio mr-10">Horizontally</label>
+
+	                    <input class="input_radio" id ="assign_place_automatically_vertically" type="radio" value="vertically" name="assign_place_automatically">
+	                    <label for="assign_place_automatically_vertically" class="label label_sm label_radio mr-10">Vertically</label>
+
+	                    <input class="input_radio" id ="assign_place_automatically_non" type="radio" value="non" name="assign_place_automatically">
+	                    <label for="assign_place_automatically_non" class="label label_sm label_radio">Non</label>		 			
+					</section>
 					
-					<h1 class="h1">Color name</h1>
-					<div id="zone_color_name" class="color mb-22">
-						<div class="color__bg"></div>
-						<input class="color_input"  type="text" hidden name="" value="#fff"> 
-					</div>
-					<button class="btn">Add</button>
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
 
-				</section>
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1">Zones:</h1>
-					<select class="select mb-16" >
-						<option class="option"  value="Verdana Regular">Parter - blue</option>
-						<option class="option"  value="Roboto">Roboto</option>
-						<option class="option"  value="Arial">Arial</option>
-						<option class="option"  value="Helvetica">Helvetica</option>
-						<option class="option"  value="San Francisco">San Francisco</option>
-					</select>
-
-				</section>
-				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-
-		<!-- icons -->
-		<li class="nav__item active">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#selection"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<h1 class="h1">Icons</h1>
-
-					<div class="icons">
-
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#open-exit-door"></use>		
-							</svg>	
+			<!-- dance floor  -->
+			<li class="nav__item ">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#disco-ball"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->		
+				<div class="nav__content">
+					<section class="section">
+						<h1 class="h1">Add dance floor</h1>
+						<div class="counter  counter_dance-floor">
+							<label for="" class="label label_grey">Height</label>
+							<div class="d-flex align-center">
+								<span class="counter__minus"></span>
+								<input type="text" class="counter__input" value="1000"/>
+								<span class="counter__plus"></span>
+							</div>					
 						</div>
 
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#wc"></use>		
-							</svg>	
+						<div class="counter  counter_dance-floor">
+							<label for="" class="label label_grey">Width</label>
+							<div class="d-flex align-center">
+								<span class="counter__minus"></span>
+								<input type="text" class="counter__input" value="1000"/>
+								<span class="counter__plus"></span>
+							</div>					
 						</div>
 
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#microphone-black-shape"></use>		
-							</svg>	
+						<div class="counter  counter_dance-floor">
+							<label for="" class="label label_grey">X coordinate</label>
+							<div class="d-flex align-center">
+								<span class="counter__minus"></span>
+								<input type="text" class="counter__input" value="1000"/>
+								<span class="counter__plus"></span>
+							</div>					
 						</div>
 
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#cocktail"></use>		
-							</svg>	
+						<div class="counter  counter_dance-floor">
+							<label for="" class="label label_grey">Y coordinates</label>
+							<div class="d-flex align-center">
+								<span class="counter__minus"></span>
+								<input type="text" class="counter__input" value="1000"/>
+								<span class="counter__plus"></span>
+							</div>					
+						</div>
+
+						<button class="btn">Add</button>
+
+					</section>
+					
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
+
+
+			<!-- zone -->
+			<li class="nav__item">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#columns"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->		
+				<div class="nav__content">
+					<section class="section">
+						<h1 class="h1">Zone name</h1>
+						<input type="text" value="Parter" class="input mb-22">
+						
+						<h1 class="h1">Color name</h1>
+						<div id="zone_color_name" class="color mb-22">
+							<div class="color__bg"></div>
+							<input class="color_input"  type="text" hidden name="" value="#fff"> 
+						</div>
+						<button class="btn">Add</button>
+
+					</section>
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1">Zones:</h1>
+						<select class="select mb-16" >
+							<option class="option"  value="Verdana Regular">Parter - blue</option>
+							<option class="option"  value="Roboto">Roboto</option>
+							<option class="option"  value="Arial">Arial</option>
+							<option class="option"  value="Helvetica">Helvetica</option>
+							<option class="option"  value="San Francisco">San Francisco</option>
+						</select>
+
+					</section>
+					
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
+
+
+			<!-- icons -->
+			<li class="nav__item active">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#selection"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->		
+				<div class="nav__content">
+					<section class="section">
+						<h1 class="h1">Icons</h1>
+
+						<div class="icons">
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#open-exit-door"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#wc"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#microphone-black-shape"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#cocktail"></use>		
+								</svg>	
+							</div>
+
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#help"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#disco-ball"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#food"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#info"></use>		
+								</svg>	
+							</div>
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#way-in"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#newspaper"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#camping-tent"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#restaurant"></use>		
+								</svg>	
+							</div>
+
+
+							<div class="icon__wrapper">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#elevator-doors"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#parking-sign"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#computer"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper border-b-0">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#hanger"></use>		
+								</svg>	
+							</div>
+										<div class="icon__wrapper border-b-0">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#medical"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper border-b-0">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#escalator"></use>		
+								</svg>	
+							</div>
+
+							<div class="icon__wrapper border-b-0 ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#shower"></use>		
+								</svg>	
+							</div>
+							<div class="icon__wrapper  border-b-0 ">
+								<svg class="icon icon_sm" >
+									<use xlink:href="#wifi"></use>		
+								</svg>	
+							</div>
+
+
+
+						</div> <!-- icons -->
+
+					</section>
+
+					<section class="section">
+
+
+						<h1 class="h1">Icon color</h1>
+						<div id="icon_color" class="color mb-22">
+							<div class="color__bg"></div>
+							<input class="color_input"  type="text" hidden name="" value="#fff"> 
 						</div>
 
 
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#help"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#disco-ball"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#food"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#info"></use>		
-							</svg>	
-						</div>
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#way-in"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#newspaper"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#camping-tent"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#restaurant"></use>		
-							</svg>	
-						</div>
-
-
-						<div class="icon__wrapper">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#elevator-doors"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#parking-sign"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#computer"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper border-b-0">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#hanger"></use>		
-							</svg>	
-						</div>
-									<div class="icon__wrapper border-b-0">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#medical"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper border-b-0">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#escalator"></use>		
-							</svg>	
-						</div>
-
-						<div class="icon__wrapper border-b-0 ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#shower"></use>		
-							</svg>	
-						</div>
-						<div class="icon__wrapper  border-b-0 ">
-							<svg class="icon icon_sm" >
-								<use xlink:href="#wifi"></use>		
-							</svg>	
-						</div>
+						<button class="btn">Add</button>
+					</section>
 
 
 
-					</div> <!-- icons -->
-
-				</section>
-
-				<section class="section">
-
-
-					<h1 class="h1">Icon color</h1>
-					<div id="icon_color" class="color mb-22">
-						<div class="color__bg"></div>
-						<input class="color_input"  type="text" hidden name="" value="#fff"> 
-					</div>
-
-
-					<button class="btn">Add</button>
-				</section>
+					
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
 
 
 
-				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-
-
-		<!-- settings -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#settings-cogwheel-button"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				<section class="section">
-					<h1 class="h1 ">Canvas size</h1>
-					<div class="d-flex align-center justify-content-between">
+			<!-- settings -->
+			<li class="nav__item">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#settings-cogwheel-button"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->		
+				<div class="nav__content">
+					<section class="section">
+						<h1 class="h1 ">Canvas size</h1>
+						<div class="d-flex align-center justify-content-between">
+								<div class="slider-container">
+									<div >
+										<span class="bar"><span class="fill"></span></span>
+										<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
+									</div>					
+								</div>
+								<input type="text" value="50" class="slider-input input_sm input">		
+							</div>
+						<div class="cross_wrapper">
+							<span class="cross">Х</span>
+						</div>	
+						<div class="d-flex align-center justify-content-between mb-16">
 							<div class="slider-container">
 								<div >
 									<span class="bar"><span class="fill"></span></span>
@@ -636,77 +649,67 @@
 							</div>
 							<input type="text" value="50" class="slider-input input_sm input">		
 						</div>
-					<div class="cross_wrapper">
-						<span class="cross">Х</span>
-					</div>	
-					<div class="d-flex align-center justify-content-between mb-16">
-						<div class="slider-container">
-							<div >
-								<span class="bar"><span class="fill"></span></span>
-								<input  class="slider"  type="range" value="50" max="100" min="0" step="1">
-							</div>					
-						</div>
-						<input type="text" value="50" class="slider-input input_sm input">		
-					</div>
+						
+					</section>
+
+					<hr class="hr">
+
+					<section class="section">
+						<h1 class="h1"> Table color</h1>
+							<div id="settings_table" class="color">
+								<div class="color__bg"></div>
+								<input class="color_input"  type="text" hidden name="" value="#fff"> 
+							</div>
+					</section>
+
+					<hr class="hr">
+					<section class="section">
+						<h1 class="h1">Stroke color</h1>
+							<div id="settings_stroke" class="color">
+								<div class="color__bg"></div>
+								<input class="color_input"  type="text" hidden name="" value="#fff"> 
+							</div>
+					</section>
+
+					<hr class="hr">
+
+					<section class="section">
+						<button class="btn">Add</button>
+					</section>
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
+
+			<!-- delete -->
+			<li class="nav__item">
+				<div class="nav__icon">
+					<svg class="icon" >
+						<use xlink:href="#delete-photo"></use>		
+					</svg>	
+				</div> <!-- nav__icon -->		
+				<div class="nav__content">
 					
-				</section>
-
-				<hr class="hr">
-
-				<section class="section">
-					<h1 class="h1"> Table color</h1>
-						<div id="settings_table" class="color">
-							<div class="color__bg"></div>
-							<input class="color_input"  type="text" hidden name="" value="#fff"> 
-						</div>
-				</section>
-
-				<hr class="hr">
-				<section class="section">
-					<h1 class="h1">Stroke color</h1>
-						<div id="settings_stroke" class="color">
-							<div class="color__bg"></div>
-							<input class="color_input"  type="text" hidden name="" value="#fff"> 
-						</div>
-				</section>
-
-				<hr class="hr">
-
-				<section class="section">
-					<button class="btn">Add</button>
-				</section>
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
-
-		<!-- delete -->
-		<li class="nav__item">
-			<div class="nav__icon">
-				<svg class="icon" >
-					<use xlink:href="#delete-photo"></use>		
-				</svg>	
-			</div> <!-- nav__icon -->		
-			<div class="nav__content">
-				
-			</div> <!-- .nav__content -->
-		</li> <!-- .nav__item -->
+				</div> <!-- .nav__content -->
+			</li> <!-- .nav__item -->
 
 
 
-		<li class="nav__item last  ">
-			<div class="nav__icon">
+			<li class="nav__item last  ">
+				<div class="nav__icon">
 
-			</div> <!-- nav__icon -->
-		
-			<div class="nav__content">
-		
-				
-			</div> <!-- .nav__content -->
+				</div> <!-- nav__icon -->
+			
+				<div class="nav__content">
+			
+					
+				</div> <!-- .nav__content -->
 
-		</li> <!-- .nav__item -->
+			</li> <!-- .nav__item -->
 
 
-	</ul> <!-- .nav -->		
-</nav> <!-- .toolbox -->
+		</ul> <!-- .nav -->		
+	</nav> <!-- .toolbox -->
+	
+</div> <!-- wrapper -->
 
 
 <!-- jquery -->
@@ -718,7 +721,7 @@
 
 <script src="plugins/colorpicker/js/colorpicker.js"></script>
 <script  src="plugins/colorpicker/js/eye.js"></script>
-<script" src="plugins/colorpicker/js/utils.js"></script>
+<script src="plugins/colorpicker/js/utils.js"></script>
 
 
 <!-- script -->
