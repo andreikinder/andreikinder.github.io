@@ -20,7 +20,7 @@ html{
 }
 body {
 	color: #4d4d4d;
-	font: 1.6rem/1.5 Asap;	
+	font: 1.6rem/1.5 Roboto;	
 	background-color: #ffffff;
 }
 ol { 
@@ -47,7 +47,7 @@ table {
 }
 input, textarea{
 	outline: none;
-	font: 1.6rem/1.5 Asap;
+	font: 1.6rem/1.5 Roboto;
 	color: #4d4d4d;
 	transition: all 0.5s ease;
 }
@@ -147,7 +147,7 @@ font-family: 'font683719689ce3635687532089a45d510f';
 .logo-title, .logo-inf{
 	/* Style for "OENRIQUE" */
 	color: #000000;
-	font: 300 1.4rem Lato;
+	font: 300 1.4rem Roboto;
 	line-height: 1.5;
 	text-transform: uppercase;
 	/* Text style for "OENRIQUE" */
@@ -162,12 +162,20 @@ font-family: 'font683719689ce3635687532089a45d510f';
 .nav-list{
 	width: 100%;
 	display: none;
+	
 }
 .nav-list-item {
 	margin-bottom: 0.5rem;
+	border-bottom: 0.2rem solid transparent;
+	transition: .3s all ease;
 }
 .nav-list-item:last-child{
 	margin-bottom: 0;
+}
+
+.nav-list-item:hover{
+	border-bottom: 0.2rem solid #4d4d4d;
+	transition: all 0.3s ease;
 }
 
 .nav-list-item a{
@@ -252,6 +260,7 @@ font-family: 'font683719689ce3635687532089a45d510f';
 	color: #ffffff;
 	background-color: #0985bf;
 	transition: all 0.5s ease;
+	cursor: pointer;
 }	
 
 
@@ -420,6 +429,7 @@ tr:last-child td{
 	/* Style for "CEO, RanDO" */
 	font-size: 1.2rem;
 	font-style: italic;
+	text-transform: none;
 }
 
 .avatar{
@@ -435,6 +445,7 @@ tr:last-child td{
 	color: #212121;
 	font-weight: 400;
 	margin-top: 1rem;
+	text-transform: none;
 
 }
 
@@ -451,6 +462,9 @@ tr:last-child td{
 	border: 1px solid #212121;
 	margin-right: 1rem;
 	background: none;
+}
+.dot:hover{
+	cursor: pointer;
 }
 
 button[class='dot active']{
@@ -486,7 +500,7 @@ button[class='dot active']{
 }
 	.count{
 	/* Text style for ", Hands to" */
-	font-family: "Asap - Regular";
+	font-family: Roboto;
 	font-weight: 700;
 	font-size: 2.3rem;
 	margin-bottom: 1rem;
@@ -494,9 +508,10 @@ button[class='dot active']{
 
 	.note{
 	/* Text style for "120" */
-	font-family: "Asap Medium";
+	font-family: Roboto;
 	font-size: 1.8rem;
-	font-weight: 500;
+	font-weight: 300;
+	line-height: 1.2;
 
 }
 
@@ -624,7 +639,7 @@ footer .line{
 	margin-top: 1.5rem;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: 'Montserrat Pro'
+	font-family: 'Montserrat';
 }
 
 
@@ -693,6 +708,7 @@ footer .line{
 
 	font-size: 2rem;
 
+
 	}
 
 	.name-title{
@@ -710,6 +726,11 @@ footer .line{
 	}
 	.input-name{
 		margin-right: 30px;
+		
+	}
+	input, textarea{
+		border: none;
+		outline: none;
 	}
 
 	.form-in > textarea{
@@ -729,7 +750,7 @@ footer .line{
 
 
 	.send{
-		width: 123px;
+		width: 160px;
 		margin: 0 auto;
 	}
 
@@ -742,8 +763,9 @@ footer .line{
 	}
 
 	.arrow{
-		left:70%;
-		top:37%;
+		right: 10px;
+		top:35.6%;
+		left: auto;
 	}
 	.owl-theme .owl-nav.disabled+.owl-dots{
 	margin-top: 50px;
@@ -812,7 +834,18 @@ footer .line{
 
 @media screen and (min-width:1280px) {
 	.name-title{
-	font-size: 90px;
+	font-size: 83px;
 	}
 
+}
+
+#load-more{
+	border: 1px solid #4d4d4d;
+	transition: 0.3s ease all;
+	box-shadow: none;
+}
+
+#load-more:hover{
+	border: 1px solid transparent;
+	transition: 0.3s ease all;
 }

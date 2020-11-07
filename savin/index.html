@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="js/script.js"></script>
+	<title>Тестовое задание</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<header class="header">
+			<div class="search">
+				<h2 class="search__title">Enter inventory number, guid or bims id</h2>
+				<form action="" class="search-form">
+					<input type="text" class="search-form__input" placeholder="type smth ...">
+					<button type="submit" class="btn search-form__submit">Search</button>
+				</form><!-- /.search-form -->
+			</div><!-- /.search -->
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="row">
+				<div class="col-1">
+					<div class="scale">
+						<img src="img/scale.svg" alt="scale.svg" class="scale__img">
+						<h1 class="scale__title">Аналитические весы OHAUS Adventurer АХ324 (B7 15976163)</h1>
+						<!-- /.scale__title -->
+					</div><!-- /.scale -->
+
+					<form action="" class="report-filters">
+						<div class="report-filters__wrapper">
+							<select name="" id="" class="report-filters__select">
+								<option value="1">1 month</option>
+								<option value="2">2 month</option>
+								<option value="3">2 month</option>
+							</select><!-- /#.report-filters__select -->
+						</div><!-- /.report-filters__wrapper -->
+
+
+						<div class="radio-btn-grp">
+							<div class="radio-btn-grp__item">
+								<input id="calibration" class="report-filters__radio" name="type" type="radio"
+									value="calibration">
+								<label class="report-filters__label" for="calibration">Calibration</label>
+							</div><!-- /.radio-btn-grp__item -->
+							<div class="radio-btn-grp__item">
+								<input id="measuring" class="report-filters__radio" name="type" type="radio" value="measuring">
+								<label class="report-filters__label" for="measuring">Measuring</label>
+
+							</div><!-- /.radio-btn-grp__item -->
+
+							<div class="radio-btn-grp__item">
+								<input id="using" class="report-filters__radio" name="type" type="radio" value="using">
+								<label class="report-filters__label" for="using">Using</label>
+
+							</div><!-- /.radio-btn-grp__item -->
+
+						</div><!-- /.form-group -->
+
+						<button class="report-filters__submit btn">Generate report</button>
+					</form><!-- /.report-filters -->
+
+				</div><!-- /.col-1 -->
+
+				<div class="col-2">
+					<ul class="device-info">
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Тип оборудования:</span>
+							<span class="chrt__value">Весы</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Статус:</span>
+							<span class="chrt__value">Готов к работе</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Изготовитель:</span>
+							<span class="chrt__value">Ohaus</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Модель:</span>
+							<span class="chrt__value">AX-123</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Ответственное подразделение (ремонт):</span>
+							<span class="chrt__value">Группа обслуживания <br> лабораторного оборудования</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Эксплуатирующее подразделение:</span>
+							<span class="chrt__value">Химико-аналитическая лаборатория 2.0</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">МОЛ:</span>
+							<span class="chrt__value">Иванов Иван Иванович</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Территория:</span>
+							<span class="chrt__value">г. Санкт-Петербург (Нойдорф)</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Серийный номер:</span>
+							<span class="chrt__value">B715976163</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">GUID:</span>
+							<span class="chrt__value_blue">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Bims ID:</span>
+							<span class="chrt__value_blue">49db8db1-585f-4b9e-bbf0-8a59698edc8b</span>
+						</li><!-- /.device-info__item -->
+						<li class="device-info__item chrt">
+							<span class="chrt__name">Tam:</span>
+							<span class="chrt__value_blue">А-001234</span>
+						</li><!-- /.device-info__item -->
+
+
+					</ul><!-- /.device-info -->
+
+				</div><!-- /.col-2 -->
+
+			</div><!-- /.row -->
+
+
+
+
+
+
+
+			<section class="sect-report">
+				<h2 class="sect-report__title">
+					Calibration report
+				</h2><!-- /.sect-report__title -->
+				<table class="sect-report__table report">
+					<thead class="report__thead">
+						<tr class="report__tr">
+							<th class="report__th">Data</th>
+							<th class="report__th">Used buffer solutions </th>
+							<th class="report__th">Slope, % <br> Norm 95-105</th>
+							<th class="report__th">Offset, mV <br> Norm ±(0-20)</th>
+							<th class="report__th">User</th>
+						</tr> <!-- /.report__tr -->
+					</thead><!-- /.report__thead -->
+					<tbody class="report__tbody">
+						<tr class="report__tr">
+							<td aria-label="Data:" class="report__td report__td_date">
+								04.10.19 <br>10:23
+							</td>
+							<td aria-label="Used buffer solutions:" class="report__td ">
+								<ul class="report__ul">
+									<li class="report__li">
+										В1: № 2000460789536: pH 1.09
+									</li>
+									<li class="report__li">
+										В2: № 2000460789536: pH 2.00
+									</li>
+									<li class="report__li">
+										В3: № 2000460789536: pH 4.01
+									</li>
+									<li class="report__li">
+										В4: № 2000460789536: pH 7.00
+									</li>
+									<li class="report__li">
+										В5: № 2000460789536: pH 9.21
+									</li>
+								</ul><!-- /.report__ul -->
+							</td>
+							<td aria-label="Slope, %:" class="report__td">
+								98.7 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="Offset, mV:" class="report__td">
+								-0.3 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="User" class="report__td report__td_user">
+								Иванов Генадий Петрович
+							</td>
+
+
+						</tr> <!-- /.report__tr -->
+						<tr class="report__tr">
+							<td aria-label="Data:" class="report__td report__td_date">
+								04.10.19 <br>10:23
+							</td>
+							<td aria-label="Used buffer solutions:" class="report__td ">
+								<ul class="report__ul">
+									<li class="report__li">
+										В1: № 2000460789536: pH 1.09
+									</li>
+									<li class="report__li">
+										В2: № 2000460789536: pH 2.00
+									</li>
+									<li class="report__li">
+										В3: № 2000460789536: pH 4.01
+									</li>
+									<li class="report__li">
+										В4: № 2000460789536: pH 7.00
+									</li>
+									<li class="report__li">
+										В5: № 2000460789536: pH 9.21
+									</li>
+								</ul><!-- /.report__ul -->
+							</td>
+							<td aria-label="Slope, %:" class="report__td">
+								98.7 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="Offset, mV:" class="report__td">
+								-0.3 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="User" class="report__td report__td_user">
+								Иванов Генадий Петрович
+							</td>
+
+
+						</tr> <!-- /.report__tr -->
+						<tr class="report__tr">
+							<td aria-label="Data:" class="report__td report__td_date">
+								04.10.19 <br>10:23
+							</td>
+							<td aria-label="Used buffer solutions:" class="report__td ">
+								<ul class="report__ul">
+									<li class="report__li">
+										В1: № 2000460789536: pH 1.09
+									</li>
+									<li class="report__li">
+										В2: № 2000460789536: pH 2.00
+									</li>
+									<li class="report__li">
+										В3: № 2000460789536: pH 4.01
+									</li>
+									<li class="report__li">
+										В4: № 2000460789536: pH 7.00
+									</li>
+									<li class="report__li">
+										В5: № 2000460789536: pH 9.21
+									</li>
+								</ul><!-- /.report__ul -->
+							</td>
+							<td aria-label="Slope, %:" class="report__td">
+								98.7 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="Offset, mV:" class="report__td">
+								-0.3 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="User" class="report__td report__td_user">
+								Иванов Генадий Петрович
+							</td>
+
+
+						</tr> <!-- /.report__tr -->
+						<tr class="report__tr">
+							<td aria-label="Data:" class="report__td report__td_date">
+								04.10.19 <br>10:23
+							</td>
+							<td aria-label="Used buffer solutions:" class="report__td ">
+								<ul class="report__ul">
+									<li class="report__li">
+										В1: № 2000460789536: pH 1.09
+									</li>
+									<li class="report__li">
+										В2: № 2000460789536: pH 2.00
+									</li>
+									<li class="report__li">
+										В3: № 2000460789536: pH 4.01
+									</li>
+									<li class="report__li">
+										В4: № 2000460789536: pH 7.00
+									</li>
+									<li class="report__li">
+										В5: № 2000460789536: pH 9.21
+									</li>
+								</ul><!-- /.report__ul -->
+							</td>
+							<td aria-label="Slope, %:" class="report__td">
+								98.7 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="Offset, mV:" class="report__td">
+								-0.3 <img class="report_img" src="img/tick.svg" alt="tick.svg">
+							</td>
+							<td aria-label="User" class="report__td report__td_user">
+								Иванов Генадий Петрович
+							</td>
+
+
+						</tr> <!-- /.report__tr -->
+
+					</tbody><!-- /.report__tbody -->
+
+				</table><!-- /.sect-report__table -->
+			</section><!-- /.sect-report -->
+
+
+
+
+		</main><!-- /.main -->
+
+
+	</div><!-- /.container -->
+
+
+
+</body>
+
+</html>
