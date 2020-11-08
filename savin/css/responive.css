@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  .search-form__input {
+    margin-bottom: 10px;
+  }
+  .col-2 {
+    justify-content: flex-start;
+  }
+  .search-form__submit,
+  .report-filters__submit {
+    width: 100%;
+    max-width: 400px;
+  }
+  .search-form__input {
+    width: 100%;
+    margin-right: 0;
+    max-width: 400px;
+  }
+  .search-form {
+    flex-wrap: wrap;
+  }
+  .device-info {
+    min-width: 100%;
+  }
+  .col-1 {
+    margin-bottom: 50px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .report__thead {
+    display: none;
+  }
+  .report__tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e8e9eb;
+  }
+  .report__tbody .report__tr {
+    border-bottom: 1px solid #E9E9E9;
+  }
+  .report__td {
+    display: block;
+    text-align: right;
+  }
+  .report__td_date {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .report__td_user {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .report__td::before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  .report__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .report__li {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
