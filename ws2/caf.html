@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="/">
+					<img src="img/fefulogo.png" alt="" loading="lazy">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active ">
+							<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="#">Студенты</a>
+						</li>
+
+					</ul>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Выйти</button>
+				</div>
+
+			</div><!-- /.container -->
+
+		</nav>
+
+
+	</header>
+
+
+
+
+	<main class="main">
+		<section class="">
+			<div class="container">
+				<h1>Добро пожаловать, Зав. Кафедрой 1</h1>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addGroup"
+					data-whatever="@mdo">Добавить новую группу</button>
+
+				<h2 class="mt-3">Ваши Учебные группы:</h2>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Полное название</th>
+							<th scope="col">Cокращенное название </th>
+							<th scope="col">Шифр</th>
+							<th scope="col">Дата формирования</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td><a class="link" href="#">Прикладная информатика</a> </td>
+							<td>АПИБ-18-1</td>
+							<td>578108</td>
+							<td>23.08.2010</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td><a class="link" href="#">Прикладная информатика</a> </td>
+							<td>АПИБ-18-1</td>
+							<td>578108</td>
+							<td>23.08.2010</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td><a class="link" href="#">Прикладная информатика</a> </td>
+							<td>АПИБ-18-1</td>
+							<td>578108</td>
+							<td>23.08.2010</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td><a class="link" href="#">Прикладная информатика</a> </td>
+							<td>АПИБ-18-1</td>
+							<td>578108</td>
+							<td>23.08.2010</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td><a class="link" href="#">Прикладная информатика</a> </td>
+							<td>АПИБ-18-1</td>
+							<td>578108</td>
+							<td>23.08.2010</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+
+				<nav aria-label="Page navigation example">
+					<ul class="pagination diccip-pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div><!-- /.container -->
+
+		</section>
+	</main>
+
+
+	<footer class="footer bg-light">
+		<div class="container">
+			ДВФУ все права защищены.
+		</div><!-- /.container -->
+
+	</footer><!-- /.footer -->
+
+	<div class="modal fade" id="addGroup" tabindex="-1" aria-labelledby="addGroupLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="addGroupLabel">Новая группа</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="full-name" class="col-form-label">Полное название:</label>
+							<input type="text" class="form-control" id="full-name">
+						</div>
+						<div class="form-group">
+							<label for="small-name" class="col-form-label">Сокращенное название:</label>
+							<input type="text" class="form-control" id="small-name">
+						</div>
+						<div class="form-group">
+							<label for="shifr" class="col-form-label">Шифр группы:</label>
+							<input type="text" class="form-control" id="shifr">
+						</div>
+						<div class="form-group">
+							<label for="date" class="col-form-label">Дата:</label>
+							<input type="date" class="form-control" id="date">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-primary">Добавить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

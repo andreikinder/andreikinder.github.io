@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondBlackC-Italic'),
+		  url('../fonts/HeliosCondBlackC-Italic.otf')  format("opentype");
+	font-weight: 900;
+	font-style: italic;
+ }
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondBlackC'),
+		  url('../fonts/HeliosCondBlackC.otf')  format("opentype");
+	font-weight: 900;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondC-Bold'),
+		  url('../fonts/HeliosCondC-Bold.otf')  format("opentype");
+	font-weight: bold;
+	font-style: normal;
+ }
+
+ 
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondC-BoldItalic'),
+		  url('../fonts/HeliosCondC-BoldItalic.otf')  format("opentype");
+	font-weight: bold;
+	font-style: italic;
+ }
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondC-Italic'),
+		  url('../fonts/HeliosCondC-Italic.otf')  format("opentype");
+	font-weight: normal;
+	font-style: italic;
+ }
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondC'),
+		  url('../fonts/HeliosCondC.otf')  format("opentype");
+	font-weight: normal;
+	font-style: normal;
+ }
+
+ 
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondLightC-Italic'),
+		  url('../fonts/HeliosCondLightC-Italic.otf')  format("opentype");
+	font-weight: 300;
+	font-style: italic;
+ }
+
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondLightC'),
+		  url('../fonts/HeliosCondLightC.otf')  format("opentype");
+	font-weight: 300;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondThinC-Italic'),
+		  url('../fonts/HeliosCondThinC-Italic.otf')  format("opentype");
+	font-weight: 100;
+	font-style: italic;
+ }
+
+
+
+ @font-face {
+	font-family: 'Helios';
+	src: local('HeliosCondThinC'),
+		  url('../fonts/HeliosCondThinC.otf')  format("opentype");
+	font-weight: 100;
+	font-style: normal;
+ }

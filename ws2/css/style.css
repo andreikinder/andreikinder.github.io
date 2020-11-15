@@ -1,0 +1,63 @@
+h1,
+h2 {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: 300;
+}
+
+.main {
+  padding: 70px 0;
+  min-height: calc(100vh - 168px);
+}
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  height: 80px;
+}
+
+.navbar-brand img {
+  max-width: 50px;
+}
+
+.diccip .card {
+  margin-right: 30px;
+}
+
+.diccip .card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.diccip_n .card {
+  margin-right: 30px;
+}
+
+.diccip_n .card .card-title {
+  margin-bottom: 0;
+}
+
+.diccip_n .card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.diccip_title .card-title {
+  margin-bottom: 10px;
+}
+
+.card-body:hover {
+  cursor: pointer;
+}
+
+.diccip-pagination {
+  margin-top: 30px;
+}
