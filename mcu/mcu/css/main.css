@@ -6744,3 +6744,10 @@ section {
         max-width: 250px;
     }
 }
+
+.cart_w{
+	visibility: hidden;
+}
+.services{
+	display: none;
+}
