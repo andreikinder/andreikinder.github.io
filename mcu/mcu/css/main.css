@@ -6751,3 +6751,7 @@ section {
 .services{
 	display: none;
 }
+
+.menu__item.menu__item_price{
+	display: none;	
+}
